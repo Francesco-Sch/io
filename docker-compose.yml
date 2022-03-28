@@ -4,7 +4,7 @@ services:
         build:
             context: .
         volumes:
-            - ./src:/home/jovyan/src
+            - ./src:/opt/app/code
         ports:
             - "8888:8888"
         environment:
