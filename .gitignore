@@ -1,1 +1,7 @@
 .env
+
+/src/.cache
+/src/.ipynb_checkpoints
+/src/.ipython
+/src/.jupyter
+/src/.local
