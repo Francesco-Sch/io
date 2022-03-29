@@ -5,3 +5,8 @@
 /src/.ipython
 /src/.jupyter
 /src/.local
+/src/.conda
+/src/.config
+/src/.npm
+/src/.virtual_documents
+/src/.yarn

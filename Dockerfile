@@ -10,16 +10,16 @@ USER $NB_UID
 RUN set -ex \
     && conda install --quiet --yes --channel conda-forge \
     # choose the python packages you need
-    'jupytext==1.13.0' \
-    'python-slugify[unidecode]==5.0.2' \
     'voila>=0.3.4' \
-    && conda clean --all -f -y \
-    && pip install --quiet --no-cache-dir gradio
+    'ipywidgets>=7.7.0' \
+    'elyra-code-snippet-extension>=3.6.1' \
+    && conda clean --all -f -y
+    # && pip install --quiet --no-cache-dir gradio
 
 # Build and execute JupyterLab
 RUN \
     # Install JupyterLab extensions
-    # jupyter labextension install ... --no-build \
+    # jupyter labextension install jupyterlab-code-snippets --no-build \
     jupyter lab build --LabApp.token='' -y \
     && jupyter lab clean -y \
     && rm -rf "/home/${NB_USER}/.cache/yarn" \
