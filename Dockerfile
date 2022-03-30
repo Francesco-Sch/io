@@ -6,6 +6,7 @@ USER $NB_UID
 RUN set -ex \
     && pip3 install --quiet --no-cache-dir --upgrade \
     # choose the python packages you need
+    'pillow' \
     'voila' \
     'ipywidgets' \
     'elyra[all]'

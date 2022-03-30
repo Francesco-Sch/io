@@ -5,6 +5,7 @@ services:
             context: .
         volumes:
             - ./src/notebooks:/home/jovyan/notebooks
+            # - ./src/code-snippets:/home/jovyan/.local/share/jupyter/metadata/code-snippets/
         ports:
             - "8888:8888"
         environment:
