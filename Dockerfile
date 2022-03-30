@@ -1,20 +1,14 @@
-FROM jupyter/scipy-notebook
-
-# Never prompt the user for choices on installation/configuration of packages
-ENV DEBIAN_FRONTEND noninteractive
-ENV TERM linux
+FROM jupyter/base-notebook
 
 USER $NB_UID
 
 # Install Python packages
 RUN set -ex \
-    && conda install --quiet --yes --channel conda-forge \
+    && pip3 install --quiet --no-cache-dir --upgrade \
     # choose the python packages you need
-    'voila>=0.3.4' \
-    'ipywidgets>=7.7.0' \
-    'elyra-code-snippet-extension>=3.6.1'
-    # && conda clean --all -f -y
-    # && pip install --quiet --no-cache-dir gradio
+    'voila' \
+    'ipywidgets' \
+    'elyra[all]'
 
 # Build and execute JupyterLab
 RUN set -ex \
