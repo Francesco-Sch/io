@@ -12,15 +12,15 @@ RUN set -ex \
     # choose the python packages you need
     'voila>=0.3.4' \
     'ipywidgets>=7.7.0' \
-    'elyra-code-snippet-extension>=3.6.1' \
-    && conda clean --all -f -y
+    'elyra-code-snippet-extension>=3.6.1'
+    # && conda clean --all -f -y
     # && pip install --quiet --no-cache-dir gradio
 
 # Build and execute JupyterLab
-RUN \
+RUN set -ex \
     # Install JupyterLab extensions
     # jupyter labextension install jupyterlab-code-snippets --no-build \
-    jupyter lab build --LabApp.token='' -y \
+    && jupyter lab build --LabApp.token='' -y \
     && jupyter lab clean -y \
     && rm -rf "/home/${NB_USER}/.cache/yarn" \
     && rm -rf "/home/${NB_USER}/.node-gyp" \
