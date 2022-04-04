@@ -1,1 +1,4 @@
 .env
+
+/notebooks/.ipynb_checkpoints
+/code-snippets/.ipynb_checkpoints
