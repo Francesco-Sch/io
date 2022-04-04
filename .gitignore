@@ -1,5 +1,5 @@
 .env
 
-/src/notebooks/.ipynb_checkpoints
 /src/notebooks/.log
-/src/code-snippets/.ipynb_checkpoints
+
+**/.ipynb_checkpoints
