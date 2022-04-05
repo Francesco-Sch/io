@@ -1,5 +1,3 @@
 .env
-
-/src/notebooks/.log
-
 **/.ipynb_checkpoints
+/src/notebooks/.log
