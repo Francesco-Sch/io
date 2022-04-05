@@ -41,7 +41,7 @@ export function WidgetWritable<T>(name_: string, value_: T): WidgetWritable<T> {
 }
 
 // Declare stores with their associated Traitlets here.
-export const value = WidgetWritable<string>('value', '');
+export const value = WidgetWritable<number>('value', 1);
 
 // Set the model for each store you create.
 export function setStoreModels(model: DOMWidgetModel): void {

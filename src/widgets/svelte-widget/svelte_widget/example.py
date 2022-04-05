@@ -13,15 +13,15 @@ from traitlets import Unicode, Integer
 from ._frontend import module_name, module_version
 
 
-class ExampleWidget(DOMWidget):
+class Slider(DOMWidget):
     """TODO: Add docstring here
     """
-    _model_name = Unicode('ExampleModel').tag(sync=True)
+    _model_name = Unicode('SliderModel').tag(sync=True)
     _model_module = Unicode(module_name).tag(sync=True)
     _model_module_version = Unicode(module_version).tag(sync=True)
-    _view_name = Unicode('ExampleView').tag(sync=True)
+    _view_name = Unicode('SliderView').tag(sync=True)
     _view_module = Unicode(module_name).tag(sync=True)
     _view_module_version = Unicode(module_version).tag(sync=True)
 
-    value = Unicode('Hello World').tag(sync=True)
+    value = Integer(1).tag(sync=True)
     count = Integer(0).tag(sync=True)
