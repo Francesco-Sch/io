@@ -16,8 +16,8 @@ RUN set -ex \
     'pillow' \
     'voila' \
     'ipywidgets' \
-    'ipyvue' \
-    'ipyvuetify' \
+    # 'ipyvue' \
+    # 'ipyvuetify' \
     'elyra[all]'
 
 # Build and execute JupyterLab
