@@ -9,7 +9,7 @@ RUN apt update && apt install google-chrome-stable -y
 
 USER $NB_UID
 
-# Install Python packages
+# Install Python packages via pip
 RUN set -ex \
     && pip3 install --quiet --no-cache-dir --upgrade \
     # choose the python packages you need
@@ -18,16 +18,21 @@ RUN set -ex \
     'ipywidgets' \
     # 'ipyvue' \
     # 'ipyvuetify' \
-    'elyra[all]'
+    'elyra[all]' \
+    'jupyter_packaging' \
+    'cookiecutter'
+
+# Install packages via conda
+RUN conda install nodejs
 
 # Build and execute JupyterLab
 RUN set -ex \
     # Install JupyterLab extensions
-    # jupyter labextension install jupyterlab-code-snippets --no-build \
-    && jupyter lab build --LabApp.token='' -y \
+    # jupyter labextension install ... --no-build \
+    && jupyter lab build -y \
     && jupyter lab clean -y \
     && rm -rf "/home/${NB_USER}/.cache/yarn" \
     && rm -rf "/home/${NB_USER}/.node-gyp" \
     && rm -rf "/home/${NB_USER}/work/" \
     && fix-permissions "${CONDA_DIR}" \
-    && fix-permissions "/home/${NB_USER}"
+    && fix-permissions "/home/${NB_USER}" \ 
