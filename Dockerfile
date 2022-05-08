@@ -35,4 +35,10 @@ RUN set -ex \
     && rm -rf "/home/${NB_USER}/.node-gyp" \
     && rm -rf "/home/${NB_USER}/work/" \
     && fix-permissions "${CONDA_DIR}" \
-    && fix-permissions "/home/${NB_USER}" \ 
+    && fix-permissions "/home/${NB_USER}" 
+
+# WORKDIR "home/jovyan/ext/theme"
+
+# RUN pip install -e .
+
+# RUN jupyter labextension develop --overwrite
