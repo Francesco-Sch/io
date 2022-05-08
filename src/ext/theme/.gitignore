@@ -112,3 +112,7 @@ dmypy.json
 
 # OSX files
 .DS_Store
+
+# Static folder
+/static
+*/fonts
