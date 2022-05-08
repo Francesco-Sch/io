@@ -1,19 +1,20 @@
 include LICENSE
-include README.md
+include *.md
 include pyproject.toml
-include jupyter-config/IO-Theme.json
 
 include package.json
 include install.json
 include ts*.json
 include yarn.lock
 
-graft IO-Theme/labextension
+graft IO_Theme/labextension
 
 # Javascript files
-graft lib
+graft src
 graft style
 prune **/node_modules
+prune lib
+prune binder
 
 # Patterns to exclude from any directory
 global-exclude *~

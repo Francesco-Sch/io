@@ -1,22 +1,20 @@
 import { IThemeManager } from '@jupyterlab/apputils';
-
 /**
- * Initialization data for the @francesco_sch/IO-Theme extension.
+ * Initialization data for the IO-Theme extension.
  */
-const extension = {
-  id: '@francesco_sch/IO-Theme',
-  requires: [IThemeManager],
-  autoStart: true,
-  activate: () => {
-    console.log('JupyterLab extension @francesco_sch/IO-Theme is activated!');
-    const style = '@francesco_sch/IO-Theme/index.css';
-    manager.register({
-      name: 'IO Theme',
-      isLight: true,
-      load: () => manager.loadCSS(style),
-      unload: () => Promise.resolve(undefined)
-    });
-  }
+const plugin = {
+    id: 'IO-Theme:plugin',
+    autoStart: true,
+    requires: [IThemeManager],
+    activate: (app, manager) => {
+        console.log('JupyterLab extension IO-Theme is activated!');
+        const style = 'IO-Theme/index.css';
+        manager.register({
+            name: 'IO-Theme',
+            isLight: true,
+            load: () => manager.loadCSS(style),
+            unload: () => Promise.resolve(undefined)
+        });
+    }
 };
-
-export default extension;
+export default plugin;

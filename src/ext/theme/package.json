@@ -1,16 +1,15 @@
 {
   "name": "IO-Theme",
   "version": "0.1.0",
-  "description": "Jupyter lab theme of the IO framework",
+  "description": "JupyterLab Theme of the IO framework",
   "keywords": [
     "jupyter",
     "jupyterlab",
-    "jupyterlab-extension",
-    "jupyterlab-theme"
+    "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/francesco_sch/custom-jupyterlab",
+  "homepage": "https://github.com/francesco-sch/custom-jupyterlab",
   "bugs": {
-    "url": "https://github.com/francesco_sch/custom-jupyterlab/issues"
+    "url": "https://github.com/francesco-sch/custom-jupyterlab/issues"
   },
   "license": "BSD-3-Clause",
   "author": {
@@ -22,38 +21,77 @@
     "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
   ],
   "main": "lib/index.js",
-  "style": "style/index.css",
+  "types": "lib/index.d.ts",
+  
   "repository": {
     "type": "git",
-    "url": "https://github.com/francesco_sch/custom-jupyterlab.git"
+    "url": "https://github.com/francesco-sch/custom-jupyterlab.git"
   },
   "scripts": {
-    "build": "jlpm run build:labextension:dev",
-    "build:prod": "jlpm run build:labextension",
+    "build": "jlpm build:lib && jlpm build:labextension:dev",
+    "build:prod": "jlpm clean && jlpm build:lib && jlpm build:labextension",
     "build:labextension": "jupyter labextension build .",
     "build:labextension:dev": "jupyter labextension build --development True .",
-    "clean:labextension": "rimraf IO-Theme/labextension",
-    "clean:all": "jlpm run clean:labextension",
-    "install:extension": "jupyter labextension develop --overwrite .",
-    "prepare": "jlpm run build:prod",
-    "prettier": "prettier --write \"**/*{.js,.jsx,.css,.json,.md}\"",
-    "watch": "jlpm run watch:labextension",
+    "build:lib": "tsc",
+    "clean": "jlpm clean:lib",
+    "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
+    "clean:lintcache": "rimraf .eslintcache .stylelintcache",
+    "clean:labextension": "rimraf IO_Theme/labextension",
+    "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
+    "eslint": "jlpm eslint:check --fix",
+    "eslint:check": "eslint . --cache --ext .ts,.tsx",
+    "install:extension": "jlpm build",
+    "lint": "jlpm stylelint && jlpm prettier && jlpm eslint",
+    "lint:check": "jlpm stylelint:check && jlpm prettier:check && jlpm eslint:check",
+    "prettier": "jlpm prettier:base --write --list-different",
+    "prettier:base": "prettier \"**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}\"",
+    "prettier:check": "jlpm prettier:base --check",
+    "stylelint": "jlpm stylelint:check --fix",
+    "stylelint:check": "stylelint --cache \"style/**/*.css\"",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:src": "tsc -w",
     "watch:labextension": "jupyter labextension watch ."
   },
-  "dependencies": {},
+  "dependencies": {
+    "@jupyterlab/application": "^3.1.0",
+    "@jupyterlab/apputils": "^3.1.0"
+  },
   "devDependencies": {
-    "@jupyterlab/builder": "^3.0.0",
+    "@jupyterlab/builder": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.1.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "stylelint": "^14.3.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-standard": "~24.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "typescript": "~4.1.3"
   },
   "sideEffects": [
-    "style/*.css",
-    "style/index.js"
-  ],
-  "styleModule": "style/index.js",
-  "jupyterlab": {
+    "style/*.css"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "jupyterlab": { 
     "extension": true,
-    "themePath": "style/index.css",
-    "outputDir": "IO-Theme/labextension"
+    "outputDir": "IO_Theme/labextension",
+    "themePath": "style/index.css"
+  },
+  "jupyter-releaser": {
+    "hooks": {
+      "before-build-npm": [
+        "python -m pip install jupyterlab~=3.1",
+        "jlpm"
+      ],
+      "before-build-python": [
+        "jlpm clean:all"
+      ]
+    }
   }
 }
