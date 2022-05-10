@@ -193,8 +193,8 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: white;
-  --jp-layout-color1: white;
+  --jp-layout-color0: rgb(255, 250, 247);
+  --jp-layout-color1: rgb(255, 250, 247);
   --jp-layout-color2: var(--md-grey-200);
   --jp-layout-color3: var(--md-grey-400);
   --jp-layout-color4: var(--md-grey-600);
@@ -214,7 +214,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Brand/accent */
 
   --jp-brand-color0: #ec0c4b;
-  --jp-brand-color1: #ed225d;
+  --jp-brand-color1: #236640;
   --jp-brand-color2: #ee376b;
   --jp-brand-color3: #ee3b6e;
   --jp-accent-color0: var(--md-green-700);
@@ -253,7 +253,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
   --jp-cell-prompt-width: 64px;
-  --jp-cell-prompt-font-family: 'Slussen Mono', 'Source Code Pro', monospace;
+  --jp-cell-prompt-font-family: 'Slussen Mono','Source Code Pro', monospace;
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.5;

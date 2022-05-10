@@ -20,7 +20,8 @@ RUN set -ex \
     # 'ipyvuetify' \
     'elyra[all]' \
     'jupyter_packaging' \
-    'cookiecutter'
+    'cookiecutter' \
+    'ipylab'
 
 # Install packages via conda
 RUN conda install nodejs
