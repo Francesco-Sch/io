@@ -1,4 +1,4 @@
-# Customize Jupyter Notebooks and Jupyter Lab
+# IO - AN AI framework for designers
 
 Different approaches and attempts to customize Jupyter Notebooks and the Jupyter Lab Interface to make it more usable for aspiring designers.
 
