@@ -4,9 +4,9 @@ services:
         build:
             context: .
         volumes:
-            - ./src/widgets:/home/jovyan/widgets
-            - ./src/notebooks:/home/jovyan/notebooks
-            - ./src/ext:/home/jovyan/ext
+            - ./widgets:/home/jovyan/widgets
+            - ./notebooks:/home/jovyan/notebooks
+            - ./ext:/home/jovyan/ext
             # - ./src/code-snippets:/home/jovyan/.local/share/jupyter/metadata/code-snippets/
         ports:
             - "8888:8888"
