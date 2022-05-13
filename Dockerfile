@@ -21,7 +21,8 @@ RUN set -ex \
     'elyra-code-snippet-extension' \
     'jupyter_packaging' \
     'cookiecutter' \
-    'ipylab'
+    'ipylab' \
+    'jupyterlab-unfold'
 
 # Install packages via conda
 RUN conda install nodejs
