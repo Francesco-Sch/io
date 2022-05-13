@@ -87,7 +87,7 @@ import tagSvgstr from '../../style/icons/tag.svg';
 import terminalSvgstr from '../../style/icons/terminal--3270.svg';
 // import textEditorSvgstr from '../../style/icons/filetype/text-editor.svg';
 import tocSvgstr from '../../style/icons/table-of-contents.svg';
-// import treeViewSvgstr from '../../style/icons/toolbar/tree-view.svg';
+import treeViewSvgstr from '../../style/icons/tree-view.svg';
 import trustedSvgstr from '../../style/icons/rule.svg';
 // import undoSvgstr from '../../style/icons/toolbar/undo.svg';
 import userSvgstr from '../../style/icons/user.svg';
@@ -181,7 +181,7 @@ export const tagIcon = new LabIcon({ name: 'ui-components:tag', svgstr: tagSvgst
 export const terminalIcon = new LabIcon({ name: 'ui-components:terminal', svgstr: terminalSvgstr });
 // export const textEditorIcon = new LabIcon({ name: 'ui-components:text-editor', svgstr: textEditorSvgstr });
 export const tocIcon = new LabIcon({ name: 'ui-components:toc', svgstr: tocSvgstr });
-// export const treeViewIcon = new LabIcon({ name: 'ui-components:tree-view', svgstr: treeViewSvgstr });
+export const treeViewIcon = new LabIcon({ name: 'ui-components:tree-view', svgstr: treeViewSvgstr });
 export const trustedIcon = new LabIcon({ name: 'ui-components:trusted', svgstr: trustedSvgstr });
 // export const undoIcon = new LabIcon({ name: 'ui-components:undo', svgstr: undoSvgstr });
 export const userIcon = new LabIcon({ name: 'ui-components:user', svgstr: userSvgstr });
