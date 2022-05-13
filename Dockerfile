@@ -18,13 +18,16 @@ RUN set -ex \
     'ipywidgets' \
     # 'ipyvue' \
     # 'ipyvuetify' \
-    'elyra[all]' \
+    'elyra-code-snippet-extension' \
     'jupyter_packaging' \
     'cookiecutter' \
     'ipylab'
 
 # Install packages via conda
 RUN conda install nodejs
+
+# Uninstall unecessary packages from base docker image
+RUN pip uninstall jupyterlab-git -y
 
 # Build and execute JupyterLab
 RUN set -ex \
