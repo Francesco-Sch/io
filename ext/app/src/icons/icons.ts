@@ -36,7 +36,7 @@ import extensionSvgstr from '../../style/icons/tool-box.svg';
 import fastForwardSvgstr from '../../style/icons/skip--forward.svg';
 import fileSvgstr from '../../style/icons/file.svg';
 import fileUploadSvgstr from '../../style/icons/upload.svg';
-// import filterListSvgstr from '../../style/icons/toolbar/filter-list.svg';
+import filterListSvgstr from '../../style/icons/filter.svg';
 // import folderFavoriteSvgstr from '../../style/icons/filetype/folder-favorite.svg';
 import folderSvgstr from '../../style/icons/folder.svg';
 import homeSvgstr from '../../style/icons/home.svg';
@@ -130,7 +130,7 @@ export const extensionIcon = new LabIcon({ name: 'ui-components:extension', svgs
 export const fastForwardIcon = new LabIcon({ name: 'ui-components:fast-forward', svgstr: fastForwardSvgstr });
 export const fileIcon = new LabIcon({ name: 'ui-components:file', svgstr: fileSvgstr });
 export const fileUploadIcon = new LabIcon({ name: 'ui-components:file-upload', svgstr: fileUploadSvgstr });
-// export const filterListIcon = new LabIcon({ name: 'ui-components:filter-list', svgstr: filterListSvgstr });
+export const filterListIcon = new LabIcon({ name: 'ui-components:filter-list', svgstr: filterListSvgstr });
 // export const folderFavoriteIcon = new LabIcon({ name: 'ui-components:folder-favorite', svgstr: folderFavoriteSvgstr });
 export const folderIcon = new LabIcon({ name: 'ui-components:folder', svgstr: folderSvgstr });
 export const homeIcon = new LabIcon({ name: 'ui-components:home', svgstr: homeSvgstr });
