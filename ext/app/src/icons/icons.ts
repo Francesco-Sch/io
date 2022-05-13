@@ -18,7 +18,7 @@ import caretUpSvgstr from '../../style/icons/caret--up.svg';
 import checkSvgstr from '../../style/icons/checkmark.svg';
 import circleEmptySvgstr from '../../style/icons/circle-stroke.svg';
 import circleSvgstr from '../../style/icons/circle-fill.svg';
-// import clearSvgstr from '../../style/icons/toolbar/clear.svg';
+import clearSvgstr from '../../style/icons/error.svg';
 // import closeSvgstr from '../../style/icons/toolbar/close.svg';
 // import codeSvgstr from '../../style/icons/toolbar/code.svg';
 // import collapseAllSvgstr from '../../style/icons/toolbar/collapse-all.svg';
@@ -112,7 +112,7 @@ export const caretUpIcon = new LabIcon({ name: 'ui-components:caret-up', svgstr:
 export const checkIcon = new LabIcon({ name: 'ui-components:check', svgstr: checkSvgstr });
 export const circleEmptyIcon = new LabIcon({ name: 'ui-components:circle-empty', svgstr: circleEmptySvgstr });
 export const circleIcon = new LabIcon({ name: 'ui-components:circle', svgstr: circleSvgstr });
-// export const clearIcon = new LabIcon({ name: 'ui-components:clear', svgstr: clearSvgstr });
+export const clearIcon = new LabIcon({ name: 'ui-components:clear', svgstr: clearSvgstr });
 // export const closeIcon = new LabIcon({ name: 'ui-components:close', svgstr: closeSvgstr });
 // export const codeIcon = new LabIcon({ name: 'ui-components:code', svgstr: codeSvgstr });
 // export const collapseAllIcon = new LabIcon({ name: 'ui-components:collapse-all', svgstr: collapseAllSvgstr });
