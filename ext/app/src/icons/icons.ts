@@ -62,7 +62,7 @@ import moveUpSvgstr from '../../style/icons/toolbar/arrow-up.svg';
 import newFolderSvgstr from '../../style/icons/folder--add.svg';
 import notTrustedSvgstr from '../../style/icons/rule--cancelled.svg';
 // import notebookSvgstr from '../../style/icons/filetype/notebook.svg';
-// import numberingSvgstr from '../../style/icons/toolbar/numbering.svg';
+import numberingSvgstr from '../../style/icons/list--numbered.svg';
 // import offlineBoltSvgstr from '../../style/icons/toolbar/offline-bolt.svg';
 import paletteSvgstr from '../../style/icons/search--locate.svg';
 // import pasteSvgstr from '../../style/icons/toolbar/paste.svg';
@@ -156,7 +156,7 @@ export const moveUpIcon = new LabIcon({ name: 'ui-components:move-up', svgstr: m
 export const newFolderIcon = new LabIcon({ name: 'ui-components:new-folder', svgstr: newFolderSvgstr });
 export const notTrustedIcon = new LabIcon({ name: 'ui-components:not-trusted', svgstr: notTrustedSvgstr });
 // export const notebookIcon = new LabIcon({ name: 'ui-components:notebook', svgstr: notebookSvgstr });
-// export const numberingIcon = new LabIcon({ name: 'ui-components:numbering', svgstr: numberingSvgstr });
+export const numberingIcon = new LabIcon({ name: 'ui-components:numbering', svgstr: numberingSvgstr });
 // export const offlineBoltIcon = new LabIcon({ name: 'ui-components:offline-bolt', svgstr: offlineBoltSvgstr });
 export const paletteIcon = new LabIcon({ name: 'ui-components:palette', svgstr: paletteSvgstr });
 // export const pasteIcon = new LabIcon({ name: 'ui-components:paste', svgstr: pasteSvgstr });
