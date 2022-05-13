@@ -77,7 +77,7 @@ import pythonSvgstr from '../../style/icons/python.svg';
 // import runningSvgstr from '../../style/icons/sidebar/running.svg';
 // import saveSvgstr from '../../style/icons/toolbar/save.svg';
 // import searchSvgstr from '../../style/icons/toolbar/search.svg';
-// import settingsSvgstr from '../../style/icons/filetype/settings.svg';
+import settingsSvgstr from '../../style/icons/settings.svg';
 // import shareSvgstr from '../../style/icons/sidebar/share.svg';
 // import spreadsheetSvgstr from '../../style/icons/filetype/spreadsheet.svg';
 // import stopSvgstr from '../../style/icons/toolbar/stop.svg';
@@ -171,7 +171,7 @@ export const pythonIcon = new LabIcon({ name: 'ui-components:python', svgstr: py
 // export const runningIcon = new LabIcon({ name: 'ui-components:running', svgstr: runningSvgstr });
 // export const saveIcon = new LabIcon({ name: 'ui-components:save', svgstr: saveSvgstr });
 // export const searchIcon = new LabIcon({ name: 'ui-components:search', svgstr: searchSvgstr });
-// export const settingsIcon = new LabIcon({ name: 'ui-components:settings', svgstr: settingsSvgstr });
+export const settingsIcon = new LabIcon({ name: 'ui-components:settings', svgstr: settingsSvgstr });
 // export const shareIcon = new LabIcon({ name: 'ui-components:share', svgstr: shareSvgstr });
 // export const spreadsheetIcon = new LabIcon({ name: 'ui-components:spreadsheet', svgstr: spreadsheetSvgstr });
 // export const stopIcon = new LabIcon({ name: 'ui-components:stop', svgstr: stopSvgstr });
