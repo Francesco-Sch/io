@@ -41,7 +41,7 @@ import fileSvgstr from '../../style/icons/file.svg';
 import folderSvgstr from '../../style/icons/folder.svg';
 import homeSvgstr from '../../style/icons/filetype/home.svg';
 // import html5Svgstr from '../../style/icons/filetype/html5.svg';
-// import imageSvgstr from '../../style/icons/filetype/image.svg';
+import imageSvgstr from '../../style/icons/image.svg';
 // import inspectorSvgstr from '../../style/icons/filetype/inspector.svg';
 // import jsonSvgstr from '../../style/icons/filetype/json.svg';
 // import juliaSvgstr from '../../style/icons/filetype/julia.svg';
@@ -135,7 +135,7 @@ export const fileIcon = new LabIcon({ name: 'ui-components:file', svgstr: fileSv
 export const folderIcon = new LabIcon({ name: 'ui-components:folder', svgstr: folderSvgstr });
 export const homeIcon = new LabIcon({ name: 'ui-components:home', svgstr: homeSvgstr });
 // export const html5Icon = new LabIcon({ name: 'ui-components:html5', svgstr: html5Svgstr });
-// export const imageIcon = new LabIcon({ name: 'ui-components:image', svgstr: imageSvgstr });
+export const imageIcon = new LabIcon({ name: 'ui-components:image', svgstr: imageSvgstr });
 // export const inspectorIcon = new LabIcon({ name: 'ui-components:inspector', svgstr: inspectorSvgstr });
 // export const jsonIcon = new LabIcon({ name: 'ui-components:json', svgstr: jsonSvgstr });
 // export const juliaIcon = new LabIcon({ name: 'ui-components:julia', svgstr: juliaSvgstr });
