@@ -3,7 +3,7 @@ import { LabIcon } from '@jupyterlab/ui-components';
 // icon svg import statements
 import addAboveSvgstr from '../../style/icons/launch-study--2.svg';
 import addBelowSvgstr from '../../style/icons/launch-study--1.svg';
-// import addSvgstr from '../../style/icons/toolbar/add.svg';
+import addSvgstr from '../../style/icons/add.svg';
 // import bugDotSvgstr from '../../style/icons/toolbar/bug-dot.svg';
 // import bugSvgstr from '../../style/icons/toolbar/bug.svg';
 import buildSvgstr from '../../style/icons/settings--services.svg';
@@ -97,7 +97,7 @@ import userSvgstr from '../../style/icons/user.svg';
 // // LabIcon instance construction
 export const addAboveIcon = new LabIcon({ name: 'ui-components:add-above', svgstr: addAboveSvgstr });
 export const addBelowIcon = new LabIcon({ name: 'ui-components:add-below', svgstr: addBelowSvgstr });
-// export const addIcon = new LabIcon({ name: 'ui-components:add', svgstr: addSvgstr });
+export const addIcon = new LabIcon({ name: 'ui-components:add', svgstr: addSvgstr });
 // export const bugDotIcon = new LabIcon({ name: 'ui-components:bug-dot', svgstr: bugDotSvgstr });
 // export const bugIcon = new LabIcon({ name: 'ui-components:bug', svgstr: bugSvgstr });
 export const buildIcon = new LabIcon({ name: 'ui-components:build', svgstr: buildSvgstr });
