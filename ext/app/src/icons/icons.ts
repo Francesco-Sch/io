@@ -65,7 +65,7 @@ import notTrustedSvgstr from '../../style/icons/rule--cancelled.svg';
 import numberingSvgstr from '../../style/icons/list--numbered.svg';
 // import offlineBoltSvgstr from '../../style/icons/toolbar/offline-bolt.svg';
 import paletteSvgstr from '../../style/icons/search--locate.svg';
-// import pasteSvgstr from '../../style/icons/toolbar/paste.svg';
+import pasteSvgstr from '../../style/icons/paste.svg';
 // import pdfSvgstr from '../../style/icons/filetype/pdf.svg';
 import pythonSvgstr from '../../style/icons/python.svg';
 // import rKernelSvgstr from '../../style/icons/filetype/r-kernel.svg';
@@ -159,7 +159,7 @@ export const notTrustedIcon = new LabIcon({ name: 'ui-components:not-trusted', s
 export const numberingIcon = new LabIcon({ name: 'ui-components:numbering', svgstr: numberingSvgstr });
 // export const offlineBoltIcon = new LabIcon({ name: 'ui-components:offline-bolt', svgstr: offlineBoltSvgstr });
 export const paletteIcon = new LabIcon({ name: 'ui-components:palette', svgstr: paletteSvgstr });
-// export const pasteIcon = new LabIcon({ name: 'ui-components:paste', svgstr: pasteSvgstr });
+export const pasteIcon = new LabIcon({ name: 'ui-components:paste', svgstr: pasteSvgstr });
 // export const pdfIcon = new LabIcon({ name: 'ui-components:pdf', svgstr: pdfSvgstr });
 export const pythonIcon = new LabIcon({ name: 'ui-components:python', svgstr: pythonSvgstr });
 // export const rKernelIcon = new LabIcon({ name: 'ui-components:r-kernel', svgstr: rKernelSvgstr });
