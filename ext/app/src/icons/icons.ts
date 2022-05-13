@@ -74,7 +74,7 @@ import pythonSvgstr from '../../style/icons/python.svg';
 // import refreshSvgstr from '../../style/icons/toolbar/refresh.svg';
 // import regexSvgstr from '../../style/icons/search/regex.svg';
 // import runSvgstr from '../../style/icons/toolbar/run.svg';
-// import runningSvgstr from '../../style/icons/sidebar/running.svg';
+import runningSvgstr from '../../style/icons/stop--outline.svg';
 // import saveSvgstr from '../../style/icons/toolbar/save.svg';
 // import searchSvgstr from '../../style/icons/toolbar/search.svg';
 import settingsSvgstr from '../../style/icons/settings.svg';
@@ -168,7 +168,7 @@ export const pythonIcon = new LabIcon({ name: 'ui-components:python', svgstr: py
 // export const refreshIcon = new LabIcon({ name: 'ui-components:refresh', svgstr: refreshSvgstr });
 // export const regexIcon = new LabIcon({ name: 'ui-components:regex', svgstr: regexSvgstr });
 // export const runIcon = new LabIcon({ name: 'ui-components:run', svgstr: runSvgstr });
-// export const runningIcon = new LabIcon({ name: 'ui-components:running', svgstr: runningSvgstr });
+export const runningIcon = new LabIcon({ name: 'ui-components:running', svgstr: runningSvgstr });
 // export const saveIcon = new LabIcon({ name: 'ui-components:save', svgstr: saveSvgstr });
 // export const searchIcon = new LabIcon({ name: 'ui-components:search', svgstr: searchSvgstr });
 export const settingsIcon = new LabIcon({ name: 'ui-components:settings', svgstr: settingsSvgstr });
