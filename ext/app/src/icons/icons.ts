@@ -64,7 +64,7 @@ import launcherSvgstr from '../../style/icons/launcher.svg';
 // import notebookSvgstr from '../../style/icons/filetype/notebook.svg';
 // import numberingSvgstr from '../../style/icons/toolbar/numbering.svg';
 // import offlineBoltSvgstr from '../../style/icons/toolbar/offline-bolt.svg';
-// import paletteSvgstr from '../../style/icons/sidebar/palette.svg';
+import paletteSvgstr from '../../style/icons/search--locate.svg';
 // import pasteSvgstr from '../../style/icons/toolbar/paste.svg';
 // import pdfSvgstr from '../../style/icons/filetype/pdf.svg';
 import pythonSvgstr from '../../style/icons/python.svg';
@@ -158,7 +158,7 @@ export const launcherIcon = new LabIcon({ name: 'ui-components:launcher', svgstr
 // export const notebookIcon = new LabIcon({ name: 'ui-components:notebook', svgstr: notebookSvgstr });
 // export const numberingIcon = new LabIcon({ name: 'ui-components:numbering', svgstr: numberingSvgstr });
 // export const offlineBoltIcon = new LabIcon({ name: 'ui-components:offline-bolt', svgstr: offlineBoltSvgstr });
-// export const paletteIcon = new LabIcon({ name: 'ui-components:palette', svgstr: paletteSvgstr });
+export const paletteIcon = new LabIcon({ name: 'ui-components:palette', svgstr: paletteSvgstr });
 // export const pasteIcon = new LabIcon({ name: 'ui-components:paste', svgstr: pasteSvgstr });
 // export const pdfIcon = new LabIcon({ name: 'ui-components:pdf', svgstr: pdfSvgstr });
 export const pythonIcon = new LabIcon({ name: 'ui-components:python', svgstr: pythonSvgstr });
