@@ -15,7 +15,7 @@ import caretRightSvgstr from '../../style/icons/caret--right.svg';
 // import caretUpEmptyThinSvgstr from '../../style/icons/arrow/caret-up-empty-thin.svg';
 import caretUpSvgstr from '../../style/icons/caret--up.svg';
 // import caseSensitiveSvgstr from '../../style/icons/search/case-sensitive.svg';
-// import checkSvgstr from '../../style/icons/toolbar/check.svg';
+import checkSvgstr from '../../style/icons/checkmark.svg';
 // import circleEmptySvgstr from '../../style/icons/toolbar/circle-empty.svg';
 // import circleSvgstr from '../../style/icons/toolbar/circle.svg';
 // import clearSvgstr from '../../style/icons/toolbar/clear.svg';
@@ -109,7 +109,7 @@ export const caretRightIcon = new LabIcon({ name: 'ui-components:caret-right', s
 // export const caretUpEmptyThinIcon = new LabIcon({ name: 'ui-components:caret-up-empty-thin', svgstr: caretUpEmptyThinSvgstr });
 export const caretUpIcon = new LabIcon({ name: 'ui-components:caret-up', svgstr: caretUpSvgstr });
 // export const caseSensitiveIcon = new LabIcon({ name: 'ui-components:case-sensitive', svgstr: caseSensitiveSvgstr });
-// export const checkIcon = new LabIcon({ name: 'ui-components:check', svgstr: checkSvgstr });
+export const checkIcon = new LabIcon({ name: 'ui-components:check', svgstr: checkSvgstr });
 // export const circleEmptyIcon = new LabIcon({ name: 'ui-components:circle-empty', svgstr: circleEmptySvgstr });
 // export const circleIcon = new LabIcon({ name: 'ui-components:circle', svgstr: circleSvgstr });
 // export const clearIcon = new LabIcon({ name: 'ui-components:clear', svgstr: clearSvgstr });
