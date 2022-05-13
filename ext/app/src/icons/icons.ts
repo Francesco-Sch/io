@@ -81,7 +81,7 @@ import settingsSvgstr from '../../style/icons/settings.svg';
 import shareSvgstr from '../../style/icons/share.svg';
 // import spreadsheetSvgstr from '../../style/icons/filetype/spreadsheet.svg';
 // import stopSvgstr from '../../style/icons/toolbar/stop.svg';
-// import tabSvgstr from '../../style/icons/sidebar/tab.svg';
+import tabSvgstr from '../../style/icons/new-tab.svg';
 // import tableRowsSvgstr from '../../style/icons/toolbar/table-rows.svg';
 // import tagSvgstr from '../../style/icons/toolbar/tag.svg';
 // import terminalSvgstr from '../../style/icons/statusbar/terminal.svg';
@@ -175,7 +175,7 @@ export const settingsIcon = new LabIcon({ name: 'ui-components:settings', svgstr
 export const shareIcon = new LabIcon({ name: 'ui-components:share', svgstr: shareSvgstr });
 // export const spreadsheetIcon = new LabIcon({ name: 'ui-components:spreadsheet', svgstr: spreadsheetSvgstr });
 // export const stopIcon = new LabIcon({ name: 'ui-components:stop', svgstr: stopSvgstr });
-// export const tabIcon = new LabIcon({ name: 'ui-components:tab', svgstr: tabSvgstr });
+export const tabIcon = new LabIcon({ name: 'ui-components:tab', svgstr: tabSvgstr });
 // export const tableRowsIcon = new LabIcon({ name: 'ui-components:table-rows', svgstr: tableRowsSvgstr });
 // export const tagIcon = new LabIcon({ name: 'ui-components:tag', svgstr: tagSvgstr });
 // export const terminalIcon = new LabIcon({ name: 'ui-components:terminal', svgstr: terminalSvgstr });
