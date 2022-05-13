@@ -48,7 +48,7 @@ import imageSvgstr from '../../style/icons/image.svg';
 // import jupyterFaviconSvgstr from '../../style/icons/jupyter/jupyter-favicon.svg';
 // import jupyterSvgstr from '../../style/icons/jupyter/jupyter.svg';
 // import jupyterlabWordmarkSvgstr from '../../style/icons/jupyter/jupyterlab-wordmark.svg';
-// import kernelSvgstr from '../../style/icons/statusbar/kernel.svg';
+import kernelSvgstr from '../../style/icons/chip.svg';
 import keyboardSvgstr from '../../style/icons/keyboard.svg';
 // import launchSvgstr from '../../style/icons/toolbar/launch.svg';
 import launcherSvgstr from '../../style/icons/launcher.svg';
@@ -142,7 +142,7 @@ export const imageIcon = new LabIcon({ name: 'ui-components:image', svgstr: imag
 // export const jupyterFaviconIcon = new LabIcon({ name: 'ui-components:jupyter-favicon', svgstr: jupyterFaviconSvgstr });
 // export const jupyterIcon = new LabIcon({ name: 'ui-components:jupyter', svgstr: jupyterSvgstr });
 // export const jupyterlabWordmarkIcon = new LabIcon({ name: 'ui-components:jupyterlab-wordmark', svgstr: jupyterlabWordmarkSvgstr });
-// export const kernelIcon = new LabIcon({ name: 'ui-components:kernel', svgstr: kernelSvgstr });
+export const kernelIcon = new LabIcon({ name: 'ui-components:kernel', svgstr: kernelSvgstr });
 export const keyboardIcon = new LabIcon({ name: 'ui-components:keyboard', svgstr: keyboardSvgstr });
 // export const launchIcon = new LabIcon({ name: 'ui-components:launch', svgstr: launchSvgstr });
 export const launcherIcon = new LabIcon({ name: 'ui-components:launcher', svgstr: launcherSvgstr });
