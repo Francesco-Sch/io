@@ -25,7 +25,7 @@ import collapseAllSvgstr from '../../style/icons/collapse-all.svg';
 import consoleSvgstr from '../../style/icons/terminal.svg';
 import copySvgstr from '../../style/icons/copy.svg';
 // import copyrightSvgstr from '../../style/icons/licenses/copyright.svg';
-// import cutSvgstr from '../../style/icons/toolbar/cut.svg';
+import cutSvgstr from '../../style/icons/cut.svg';
 // import deleteSvgstr from '../../style/icons/toolbar/delete.svg';
 // import downloadSvgstr from '../../style/icons/toolbar/download.svg';
 // import duplicateSvgstr from '../../style/icons/toolbar/duplicate.svg';
@@ -119,7 +119,7 @@ export const collapseAllIcon = new LabIcon({ name: 'ui-components:collapse-all',
 export const consoleIcon = new LabIcon({ name: 'ui-components:console', svgstr: consoleSvgstr });
 export const copyIcon = new LabIcon({ name: 'ui-components:copy', svgstr: copySvgstr });
 // export const copyrightIcon = new LabIcon({ name: 'ui-components:copyright', svgstr: copyrightSvgstr });
-// export const cutIcon = new LabIcon({ name: 'ui-components:cut', svgstr: cutSvgstr });
+export const cutIcon = new LabIcon({ name: 'ui-components:cut', svgstr: cutSvgstr });
 // export const deleteIcon = new LabIcon({ name: 'ui-components:delete', svgstr: deleteSvgstr });
 // export const downloadIcon = new LabIcon({ name: 'ui-components:download', svgstr: downloadSvgstr });
 // export const duplicateIcon = new LabIcon({ name: 'ui-components:duplicate', svgstr: duplicateSvgstr });
