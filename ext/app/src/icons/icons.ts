@@ -59,7 +59,7 @@ import listSvgstr from '../../style/icons/list.svg';
 // import markdownSvgstr from '../../style/icons/filetype/markdown.svg';
 import moveDownSvgstr from '../../style/icons/arrow-down.svg';
 import moveUpSvgstr from '../../style/icons/toolbar/arrow-up.svg';
-// import newFolderSvgstr from '../../style/icons/toolbar/new-folder.svg';
+import newFolderSvgstr from '../../style/icons/folder--add.svg';
 import notTrustedSvgstr from '../../style/icons/rule--cancelled.svg';
 // import notebookSvgstr from '../../style/icons/filetype/notebook.svg';
 // import numberingSvgstr from '../../style/icons/toolbar/numbering.svg';
@@ -153,7 +153,7 @@ export const listIcon = new LabIcon({ name: 'ui-components:list', svgstr: listSv
 // export const markdownIcon = new LabIcon({ name: 'ui-components:markdown', svgstr: markdownSvgstr });
 export const moveDownIcon = new LabIcon({ name: 'ui-components:move-down', svgstr: moveDownSvgstr });
 export const moveUpIcon = new LabIcon({ name: 'ui-components:move-up', svgstr: moveUpSvgstr });
-// export const newFolderIcon = new LabIcon({ name: 'ui-components:new-folder', svgstr: newFolderSvgstr });
+export const newFolderIcon = new LabIcon({ name: 'ui-components:new-folder', svgstr: newFolderSvgstr });
 export const notTrustedIcon = new LabIcon({ name: 'ui-components:not-trusted', svgstr: notTrustedSvgstr });
 // export const notebookIcon = new LabIcon({ name: 'ui-components:notebook', svgstr: notebookSvgstr });
 // export const numberingIcon = new LabIcon({ name: 'ui-components:numbering', svgstr: numberingSvgstr });
