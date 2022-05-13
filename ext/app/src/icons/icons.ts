@@ -71,7 +71,7 @@ import pythonSvgstr from '../../style/icons/python.svg';
 // import rKernelSvgstr from '../../style/icons/filetype/r-kernel.svg';
 // import reactSvgstr from '../../style/icons/filetype/react.svg';
 import redoSvgstr from '../../style/icons/redo.svg';
-// import refreshSvgstr from '../../style/icons/toolbar/refresh.svg';
+import refreshSvgstr from '../../style/icons/renew.svg';
 // import regexSvgstr from '../../style/icons/search/regex.svg';
 // import runSvgstr from '../../style/icons/toolbar/run.svg';
 import runningSvgstr from '../../style/icons/stop--outline.svg';
@@ -165,7 +165,7 @@ export const pythonIcon = new LabIcon({ name: 'ui-components:python', svgstr: py
 // export const rKernelIcon = new LabIcon({ name: 'ui-components:r-kernel', svgstr: rKernelSvgstr });
 // export const reactIcon = new LabIcon({ name: 'ui-components:react', svgstr: reactSvgstr });
 export const redoIcon = new LabIcon({ name: 'ui-components:redo', svgstr: redoSvgstr });
-// export const refreshIcon = new LabIcon({ name: 'ui-components:refresh', svgstr: refreshSvgstr });
+export const refreshIcon = new LabIcon({ name: 'ui-components:refresh', svgstr: refreshSvgstr });
 // export const regexIcon = new LabIcon({ name: 'ui-components:regex', svgstr: regexSvgstr });
 // export const runIcon = new LabIcon({ name: 'ui-components:run', svgstr: runSvgstr });
 export const runningIcon = new LabIcon({ name: 'ui-components:running', svgstr: runningSvgstr });
