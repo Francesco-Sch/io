@@ -89,7 +89,7 @@ import terminalSvgstr from '../../style/icons/terminal--3270.svg';
 import tocSvgstr from '../../style/icons/table-of-contents.svg';
 import treeViewSvgstr from '../../style/icons/tree-view.svg';
 import trustedSvgstr from '../../style/icons/rule.svg';
-// import undoSvgstr from '../../style/icons/toolbar/undo.svg';
+import undoSvgstr from '../../style/icons/undo.svg';
 import userSvgstr from '../../style/icons/user.svg';
 // import vegaSvgstr from '../../style/icons/filetype/vega.svg';
 // import yamlSvgstr from '../../style/icons/filetype/yaml.svg';
@@ -183,7 +183,7 @@ export const terminalIcon = new LabIcon({ name: 'ui-components:terminal', svgstr
 export const tocIcon = new LabIcon({ name: 'ui-components:toc', svgstr: tocSvgstr });
 export const treeViewIcon = new LabIcon({ name: 'ui-components:tree-view', svgstr: treeViewSvgstr });
 export const trustedIcon = new LabIcon({ name: 'ui-components:trusted', svgstr: trustedSvgstr });
-// export const undoIcon = new LabIcon({ name: 'ui-components:undo', svgstr: undoSvgstr });
+export const undoIcon = new LabIcon({ name: 'ui-components:undo', svgstr: undoSvgstr });
 export const userIcon = new LabIcon({ name: 'ui-components:user', svgstr: userSvgstr });
 // export const vegaIcon = new LabIcon({ name: 'ui-components:vega', svgstr: vegaSvgstr });
 // export const yamlIcon = new LabIcon({ name: 'ui-components:yaml', svgstr: yamlSvgstr });
