@@ -29,7 +29,7 @@ import cutSvgstr from '../../style/icons/cut.svg';
 import deleteSvgstr from '../../style/icons/trash-can.svg';
 import downloadSvgstr from '../../style/icons/download.svg';
 import duplicateSvgstr from '../../style/icons/replicate.svg';
-// import editSvgstr from '../../style/icons/toolbar/edit.svg';
+import editSvgstr from '../../style/icons/edit.svg';
 // import ellipsesSvgstr from '../../style/icons/toolbar/ellipses.svg';
 // import expandAllSvgstr from '../../style/icons/toolbar/expand-all.svg';
 import extensionSvgstr from '../../style/icons/tool-box.svg';
@@ -123,7 +123,7 @@ export const cutIcon = new LabIcon({ name: 'ui-components:cut', svgstr: cutSvgst
 export const deleteIcon = new LabIcon({ name: 'ui-components:delete', svgstr: deleteSvgstr });
 export const downloadIcon = new LabIcon({ name: 'ui-components:download', svgstr: downloadSvgstr });
 export const duplicateIcon = new LabIcon({ name: 'ui-components:duplicate', svgstr: duplicateSvgstr });
-// export const editIcon = new LabIcon({ name: 'ui-components:edit', svgstr: editSvgstr });
+export const editIcon = new LabIcon({ name: 'ui-components:edit', svgstr: editSvgstr });
 // export const ellipsesIcon = new LabIcon({ name: 'ui-components:ellipses', svgstr: ellipsesSvgstr });
 // export const expandAllIcon = new LabIcon({ name: 'ui-components:expand-all', svgstr: expandAllSvgstr });
 export const extensionIcon = new LabIcon({ name: 'ui-components:extension', svgstr: extensionSvgstr });
