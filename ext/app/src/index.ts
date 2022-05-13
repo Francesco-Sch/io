@@ -3,6 +3,8 @@ import {
   JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
+export * from './icons/icons';
+
 /**
  * Initialization data for the IO-App extension.
  */
