@@ -1,8 +1,8 @@
 import { LabIcon } from '@jupyterlab/ui-components';
 
 // icon svg import statements
-// import addAboveSvgstr from '../../style/icons/toolbar/add-above.svg';
-// import addBelowSvgstr from '../../style/icons/toolbar/add-below.svg';
+import addAboveSvgstr from '../../style/icons/launch-study--2.svg';
+import addBelowSvgstr from '../../style/icons/launch-study--1.svg';
 // import addSvgstr from '../../style/icons/toolbar/add.svg';
 // import bugDotSvgstr from '../../style/icons/toolbar/bug-dot.svg';
 // import bugSvgstr from '../../style/icons/toolbar/bug.svg';
@@ -95,8 +95,8 @@ import userSvgstr from '../../style/icons/user.svg';
 // import yamlSvgstr from '../../style/icons/filetype/yaml.svg';
 
 // // LabIcon instance construction
-// export const addAboveIcon = new LabIcon({ name: 'ui-components:add-above', svgstr: addAboveSvgstr });
-// export const addBelowIcon = new LabIcon({ name: 'ui-components:add-below', svgstr: addBelowSvgstr });
+export const addAboveIcon = new LabIcon({ name: 'ui-components:add-above', svgstr: addAboveSvgstr });
+export const addBelowIcon = new LabIcon({ name: 'ui-components:add-below', svgstr: addBelowSvgstr });
 // export const addIcon = new LabIcon({ name: 'ui-components:add', svgstr: addSvgstr });
 // export const bugDotIcon = new LabIcon({ name: 'ui-components:bug-dot', svgstr: bugDotSvgstr });
 // export const bugIcon = new LabIcon({ name: 'ui-components:bug', svgstr: bugSvgstr });
@@ -178,7 +178,7 @@ export const shareIcon = new LabIcon({ name: 'ui-components:share', svgstr: shar
 export const tabIcon = new LabIcon({ name: 'ui-components:tab', svgstr: tabSvgstr });
 // export const tableRowsIcon = new LabIcon({ name: 'ui-components:table-rows', svgstr: tableRowsSvgstr });
 // export const tagIcon = new LabIcon({ name: 'ui-components:tag', svgstr: tagSvgstr });
-// export const terminalIcon = new LabIcon({ name: 'ui-components:terminal', svgstr: terminalSvgstr });
+export const terminalIcon = new LabIcon({ name: 'ui-components:terminal', svgstr: terminalSvgstr });
 // export const textEditorIcon = new LabIcon({ name: 'ui-components:text-editor', svgstr: textEditorSvgstr });
 export const tocIcon = new LabIcon({ name: 'ui-components:toc', svgstr: tocSvgstr });
 // export const treeViewIcon = new LabIcon({ name: 'ui-components:tree-view', svgstr: treeViewSvgstr });
