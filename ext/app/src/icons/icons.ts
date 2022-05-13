@@ -53,7 +53,7 @@ import keyboardSvgstr from '../../style/icons/keyboard.svg';
 import launchSvgstr from '../../style/icons/toolbar/launcher.svg';
 import launcherSvgstr from '../../style/icons/launcher.svg';
 // import lineFormSvgstr from '../../style/icons/statusbar/line-form.svg';
-// import linkSvgstr from '../../style/icons/toolbar/link.svg';
+import linkSvgstr from '../../style/icons/link.svg';
 import listSvgstr from '../../style/icons/list.svg';
 // import listingsInfoSvgstr from '../../style/icons/listings/listings-info.svg';
 // import markdownSvgstr from '../../style/icons/filetype/markdown.svg';
@@ -147,7 +147,7 @@ export const keyboardIcon = new LabIcon({ name: 'ui-components:keyboard', svgstr
 export const launchIcon = new LabIcon({ name: 'ui-components:launch', svgstr: launchSvgstr });
 export const launcherIcon = new LabIcon({ name: 'ui-components:launcher', svgstr: launcherSvgstr });
 // export const lineFormIcon = new LabIcon({ name: 'ui-components:line-form', svgstr: lineFormSvgstr });
-// export const linkIcon = new LabIcon({ name: 'ui-components:link', svgstr: linkSvgstr });
+export const linkIcon = new LabIcon({ name: 'ui-components:link', svgstr: linkSvgstr });
 export const listIcon = new LabIcon({ name: 'ui-components:list', svgstr: listSvgstr });
 // export const listingsInfoIcon = new LabIcon({ name: 'ui-components:listings-info', svgstr: listingsInfoSvgstr });
 // export const markdownIcon = new LabIcon({ name: 'ui-components:markdown', svgstr: markdownSvgstr });
