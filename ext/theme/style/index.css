@@ -31,3 +31,14 @@ pre {
 .lm-TabBar-content > .lm-TabBar-tab:first-of-type {
   border-left: none;
 }
+
+/* Style file browser */
+.p-StackedPanel-child, .jp-FileBrowser {
+  background: var(--jp-layout-color3);
+}
+.jp-FileBrowser .jp-Toolbar {
+  background: var(--jp-layout-color3);
+}
+.jp-FileBrowser .jp-DirListing-content {
+  background: var(--jp-layout-color3);
+}
