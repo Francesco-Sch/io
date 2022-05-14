@@ -14,4 +14,4 @@ services:
             NB_UID: ${UID}
             NB_GID: ${GID}
         entrypoint: start-notebook.sh
-        command: --VoilaConfiguration.enable_nbextensions=True --LabApp.token='' --watch
+        command: --VoilaConfiguration.enable_nbextensions=True --LabApp.token=''
