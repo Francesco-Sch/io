@@ -11,3 +11,23 @@ pre {
   font-size: var(--jp-code-font-size);
   line-height: var(--jp-code-line-height);
 }
+
+/* Give the editor more space */
+#jp-main-dock-panel {
+  padding: 0px; 
+}
+.lm-DockPanel-widget {
+  border-left: none;
+}
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+  border-top: none;
+}
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+  min-height: calc( var(--jp-private-horizontal-tab-height) + 3 * var(--jp-border-width) )
+}
+.lm-TabBar .lm-TabBar-addButton {
+  padding: 5px;
+}
+.lm-TabBar-content > .lm-TabBar-tab:first-of-type {
+  border-left: none;
+}
