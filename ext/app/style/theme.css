@@ -39,3 +39,10 @@ pre {
 .jp-FileBrowser .jp-DirListing-content {
   background: var(--jp-layout-color3);
 }
+
+/* Style notebook */
+.jp-Cell {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
