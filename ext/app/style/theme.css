@@ -30,7 +30,7 @@ pre {
 }
 
 /* Style file browser */
-.p-StackedPanel-child, .jp-FileBrowser {
+/* .p-StackedPanel-child, .jp-FileBrowser {
   background: var(--jp-layout-color3);
 }
 .jp-FileBrowser .jp-Toolbar {
@@ -38,7 +38,7 @@ pre {
 }
 .jp-FileBrowser .jp-DirListing-content {
   background: var(--jp-layout-color3);
-}
+} */
 
 /* Styles toolbar */
 .jp-NotebookPanel-toolbar {
