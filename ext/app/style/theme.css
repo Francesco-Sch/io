@@ -40,6 +40,12 @@ pre {
   background: var(--jp-layout-color3);
 }
 
+/* Styles toolbar */
+.jp-NotebookPanel-toolbar {
+  border-bottom: none;
+  box-shadow: none;
+}
+
 /* Style notebook */
 .jp-Cell {
   max-width: 1240px;
