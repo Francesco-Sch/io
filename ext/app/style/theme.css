@@ -52,3 +52,11 @@ pre {
   margin-left: auto;
   margin-right: auto;
 }
+/* 
+  Hide Input promt 
+
+  TODO: Collapsible headlines are not working anymore
+*/
+.jp-Notebook .jp-Cell .jp-InputPrompt {
+  display: none;
+}
