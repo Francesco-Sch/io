@@ -42,8 +42,8 @@ RUN set -ex \
     && fix-permissions "${CONDA_DIR}" \
     && fix-permissions "/home/${NB_USER}" 
 
-# WORKDIR "home/jovyan/ext/theme"
-
-# RUN pip install -e .
-
-# RUN jupyter labextension develop --overwrite
+# Disable unneeded extensions
+RUN jupyter labextension disable \
+    @jupyterlab/statusbar-extension \
+    @jupyterlab/debugger-extension \
+    @elyra/theme-extension
