@@ -63,6 +63,9 @@ pre {
 .jp-InputArea-editor {
   border: transparent;
 }
+.jp-mod-active .jp-MarkdownOutput {
+  border: none;
+}
 /* 
   Hide Input promt 
 
