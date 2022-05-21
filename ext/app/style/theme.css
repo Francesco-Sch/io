@@ -29,16 +29,20 @@ pre {
   border-left: none;
 }
 
-/* Style file browser */
-/* .p-StackedPanel-child, .jp-FileBrowser {
-  background: var(--jp-layout-color3);
+/* Styles sidebar */
+.jp-SideBar {
+  background: var(--jp-layout-color3) !important;
 }
-.jp-FileBrowser .jp-Toolbar {
-  background: var(--jp-layout-color3);
+.jp-SideBar.lm-TabBar.jp-mod-left {
+  border-right: none;
 }
-.jp-FileBrowser .jp-DirListing-content {
-  background: var(--jp-layout-color3);
-} */
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab + .lm-TabBar-tab, 
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab.lm-mod-current + .lm-TabBar-tab {
+  border: none;
+}
+.jp-SideBar .lm-TabBar-tab:not(.lm-mod-current) {
+  background: var(--jp-layout-color3) !important;
+}
 
 /* Styles toolbar */
 .jp-NotebookPanel-toolbar {
@@ -47,6 +51,10 @@ pre {
 }
 
 /* Style notebook */
+.lm-DockPanel-widget {
+  border-bottom: none;
+  border-right: none;
+}
 .jp-Cell {
   max-width: 1240px;
   margin-left: auto;
