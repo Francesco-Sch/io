@@ -75,3 +75,12 @@ pre {
   display: none;
 }
 
+/* Markdown code cells */
+.jp-RenderedHTMLCommon pre, .jp-RenderedHTMLCommon code {
+  background: rgb(254, 231, 223);
+}
+.jp-RenderedHTMLCommon > pre {
+  padding: 1.5em 2em;
+  margin: 0.2em;
+}
+
