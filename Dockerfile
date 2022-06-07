@@ -25,7 +25,7 @@ RUN set -ex \
     'jupyterlab-unfold'
 
 # Install packages via conda
-RUN conda install nodejs
+RUN conda install nodejs yarn
 
 # Uninstall unecessary packages from base docker image
 RUN pip uninstall jupyterlab-git -y

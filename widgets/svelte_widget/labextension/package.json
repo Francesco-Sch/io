@@ -51,11 +51,12 @@
     "@jupyterlab/builder": "^3.0.0",
     "@phosphor/application": "^1.6.0",
     "@phosphor/widgets": "^1.6.0",
+    "@tsconfig/svelte": "^2.0.1",
     "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^3.6.0",
     "@typescript-eslint/parser": "^3.6.0",
-    "@tsconfig/svelte": "^2.0.1",
     "acorn": "^7.2.0",
+    "carbon-components-svelte": "^0.65.0",
     "css-loader": "^3.2.0",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
@@ -87,7 +88,7 @@
       }
     },
     "_build": {
-      "load": "static/remoteEntry.2da925042a962801e27a.js",
+      "load": "static/remoteEntry.9a6087db45399fdb9d45.js",
       "extension": "./extension"
     }
   }

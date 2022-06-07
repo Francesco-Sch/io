@@ -1,6 +1,8 @@
 .env
 **/.ipynb_checkpoints
 /src/notebooks/.log
+**/__pycache__
+**/node_modules
 
 **/dataset
 **/crawler

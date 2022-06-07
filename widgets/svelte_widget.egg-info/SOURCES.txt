@@ -11,6 +11,7 @@ tsconfig.json
 webpack.config.js
 docs/source/_static/embed-bundle.js
 examples/introduction.ipynb
+src/PinterestLogin.svelte
 src/Widget.svelte
 src/extension.ts
 src/index.ts
@@ -31,8 +32,8 @@ svelte_widget.egg-info/dependency_links.txt
 svelte_widget.egg-info/requires.txt
 svelte_widget.egg-info/top_level.txt
 svelte_widget/labextension/package.json
-svelte_widget/labextension/static/568.8e72f63ff64800590fce.js
-svelte_widget/labextension/static/remoteEntry.a48852b68af4986c562b.js
+svelte_widget/labextension/static/568.726c2a1ea4bc2a3d9fba.js
+svelte_widget/labextension/static/remoteEntry.6496eb47188444a998d9.js
 svelte_widget/labextension/static/style.js
 svelte_widget/labextension/static/third-party-licenses.json
 svelte_widget/nbextension/extension.js
