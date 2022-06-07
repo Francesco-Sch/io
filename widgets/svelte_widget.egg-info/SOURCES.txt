@@ -32,7 +32,7 @@ svelte_widget.egg-info/requires.txt
 svelte_widget.egg-info/top_level.txt
 svelte_widget/labextension/package.json
 svelte_widget/labextension/static/568.8e72f63ff64800590fce.js
-svelte_widget/labextension/static/remoteEntry.9150186d543adbbf8f53.js
+svelte_widget/labextension/static/remoteEntry.a48852b68af4986c562b.js
 svelte_widget/labextension/static/style.js
 svelte_widget/labextension/static/third-party-licenses.json
 svelte_widget/nbextension/extension.js
