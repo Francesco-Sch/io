@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { value } from './stores';
+  import { value } from '../../stores';
 
   let localValue = $value;
 </script>

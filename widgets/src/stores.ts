@@ -46,6 +46,7 @@ export function WidgetWritable<T>(name_: string, value_: T): WidgetWritable<T> {
 
 // Declare stores with their associated Traitlets here.
 export const value = WidgetWritable<number>("value", 1);
+
 export const PinterestLoginUserName = WidgetWritable<string>(
 	"PinterestLoginUserName",
 	"Enter your username"

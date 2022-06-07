@@ -4,7 +4,7 @@
     import { 
         PinterestLoginUserName,
         PinterestLoginPassword
-    } from './stores';
+    } from '../../stores';
 
     let localPinterestLoginUserName:string = $PinterestLoginUserName
     let localPinterestLoginPassword:string = $PinterestLoginPassword
