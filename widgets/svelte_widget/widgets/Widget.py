@@ -4,18 +4,12 @@
 # Copyright (c) Francesco Scheffczyk.
 # Distributed under the terms of the Modified BSD License.
 
-"""
-TODO: Add module docstring
-"""
-
 from ipywidgets import DOMWidget
 from traitlets import Unicode, Integer
 from .._frontend import module_name, module_version
 
 
 class Slider(DOMWidget):
-    """TODO: Add docstring here
-    """
     _model_name = Unicode('SliderModel').tag(sync=True)
     _model_module = Unicode(module_name).tag(sync=True)
     _model_module_version = Unicode(module_version).tag(sync=True)

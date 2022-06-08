@@ -7,5 +7,6 @@ export declare function WidgetWritable<T>(name_: string, value_: T): WidgetWrita
 export declare const value: WidgetWritable<number>;
 export declare const PinterestLoginUserName: WidgetWritable<string>;
 export declare const PinterestLoginPassword: WidgetWritable<string>;
+export declare const PinterestLinks: WidgetWritable<string[]>;
 export declare function setStoreModels(model: DOMWidgetModel): void;
 export {};

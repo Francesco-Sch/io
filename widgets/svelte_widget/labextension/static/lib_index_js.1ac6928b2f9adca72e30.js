@@ -1,4 +1,12 @@
-/*
+(self["webpackChunksvelte_widget"] = self["webpackChunksvelte_widget"] || []).push([["lib_index_js"],{
+
+/***/ "./lib/index.js":
+/*!**********************!*\
+  !*** ./lib/index.js ***!
+  \**********************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
  * It uses "eval()" calls to create a separate source file in the browser devtools.
@@ -6,7 +14,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-define("svelte-widget", ["@jupyter-widgets/base"], (__WEBPACK_EXTERNAL_MODULE__jupyter_widgets_base__) => { return /******/ (() => { // webpackBootstrap
+!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! @jupyter-widgets/base */ "webpack/sharing/consume/default/@jupyter-widgets/base")], __WEBPACK_AMD_DEFINE_RESULT__ = ((__WEBPACK_EXTERNAL_MODULE__jupyter_widgets_base__) => { return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/carbon-components-svelte/css/white.css":
@@ -205,6 +213,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/plugin.ts":
+/*!***********************!*\
+  !*** ./src/plugin.ts ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _jupyter_widgets_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @jupyter-widgets/base */ \"@jupyter-widgets/base\");\n/* harmony import */ var _jupyter_widgets_base__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_jupyter_widgets_base__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index */ \"./src/index.ts\");\n/* harmony import */ var _version__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./version */ \"./src/version.ts\");\n// Copyright (c) Francesco Scheffczyk\n// Distributed under the terms of the Modified BSD License.\n\n\n\nconst EXTENSION_ID = \"svelte-widget:plugin\";\n/**\n * The example plugin.\n */\nconst examplePlugin = {\n    id: EXTENSION_ID,\n    requires: [_jupyter_widgets_base__WEBPACK_IMPORTED_MODULE_0__.IJupyterWidgetRegistry],\n    activate: activateWidgetExtension,\n    autoStart: true,\n};\n// the \"as unknown as ...\" typecast above is solely to support JupyterLab 1\n// and 2 in the same codebase and should be removed when we migrate to Lumino.\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (examplePlugin);\n/**\n * Activate the widget extension.\n */\nfunction activateWidgetExtension(app, registry) {\n    registry.registerWidget({\n        name: _version__WEBPACK_IMPORTED_MODULE_2__.MODULE_NAME,\n        version: _version__WEBPACK_IMPORTED_MODULE_2__.MODULE_VERSION,\n        exports: _index__WEBPACK_IMPORTED_MODULE_1__,\n    });\n}\n\n\n//# sourceURL=webpack://svelte-widget/./src/plugin.ts?");
+
+/***/ }),
+
 /***/ "./src/stores.ts":
 /*!***********************!*\
   !*** ./src/stores.ts ***!
@@ -321,7 +340,7 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+/******/ 	function __nested_webpack_require_963668__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
@@ -335,7 +354,7 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_963668__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -345,11 +364,11 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
+/******/ 		__nested_webpack_require_963668__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
 /******/ 				() => (module['default']) :
 /******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			__nested_webpack_require_963668__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
@@ -357,9 +376,9 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__nested_webpack_require_963668__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				if(__nested_webpack_require_963668__.o(definition, key) && !__nested_webpack_require_963668__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
@@ -368,13 +387,13 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 		__nested_webpack_require_963668__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__nested_webpack_require_963668__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
@@ -387,9 +406,15 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.ts");
+/******/ 	var __webpack_exports__ = __nested_webpack_require_963668__("./src/plugin.ts");
 /******/ 	
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
-});;
+}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));;
+
+/***/ })
+
+}]);
+//# sourceMappingURL=lib_index_js.1ac6928b2f9adca72e30.js.map

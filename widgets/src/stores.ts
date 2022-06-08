@@ -45,8 +45,15 @@ export function WidgetWritable<T>(name_: string, value_: T): WidgetWritable<T> {
 }
 
 // Declare stores with their associated Traitlets here.
+
+// ----------------
+// Example Widget
+// ----------------
 export const value = WidgetWritable<number>("value", 1);
 
+// ----------------
+// Pinterest Login
+// ----------------
 export const PinterestLoginUserName = WidgetWritable<string>(
 	"PinterestLoginUserName",
 	"Enter your username"
@@ -56,9 +63,30 @@ export const PinterestLoginPassword = WidgetWritable<string>(
 	"Enter your password"
 );
 
+// ----------------
+// Pinterest Links
+// ----------------
+export const PinterestLinks = WidgetWritable<string[]>("PinterestLinks", []);
+export const PinterestOutputFolder = WidgetWritable<string>(
+	"PinterestOutputFolder",
+	""
+);
+export const PinterestImagesAmount = WidgetWritable<number>(
+	"PinterestImagesAmount",
+	0
+);
+
 // Set the model for each store you create.
 export function setStoreModels(model: DOMWidgetModel): void {
+	// Example Widget
 	value.setModel(model);
+
+	// Pinterest Login
 	PinterestLoginUserName.setModel(model);
 	PinterestLoginPassword.setModel(model);
+
+	// Pinterest Links
+	PinterestLinks.setModel(model);
+	PinterestOutputFolder.setModel(model);
+	PinterestImagesAmount.setModel(model);
 }
