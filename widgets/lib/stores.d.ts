@@ -10,5 +10,6 @@ export declare const PinterestLoginPassword: WidgetWritable<string>;
 export declare const PinterestLinks: WidgetWritable<string[]>;
 export declare const PinterestOutputFolder: WidgetWritable<string>;
 export declare const PinterestImagesAmount: WidgetWritable<number>;
+export declare const PinterestScraperClick: WidgetWritable<boolean>;
 export declare function setStoreModels(model: DOMWidgetModel): void;
 export {};

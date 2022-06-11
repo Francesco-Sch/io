@@ -79,6 +79,14 @@ export const PinterestImagesAmount = WidgetWritable<number>(
 	0
 );
 
+// ----------------
+// Pinterest Scraper
+// ----------------
+export const PinterestScraperClick = WidgetWritable<boolean>(
+	"PinterestScraperClick",
+	false
+);
+
 // Set the model for each store you create.
 export function setStoreModels(model: DOMWidgetModel): void {
 	// Example Widget
@@ -92,4 +100,7 @@ export function setStoreModels(model: DOMWidgetModel): void {
 	PinterestLinks.setModel(model);
 	PinterestOutputFolder.setModel(model);
 	PinterestImagesAmount.setModel(model);
+
+	// Pinterest Scraper
+	PinterestScraperClick.setModel(model);
 }

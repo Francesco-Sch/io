@@ -7,6 +7,7 @@
 from .widgets.Widget import *
 from .widgets.PinterestLogin import *
 from .widgets.PinterestLinks import *
+from .widgets.PinterestScraper import *
 
 from ._version import __version__, version_info
 
