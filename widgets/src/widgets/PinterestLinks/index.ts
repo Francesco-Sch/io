@@ -24,7 +24,7 @@ export class PinterestLinksModel extends DOMWidgetModel {
 			_view_module: PinterestLinksModel.view_module,
 			_view_module_version: PinterestLinksModel.view_module_version,
 
-			PinterestLinks: {},
+			PinterestLinks: [],
 			PinterestOutputFolder: "",
 			PinterestImagesAmount: 0,
 		};
