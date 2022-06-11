@@ -13,8 +13,6 @@
     let imagesAmount:number = $PinterestImagesAmount
 
     function updatePinterestLinks () {
-        console.log("PinterestLinks updated.")
-
         localPinterestLinks.push(currentLinkInput)
         localPinterestLinks = localPinterestLinks
 
@@ -46,12 +44,12 @@
     <h3>Set settings</h3>
 
     <p>Name of the folder for the collected images</p>
-    <TextInput light hideLabel placeholder='Name of folder' bind:value={outputFolder} onfocusout={() => {
+    <TextInput light hideLabel placeholder='Name of folder' bind:value={outputFolder} on:blur={() => {
         PinterestOutputFolder.set(outputFolder)
     }}/>
 
     <p>Amount of images you want to scrape</p>
-    <NumberInput light hideLabel placeholder='3000' bind:value={imagesAmount} onfocusout={() => {
+    <NumberInput light hideLabel placeholder='3000' bind:value={imagesAmount} on:blur={() => {
         PinterestImagesAmount.set(imagesAmount)
     }}/>
 </div>
