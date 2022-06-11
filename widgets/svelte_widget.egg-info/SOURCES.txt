@@ -21,7 +21,6 @@ src/.ipynb_checkpoints/index-checkpoint.ts
 src/.ipynb_checkpoints/widget-checkpoint.ts
 src/widgets/PinterestLinks/PinterestLinks.svelte
 src/widgets/PinterestLinks/index.ts
-src/widgets/PinterestLinks/.ipynb_checkpoints/PinterestLinks-checkpoint.svelte
 src/widgets/PinterestLogin/PinterestLogin.svelte
 src/widgets/PinterestLogin/index.ts
 src/widgets/Widget/Widget.svelte
@@ -35,8 +34,8 @@ svelte_widget.egg-info/dependency_links.txt
 svelte_widget.egg-info/requires.txt
 svelte_widget.egg-info/top_level.txt
 svelte_widget/labextension/package.json
-svelte_widget/labextension/static/568.1af52521d783418d6249.js
-svelte_widget/labextension/static/remoteEntry.63bac8b0a00798cca10e.js
+svelte_widget/labextension/static/568.3de41aaa91b6602549f4.js
+svelte_widget/labextension/static/remoteEntry.687301ec2f2744364c7f.js
 svelte_widget/labextension/static/style.js
 svelte_widget/labextension/static/third-party-licenses.json
 svelte_widget/nbextension/extension.js

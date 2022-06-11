@@ -5,7 +5,8 @@
 # Distributed under the terms of the Modified BSD License.
 
 from ipywidgets import DOMWidget
-from traitlets import Unicode, Integer, List
+from traitlets import Unicode, Integer, Dict
+
 from .._frontend import module_name, module_version
 
 class PinterestLinks(DOMWidget):
@@ -16,6 +17,6 @@ class PinterestLinks(DOMWidget):
     _view_module = Unicode(module_name).tag(sync=True)
     _view_module_version = Unicode(module_version).tag(sync=True)
 
-    PinterestLinks = List([]).tag(sync=True)
+    PinterestLinks = Dict(Unicode()).tag(sync=True)
     PinterestOutputFolder = Unicode('').tag(sync=True)
     PinterestImagesAmount = Integer(0).tag(sync=True)

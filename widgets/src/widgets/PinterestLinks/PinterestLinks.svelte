@@ -6,11 +6,28 @@
         PinterestImagesAmount
     } from '../../stores';
 
-    let localPinterestLinks:string[] = $PinterestLinks
+    let localPinterestLinks = {}
     let currentLinkInput:string = ''
 
     let outputFolder:string = $PinterestOutputFolder
     let imagesAmount:number = $PinterestImagesAmount
+
+    function updatePinterestLinks () {
+        console.log("PinterestLinks updated.")
+
+        let lastKey = parseInt(Object.keys(localPinterestLinks)[Object.keys(localPinterestLinks).length - 1])
+        let nextKey:any = (lastKey + 1).toString()
+
+        if(isNaN(lastKey)) {
+            nextKey = '0'
+        }
+
+        localPinterestLinks[nextKey] =  currentLinkInput
+        localPinterestLinks = localPinterestLinks
+
+        PinterestLinks.set({})
+        PinterestLinks.set(localPinterestLinks)
+    }
 </script>
 
 <style></style>
@@ -19,7 +36,7 @@
     <h3>Add links</h3>
 
     <div>
-        {#each localPinterestLinks || [] as link}
+        {#each Object.entries(localPinterestLinks) as [index, link]}
             <div>
                 <p>{link}</p>
             </div>
@@ -29,12 +46,7 @@
     </div>
 
     <TextInput light hideLabel placeholder='Enter a pinterest link' bind:value={currentLinkInput} />
-    <Button on:click="{() => {
-        localPinterestLinks.push(currentLinkInput)
-        localPinterestLinks = localPinterestLinks
-
-        PinterestLinks.set(localPinterestLinks)
-    }}">
+    <Button on:click={updatePinterestLinks}>
         Add link
     </Button>
 

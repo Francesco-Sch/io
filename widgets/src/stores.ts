@@ -66,7 +66,7 @@ export const PinterestLoginPassword = WidgetWritable<string>(
 // ----------------
 // Pinterest Links
 // ----------------
-export const PinterestLinks = WidgetWritable<string[]>("PinterestLinks", []);
+export const PinterestLinks = WidgetWritable<object>("PinterestLinks", {});
 export const PinterestOutputFolder = WidgetWritable<string>(
 	"PinterestOutputFolder",
 	""
