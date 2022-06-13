@@ -624,6 +624,7 @@
               "singleton": true,
               "import": false
             },
+            "axios": {},
             "svelte-widget": {
               "version": "0.1.0",
               "singleton": true,

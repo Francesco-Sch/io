@@ -84,6 +84,14 @@ export const CrawlerInitClick = WidgetWritable<boolean>(
 	false
 );
 
+// ----------------
+// Crawler Gallery
+// ----------------
+export const CrawlerGalleryFolder = WidgetWritable<string>(
+	"CrawlerGalleryFolder",
+	""
+);
+
 // Set the model for each store you create.
 export function setStoreModels(model: DOMWidgetModel): void {
 	// Example Widget
@@ -100,4 +108,7 @@ export function setStoreModels(model: DOMWidgetModel): void {
 
 	// Crawler Init
 	CrawlerInitClick.setModel(model);
+
+	// Crawler Gallery
+	CrawlerGalleryFolder.setModel(model);
 }

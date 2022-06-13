@@ -43,7 +43,8 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@jupyter-widgets/base": "^1.1.10 || ^2.0.0 || ^3.0.0 || ^4.0.0"
+    "@jupyter-widgets/base": "^1.1.10 || ^2.0.0 || ^3.0.0 || ^4.0.0",
+    "axios": "^0.27.2"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
@@ -88,7 +89,7 @@
       }
     },
     "_build": {
-      "load": "static/remoteEntry.be035b342c8407e6aa2d.js",
+      "load": "static/remoteEntry.09fe61bf19834e27d68b.js",
       "extension": "./extension"
     }
   }

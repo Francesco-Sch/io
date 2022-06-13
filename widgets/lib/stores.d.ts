@@ -11,5 +11,6 @@ export declare const CrawlerLinks: WidgetWritable<string[]>;
 export declare const CrawlerOutputFolder: WidgetWritable<string>;
 export declare const CrawlerImagesAmount: WidgetWritable<number>;
 export declare const CrawlerInitClick: WidgetWritable<boolean>;
+export declare const CrawlerGalleryFolder: WidgetWritable<string>;
 export declare function setStoreModels(model: DOMWidgetModel): void;
 export {};
