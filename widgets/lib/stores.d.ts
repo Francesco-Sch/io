@@ -5,11 +5,11 @@ interface WidgetWritable<T> extends Writable<T> {
 }
 export declare function WidgetWritable<T>(name_: string, value_: T): WidgetWritable<T>;
 export declare const value: WidgetWritable<number>;
-export declare const PinterestLoginUserName: WidgetWritable<string>;
-export declare const PinterestLoginPassword: WidgetWritable<string>;
-export declare const PinterestLinks: WidgetWritable<string[]>;
-export declare const PinterestOutputFolder: WidgetWritable<string>;
-export declare const PinterestImagesAmount: WidgetWritable<number>;
-export declare const PinterestScraperClick: WidgetWritable<boolean>;
+export declare const CrawlerLoginUserName: WidgetWritable<string>;
+export declare const CrawlerLoginPassword: WidgetWritable<string>;
+export declare const CrawlerLinks: WidgetWritable<string[]>;
+export declare const CrawlerOutputFolder: WidgetWritable<string>;
+export declare const CrawlerImagesAmount: WidgetWritable<number>;
+export declare const CrawlerInitClick: WidgetWritable<boolean>;
 export declare function setStoreModels(model: DOMWidgetModel): void;
 export {};

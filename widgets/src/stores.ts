@@ -52,38 +52,35 @@ export function WidgetWritable<T>(name_: string, value_: T): WidgetWritable<T> {
 export const value = WidgetWritable<number>("value", 1);
 
 // ----------------
-// Pinterest Login
+// Crawler Login
 // ----------------
-export const PinterestLoginUserName = WidgetWritable<string>(
-	"PinterestLoginUserName",
+export const CrawlerLoginUserName = WidgetWritable<string>(
+	"CrawlerLoginUserName",
 	"Enter your username"
 );
-export const PinterestLoginPassword = WidgetWritable<string>(
-	"PinterestLoginPassword",
+export const CrawlerLoginPassword = WidgetWritable<string>(
+	"CrawlerLoginPassword",
 	"Enter your password"
 );
 
 // ----------------
-// Pinterest Links
+// Crawler Links
 // ----------------
-export const PinterestLinks = WidgetWritable<Array<string>>(
-	"PinterestLinks",
-	[]
-);
-export const PinterestOutputFolder = WidgetWritable<string>(
-	"PinterestOutputFolder",
+export const CrawlerLinks = WidgetWritable<Array<string>>("CrawlerLinks", []);
+export const CrawlerOutputFolder = WidgetWritable<string>(
+	"CrawlerOutputFolder",
 	""
 );
-export const PinterestImagesAmount = WidgetWritable<number>(
-	"PinterestImagesAmount",
+export const CrawlerImagesAmount = WidgetWritable<number>(
+	"CrawlerImagesAmount",
 	0
 );
 
 // ----------------
-// Pinterest Scraper
+// Crawler Init
 // ----------------
-export const PinterestScraperClick = WidgetWritable<boolean>(
-	"PinterestScraperClick",
+export const CrawlerInitClick = WidgetWritable<boolean>(
+	"CrawlerInitClick",
 	false
 );
 
@@ -92,15 +89,15 @@ export function setStoreModels(model: DOMWidgetModel): void {
 	// Example Widget
 	value.setModel(model);
 
-	// Pinterest Login
-	PinterestLoginUserName.setModel(model);
-	PinterestLoginPassword.setModel(model);
+	// Crawler Login
+	CrawlerLoginUserName.setModel(model);
+	CrawlerLoginPassword.setModel(model);
 
-	// Pinterest Links
-	PinterestLinks.setModel(model);
-	PinterestOutputFolder.setModel(model);
-	PinterestImagesAmount.setModel(model);
+	// Crawler Links
+	CrawlerLinks.setModel(model);
+	CrawlerOutputFolder.setModel(model);
+	CrawlerImagesAmount.setModel(model);
 
-	// Pinterest Scraper
-	PinterestScraperClick.setModel(model);
+	// Crawler Init
+	CrawlerInitClick.setModel(model);
 }

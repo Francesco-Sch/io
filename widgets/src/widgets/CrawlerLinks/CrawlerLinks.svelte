@@ -1,23 +1,23 @@
 <script lang="ts">
     import { TextInput, NumberInput, Button } from "carbon-components-svelte";
     import { 
-        PinterestLinks,
-        PinterestOutputFolder,
-        PinterestImagesAmount
+        CrawlerLinks,
+        CrawlerOutputFolder,
+        CrawlerImagesAmount
     } from '../../stores';
 
-    let localPinterestLinks:Array<string> = []
+    let links:Array<string> = []
     let currentLinkInput:string = ''
 
-    let outputFolder:string = $PinterestOutputFolder
-    let imagesAmount:number = $PinterestImagesAmount
+    let outputFolder:string = $CrawlerOutputFolder
+    let imagesAmount:number = $CrawlerImagesAmount
 
     function updatePinterestLinks () {
-        localPinterestLinks.push(currentLinkInput)
-        localPinterestLinks = localPinterestLinks
+        links.push(currentLinkInput)
+        links = links
 
-        PinterestLinks.set([])
-        PinterestLinks.set(localPinterestLinks)
+        CrawlerLinks.set([])
+        CrawlerLinks.set(links)
     }
 </script>
 
@@ -27,7 +27,7 @@
     <h3>Add links</h3>
 
     <div>
-        {#each localPinterestLinks || [] as link}
+        {#each links || [] as link}
             <div>
                 <p>{link}</p>
             </div>
@@ -45,11 +45,11 @@
 
     <p>Name of the folder for the collected images</p>
     <TextInput light hideLabel placeholder='Name of folder' bind:value={outputFolder} on:blur={() => {
-        PinterestOutputFolder.set(outputFolder)
+        CrawlerOutputFolder.set(outputFolder)
     }}/>
 
     <p>Amount of images you want to scrape</p>
     <NumberInput light hideLabel placeholder='3000' bind:value={imagesAmount} on:blur={() => {
-        PinterestImagesAmount.set(imagesAmount)
+        CrawlerImagesAmount.set(imagesAmount)
     }}/>
 </div>

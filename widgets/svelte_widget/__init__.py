@@ -5,9 +5,9 @@
 # Distributed under the terms of the Modified BSD License.
 
 from .widgets.Widget import *
-from .widgets.PinterestLogin import *
-from .widgets.PinterestLinks import *
-from .widgets.PinterestScraper import *
+from .widgets.CrawlerLogin import *
+from .widgets.CrawlerLinks import *
+from .widgets.CrawlerInit import *
 
 from ._version import __version__, version_info
 

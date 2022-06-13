@@ -1,7 +1,7 @@
 <script lang="ts">
     import { Button } from "carbon-components-svelte";
     import { 
-        PinterestScraperClick,
+        CrawlerInitClick,
     } from '../../stores';
 </script>
 
@@ -9,6 +9,6 @@
 
 <div>
     <Button on:click="{() => {
-        PinterestScraperClick.set(true);
+        CrawlerInitClick.set(true);
     }}">Start scraping</Button>
 </div>
