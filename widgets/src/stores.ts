@@ -56,11 +56,11 @@ export const value = WidgetWritable<number>("value", 1);
 // ----------------
 export const CrawlerLoginUserName = WidgetWritable<string>(
 	"CrawlerLoginUserName",
-	"Enter your username"
+	""
 );
 export const CrawlerLoginPassword = WidgetWritable<string>(
 	"CrawlerLoginPassword",
-	"Enter your password"
+	""
 );
 
 // ----------------

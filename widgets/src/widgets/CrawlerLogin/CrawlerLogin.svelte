@@ -9,11 +9,7 @@
     let localCrawlerLoginPassword:string = $CrawlerLoginPassword
 </script>
 
-<style>
-    .crawler-login :global(.submit-btn) {
-        background-color: var(--orange-100);
-    }
-</style>
+<style></style>
 
 <div class="io-widget crawler-login">
     <Form 
@@ -31,10 +27,10 @@
             console.log('Global Password: ' + CrawlerLoginPassword)
         }}
     >
-        <TextInput light hideLabel placeholder='Enter your username' bind:value={localCrawlerLoginUserName}/>
-        <TextInput light hideLabel placeholder='Enter your password' bind:value={localCrawlerLoginPassword}/>
+        <TextInput light hideLabel class="io_text-input" placeholder='Enter your username' bind:value={localCrawlerLoginUserName}/>
+        <TextInput light hideLabel class="io_text-input" placeholder='Enter your password' bind:value={localCrawlerLoginPassword}/>
 
-        <Button class="submit-btn" type="submit" on:click={() => {
+        <Button class="io_primary-btn" type="submit" on:click={() => {
             CrawlerLoginUserName.set(localCrawlerLoginUserName)
             CrawlerLoginPassword.set(localCrawlerLoginPassword)
         }}>Login</Button>

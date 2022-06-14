@@ -23,8 +23,8 @@ export class CrawlerLoginModel extends DOMWidgetModel {
 			_view_name: CrawlerLoginModel.view_name,
 			_view_module: CrawlerLoginModel.view_module,
 			_view_module_version: CrawlerLoginModel.view_module_version,
-			CrawlerLoginUserName: "Enter your username",
-			CrawlerLoginPassword: "Enter your password",
+			CrawlerLoginUserName: "",
+			CrawlerLoginPassword: "",
 		};
 	}
 

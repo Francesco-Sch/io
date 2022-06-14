@@ -16,5 +16,5 @@ class CrawlerLogin(DOMWidget):
     _view_module = Unicode(module_name).tag(sync=True)
     _view_module_version = Unicode(module_version).tag(sync=True)
 
-    CrawlerLoginUserName = Unicode('Enter your username').tag(sync=True)
-    CrawlerLoginPassword = Unicode('Enter your password').tag(sync=True)
+    CrawlerLoginUserName = Unicode('').tag(sync=True)
+    CrawlerLoginPassword = Unicode('').tag(sync=True)

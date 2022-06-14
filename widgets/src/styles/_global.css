@@ -7,12 +7,52 @@ body {
 		"Segoe UI Symbol";
 }
 .io-widget {
-	padding: var(--spacing-09);
+	padding: var(--spacing-07);
 	background-color: var(--gray-10);
 }
 
 /* ----------------------------
 BUTTON
 ---------------------------- */
-.primary-btn {
+.io_primary-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 12rem;
+	margin-top: var(--spacing-04);
+	padding: var(--spacing-04);
+
+	font-size: 1rem;
+	font-weight: 500;
+	text-align: center;
+
+	color: var(--text);
+	background-color: var(--orange-100);
+
+	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.io_primary-btn:hover {
+	color: var(--text);
+	background-color: var(--orange-active);
+}
+.io_primary-btn:focus {
+	border-color: var(--orange-active);
+	box-shadow: inset 0 0 0 1px var(--orange-100), inset 0 0 0 2px #fff;
+}
+
+/* ----------------------------
+TEXT-INPUT
+---------------------------- */
+.io_text-input {
+	margin-bottom: var(--spacing-04);
+
+	color: var(--text);
+	background-color: transparent;
+	outline: none;
+}
+.io_text-input:focus,
+.io_text-input:active {
+	border-bottom: 2px solid var(--orange-100);
+	outline: none;
 }
