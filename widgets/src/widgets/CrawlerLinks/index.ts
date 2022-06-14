@@ -26,7 +26,7 @@ export class CrawlerLinksModel extends DOMWidgetModel {
 
 			CrawlerLinks: [],
 			CrawlerOutputFolder: "",
-			CrawlerImagesAmount: 0,
+			CrawlerImagesAmount: NaN,
 		};
 	}
 

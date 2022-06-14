@@ -19,4 +19,4 @@ class CrawlerLinks(DOMWidget):
 
     CrawlerLinks = List(Unicode()).tag(sync=True)
     CrawlerOutputFolder = Unicode('').tag(sync=True)
-    CrawlerImagesAmount = Integer(0).tag(sync=True)
+    CrawlerImagesAmount = Integer().tag(sync=True)

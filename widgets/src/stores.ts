@@ -73,7 +73,7 @@ export const CrawlerOutputFolder = WidgetWritable<string>(
 );
 export const CrawlerImagesAmount = WidgetWritable<number>(
 	"CrawlerImagesAmount",
-	0
+	NaN
 );
 
 // ----------------

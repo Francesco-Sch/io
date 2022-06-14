@@ -12,6 +12,16 @@ body {
 }
 
 /* ----------------------------
+HEADLINE
+---------------------------- */
+.io_widget-headline {
+	margin-bottom: var(--spacing-06);
+
+	font-weight: 500;
+	font-size: 1.75rem;
+}
+
+/* ----------------------------
 BUTTON
 ---------------------------- */
 .io_primary-btn {
@@ -44,15 +54,28 @@ BUTTON
 /* ----------------------------
 TEXT-INPUT
 ---------------------------- */
-.io_text-input {
+.io_text-input,
+input[type="number"].io_text-input {
 	margin-bottom: var(--spacing-04);
 
+	font-family: "Slussen", -apple-system, blinkmacsystemfont, "Segoe UI",
+		helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol";
 	color: var(--text);
 	background-color: transparent;
+	border-bottom: 1px solid var(--gray-50);
 	outline: none;
+
+	font-size: 1rem;
 }
 .io_text-input:focus,
-.io_text-input:active {
+.io_text-input:active,
+input[type="number"].io_text-input:active,
+input[type="number"].io_text-input:focus {
 	border-bottom: 2px solid var(--orange-100);
 	outline: none;
+}
+.io_text-input::placeholder,
+input[type="number"].io_text-input::placeholder {
+	color: var(--gray-50);
 }
