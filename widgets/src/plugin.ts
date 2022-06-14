@@ -7,6 +7,8 @@ import type { Widget } from "@phosphor/widgets";
 
 import { IJupyterWidgetRegistry } from "@jupyter-widgets/base";
 
+import "./styles/index.css";
+
 import * as widgets from "./index";
 
 import { MODULE_NAME, MODULE_VERSION } from "./version";

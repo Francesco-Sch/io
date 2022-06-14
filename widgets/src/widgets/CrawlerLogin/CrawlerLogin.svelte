@@ -1,5 +1,4 @@
 <script lang="ts">
-    import "carbon-components-svelte/css/white.css";
     import { Form, TextInput, Button } from "carbon-components-svelte";
     import { 
         CrawlerLoginUserName,
@@ -10,7 +9,11 @@
     let localCrawlerLoginPassword:string = $CrawlerLoginPassword
 </script>
 
-<style></style>
+<style>
+    .submit-btn {
+        background-color: var(--orange-50);
+    }
+</style>
 
 <Form 
     on:submit={(e) => {
@@ -30,7 +33,7 @@
     <TextInput light hideLabel placeholder='Enter your username' bind:value={localCrawlerLoginUserName}/>
     <TextInput light hideLabel placeholder='Enter your password' bind:value={localCrawlerLoginPassword}/>
 
-    <Button type="submit" on:click={() => {
+    <Button class="submit-btn" type="submit" on:click={() => {
         CrawlerLoginUserName.set(localCrawlerLoginUserName)
         CrawlerLoginPassword.set(localCrawlerLoginPassword)
     }}>Login</Button>

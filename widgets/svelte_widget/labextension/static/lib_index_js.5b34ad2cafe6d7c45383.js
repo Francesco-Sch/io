@@ -1,4 +1,12 @@
-/*
+(self["webpackChunksvelte_widget"] = self["webpackChunksvelte_widget"] || []).push([["lib_index_js"],{
+
+/***/ "./lib/index.js":
+/*!**********************!*\
+  !*** ./lib/index.js ***!
+  \**********************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
  * It uses "eval()" calls to create a separate source file in the browser devtools.
@@ -6,7 +14,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-define(["@jupyter-widgets/base"], (__WEBPACK_EXTERNAL_MODULE__jupyter_widgets_base__) => { return /******/ (() => { // webpackBootstrap
+!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! @jupyter-widgets/base */ "webpack/sharing/consume/default/@jupyter-widgets/base")], __WEBPACK_AMD_DEFINE_RESULT__ = ((__WEBPACK_EXTERNAL_MODULE__jupyter_widgets_base__) => { return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/axios/index.js":
@@ -545,17 +553,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/extension.ts":
-/*!**************************!*\
-  !*** ./src/extension.ts ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"CrawlerGalleryModel\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.CrawlerGalleryModel),\n/* harmony export */   \"CrawlerGalleryView\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.CrawlerGalleryView),\n/* harmony export */   \"CrawlerInitModel\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.CrawlerInitModel),\n/* harmony export */   \"CrawlerInitView\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.CrawlerInitView),\n/* harmony export */   \"CrawlerLinksModel\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.CrawlerLinksModel),\n/* harmony export */   \"CrawlerLinksView\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.CrawlerLinksView),\n/* harmony export */   \"CrawlerLoginModel\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.CrawlerLoginModel),\n/* harmony export */   \"CrawlerLoginView\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.CrawlerLoginView),\n/* harmony export */   \"MODULE_NAME\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.MODULE_NAME),\n/* harmony export */   \"MODULE_VERSION\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.MODULE_VERSION),\n/* harmony export */   \"SliderModel\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.SliderModel),\n/* harmony export */   \"SliderView\": () => (/* reexport safe */ _index__WEBPACK_IMPORTED_MODULE_0__.SliderView)\n/* harmony export */ });\n/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ \"./src/index.ts\");\n// Copyright (c) Jupyter Development Team.\n// Distributed under the terms of the Modified BSD License.\n// Entry point for the notebook bundle containing custom model definitions.\n//\n// Setup notebook base URL\n//\n// Some static assets may be required by the custom widget javascript. The base\n// url for the notebook is not known at build time and is therefore computed\n// dynamically.\n// eslint-disable-next-line @typescript-eslint/no-non-null-assertion\nwindow.__webpack_public_path__ =\n    document.querySelector('body').getAttribute('data-base-url') +\n        'nbextensions/svelte_widget';\n\n\n\n//# sourceURL=webpack://svelte-widget/./src/extension.ts?");
-
-/***/ }),
-
 /***/ "./src/index.ts":
 /*!**********************!*\
   !*** ./src/index.ts ***!
@@ -564,6 +561,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"CrawlerGalleryModel\": () => (/* reexport safe */ _widgets_CrawlerGallery___WEBPACK_IMPORTED_MODULE_4__.CrawlerGalleryModel),\n/* harmony export */   \"CrawlerGalleryView\": () => (/* reexport safe */ _widgets_CrawlerGallery___WEBPACK_IMPORTED_MODULE_4__.CrawlerGalleryView),\n/* harmony export */   \"CrawlerInitModel\": () => (/* reexport safe */ _widgets_CrawlerInit___WEBPACK_IMPORTED_MODULE_3__.CrawlerInitModel),\n/* harmony export */   \"CrawlerInitView\": () => (/* reexport safe */ _widgets_CrawlerInit___WEBPACK_IMPORTED_MODULE_3__.CrawlerInitView),\n/* harmony export */   \"CrawlerLinksModel\": () => (/* reexport safe */ _widgets_CrawlerLinks___WEBPACK_IMPORTED_MODULE_2__.CrawlerLinksModel),\n/* harmony export */   \"CrawlerLinksView\": () => (/* reexport safe */ _widgets_CrawlerLinks___WEBPACK_IMPORTED_MODULE_2__.CrawlerLinksView),\n/* harmony export */   \"CrawlerLoginModel\": () => (/* reexport safe */ _widgets_CrawlerLogin___WEBPACK_IMPORTED_MODULE_1__.CrawlerLoginModel),\n/* harmony export */   \"CrawlerLoginView\": () => (/* reexport safe */ _widgets_CrawlerLogin___WEBPACK_IMPORTED_MODULE_1__.CrawlerLoginView),\n/* harmony export */   \"MODULE_NAME\": () => (/* reexport safe */ _version__WEBPACK_IMPORTED_MODULE_5__.MODULE_NAME),\n/* harmony export */   \"MODULE_VERSION\": () => (/* reexport safe */ _version__WEBPACK_IMPORTED_MODULE_5__.MODULE_VERSION),\n/* harmony export */   \"SliderModel\": () => (/* reexport safe */ _widgets_Widget___WEBPACK_IMPORTED_MODULE_0__.SliderModel),\n/* harmony export */   \"SliderView\": () => (/* reexport safe */ _widgets_Widget___WEBPACK_IMPORTED_MODULE_0__.SliderView)\n/* harmony export */ });\n/* harmony import */ var _widgets_Widget___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./widgets/Widget/ */ \"./src/widgets/Widget/index.ts\");\n/* harmony import */ var _widgets_CrawlerLogin___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./widgets/CrawlerLogin/ */ \"./src/widgets/CrawlerLogin/index.ts\");\n/* harmony import */ var _widgets_CrawlerLinks___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./widgets/CrawlerLinks/ */ \"./src/widgets/CrawlerLinks/index.ts\");\n/* harmony import */ var _widgets_CrawlerInit___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./widgets/CrawlerInit/ */ \"./src/widgets/CrawlerInit/index.ts\");\n/* harmony import */ var _widgets_CrawlerGallery___WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./widgets/CrawlerGallery/ */ \"./src/widgets/CrawlerGallery/index.ts\");\n/* harmony import */ var _version__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./version */ \"./src/version.ts\");\n// Copyright (c) Francesco Scheffczyk\n// Distributed under the terms of the Modified BSD License.\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://svelte-widget/./src/index.ts?");
+
+/***/ }),
+
+/***/ "./src/plugin.ts":
+/*!***********************!*\
+  !*** ./src/plugin.ts ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _jupyter_widgets_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @jupyter-widgets/base */ \"@jupyter-widgets/base\");\n/* harmony import */ var _jupyter_widgets_base__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_jupyter_widgets_base__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index */ \"./src/index.ts\");\n/* harmony import */ var _version__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./version */ \"./src/version.ts\");\n// Copyright (c) Francesco Scheffczyk\n// Distributed under the terms of the Modified BSD License.\n\n\n\nconst EXTENSION_ID = \"svelte-widget:plugin\";\n/**\n * The example plugin.\n */\nconst examplePlugin = {\n    id: EXTENSION_ID,\n    requires: [_jupyter_widgets_base__WEBPACK_IMPORTED_MODULE_0__.IJupyterWidgetRegistry],\n    activate: activateWidgetExtension,\n    autoStart: true,\n};\n// the \"as unknown as ...\" typecast above is solely to support JupyterLab 1\n// and 2 in the same codebase and should be removed when we migrate to Lumino.\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (examplePlugin);\n/**\n * Activate the widget extension.\n */\nfunction activateWidgetExtension(app, registry) {\n    registry.registerWidget({\n        name: _version__WEBPACK_IMPORTED_MODULE_2__.MODULE_NAME,\n        version: _version__WEBPACK_IMPORTED_MODULE_2__.MODULE_VERSION,\n        exports: _index__WEBPACK_IMPORTED_MODULE_1__,\n    });\n}\n\n\n//# sourceURL=webpack://svelte-widget/./src/plugin.ts?");
 
 /***/ }),
 
@@ -727,7 +735,7 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+/******/ 	function __nested_webpack_require_478885__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
@@ -741,7 +749,7 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_478885__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -751,11 +759,11 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
+/******/ 		__nested_webpack_require_478885__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
 /******/ 				() => (module['default']) :
 /******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			__nested_webpack_require_478885__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
@@ -763,9 +771,9 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__nested_webpack_require_478885__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				if(__nested_webpack_require_478885__.o(definition, key) && !__nested_webpack_require_478885__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
@@ -774,13 +782,13 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 		__nested_webpack_require_478885__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__nested_webpack_require_478885__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
@@ -793,9 +801,15 @@ eval("module.exports = JSON.parse('{\"name\":\"svelte-widget\",\"version\":\"0.1
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/extension.ts");
+/******/ 	var __webpack_exports__ = __nested_webpack_require_478885__("./src/plugin.ts");
 /******/ 	
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
-});;
+}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));;
+
+/***/ })
+
+}]);
+//# sourceMappingURL=lib_index_js.5b34ad2cafe6d7c45383.js.map

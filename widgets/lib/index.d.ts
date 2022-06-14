@@ -1,4 +1,3 @@
-import "./styles/index.scss";
 export * from "./widgets/Widget/";
 export * from "./widgets/CrawlerLogin/";
 export * from "./widgets/CrawlerLinks/";

@@ -4,14 +4,14 @@
     import { ImageLoader } from "carbon-components-svelte";
     import { CrawlerGalleryFolder } from '../../stores'
 
-    const folder = $CrawlerGalleryFolder
+    const folder:string = $CrawlerGalleryFolder
     let images:Array<any> = []
 
     onMount(async () => {
         const imagePathsRequest = await axios.get(`${window.location.origin}/api/contents/${folder}`)
         const imagePaths = await imagePathsRequest.data.content
 
-        imagePaths.forEach(async (e) => {
+        imagePaths.forEach(async (e:any) => {
             const imageRequest = await axios.get(`${window.location.origin}/api/contents/${e.path}`)
             let image = await imageRequest.data.content
 
