@@ -9,32 +9,34 @@
     let localCrawlerLoginPassword:string = $CrawlerLoginPassword
 </script>
 
-<Form 
-    on:submit={(e) => {
-        e.preventDefault();
-        console.log('You are logged in!')
-
-        console.log('Username: ' + localCrawlerLoginUserName)
-        console.log('Password: ' + localCrawlerLoginPassword)
-
-        CrawlerLoginUserName.set(localCrawlerLoginUserName)
-        CrawlerLoginPassword.set(localCrawlerLoginPassword)
-
-        console.log('Global Username: ' + CrawlerLoginUserName)
-        console.log('Global Password: ' + CrawlerLoginPassword)
-    }}
->
-    <TextInput light hideLabel placeholder='Enter your username' bind:value={localCrawlerLoginUserName}/>
-    <TextInput light hideLabel placeholder='Enter your password' bind:value={localCrawlerLoginPassword}/>
-
-    <Button class="submit-btn" type="submit" on:click={() => {
-        CrawlerLoginUserName.set(localCrawlerLoginUserName)
-        CrawlerLoginPassword.set(localCrawlerLoginPassword)
-    }}>Login</Button>
-</Form>
-
 <style>
-    .submit-btn {
-        background-color: var(--orange-50);
+    .crawler-login :global(.submit-btn) {
+        background-color: var(--orange-100);
     }
 </style>
+
+<div class="io-widget crawler-login">
+    <Form 
+        on:submit={(e) => {
+            e.preventDefault();
+            console.log('You are logged in!')
+
+            console.log('Username: ' + localCrawlerLoginUserName)
+            console.log('Password: ' + localCrawlerLoginPassword)
+
+            CrawlerLoginUserName.set(localCrawlerLoginUserName)
+            CrawlerLoginPassword.set(localCrawlerLoginPassword)
+
+            console.log('Global Username: ' + CrawlerLoginUserName)
+            console.log('Global Password: ' + CrawlerLoginPassword)
+        }}
+    >
+        <TextInput light hideLabel placeholder='Enter your username' bind:value={localCrawlerLoginUserName}/>
+        <TextInput light hideLabel placeholder='Enter your password' bind:value={localCrawlerLoginPassword}/>
+
+        <Button class="submit-btn" type="submit" on:click={() => {
+            CrawlerLoginUserName.set(localCrawlerLoginUserName)
+            CrawlerLoginPassword.set(localCrawlerLoginPassword)
+        }}>Login</Button>
+    </Form>
+</div>

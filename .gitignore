@@ -10,7 +10,8 @@
 **/fonts
 
 # Widgets
-/widgets/dist
-/widgets/lib
-/widgets/**/labextension
-/widgets/**/nbextension
+/widgets/dist/
+/widgets/lib/
+/widgets/docs/
+/widgets/**/labextension/
+/widgets/**/nbextension/

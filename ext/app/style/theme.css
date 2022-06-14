@@ -11,7 +11,7 @@ pre {
 
 /* Give the editor more space */
 #jp-main-dock-panel {
-  padding: 0px; 
+  padding: 0px;
 }
 .lm-DockPanel-widget {
   border-left: none;
@@ -20,7 +20,9 @@ pre {
   border-top: none;
 }
 .lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
-  min-height: calc( var(--jp-private-horizontal-tab-height) + 3 * var(--jp-border-width) )
+  min-height: calc(
+    var(--jp-private-horizontal-tab-height) + 3 * var(--jp-border-width)
+  );
 }
 .lm-TabBar .lm-TabBar-addButton {
   padding: 5px;
@@ -36,8 +38,10 @@ pre {
 .jp-SideBar.lm-TabBar.jp-mod-left {
   border-right: none;
 }
-.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab + .lm-TabBar-tab, 
-.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab.lm-mod-current + .lm-TabBar-tab {
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab + .lm-TabBar-tab,
+.jp-SideBar.lm-TabBar.jp-mod-left
+  .lm-TabBar-tab.lm-mod-current
+  + .lm-TabBar-tab {
   border: none;
 }
 .jp-SideBar .lm-TabBar-tab:not(.lm-mod-current) {
@@ -75,12 +79,17 @@ pre {
   display: none;
 }
 
+/* Hides output prompt to align widgets with code cells */
+.jp-OutputPrompt {
+  display: none;
+}
+
 /* Markdown code cells */
-.jp-RenderedHTMLCommon pre, .jp-RenderedHTMLCommon code {
+.jp-RenderedHTMLCommon pre,
+.jp-RenderedHTMLCommon code {
   background: rgb(254, 231, 223);
 }
 .jp-RenderedHTMLCommon > pre {
   padding: 1.5em 2em;
   margin: 0.2em;
 }
-

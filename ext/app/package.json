@@ -17,8 +17,8 @@
     "email": "francesco.scheffczyk@gmail.com"
   },
   "files": [
-    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
-    "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,woff}",
+    "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,woff}"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -79,7 +79,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "jupyterlab": { 
+  "jupyterlab": {
     "extension": true,
     "outputDir": "IO_App/labextension",
     "themePath": "style/index.css"

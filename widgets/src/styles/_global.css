@@ -6,6 +6,10 @@ body {
 		helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
 		"Segoe UI Symbol";
 }
+.io-widget {
+	padding: var(--spacing-09);
+	background-color: var(--gray-10);
+}
 
 /* ----------------------------
 BUTTON
