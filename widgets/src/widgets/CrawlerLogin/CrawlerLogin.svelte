@@ -9,12 +9,6 @@
     let localCrawlerLoginPassword:string = $CrawlerLoginPassword
 </script>
 
-<style>
-    .submit-btn {
-        background-color: var(--orange-50);
-    }
-</style>
-
 <Form 
     on:submit={(e) => {
         e.preventDefault();
@@ -38,3 +32,9 @@
         CrawlerLoginPassword.set(localCrawlerLoginPassword)
     }}>Login</Button>
 </Form>
+
+<style>
+    .submit-btn {
+        background-color: var(--orange-50);
+    }
+</style>
