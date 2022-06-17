@@ -6,6 +6,7 @@
 
     const folder:string = $CrawlerGalleryFolder
     let images:Array<any> = []
+    export let gridValue:Number = 6
 
     onMount(async () => {
         const imagePathsRequest = await axios.get(`${window.location.origin}/api/contents/${folder}`)
@@ -21,12 +22,37 @@
     })
 </script>
 
-<style></style>
+<style>
+    .crawler-gallery .images-grid {
+        max-height: 48rem;
+        overflow-y: auto;
+    }
+    .crawler-gallery .images-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .crawler-gallery .images-grid :global(.single-image) {
+        height: 12rem;
+        margin-right: var(--spacing-03);
 
-<div>
-    {#each images as image}
-       <ImageLoader src={`data:image/jpg;base64,${image}`} alt="part of dataset"/> 
-    {:else}
-        <p>Images couldn't be rendered.</p>
-    {/each}
+        object-fit: contain;
+    }
+</style>
+
+<div class="io-widget crawler-gallery">
+    <div class="header">
+        <h3 class="io_widget-headline">Collected images</h3>
+    </div>
+    <div class="images-grid">
+        {#each images as image}
+            <ImageLoader 
+                src={`data:image/jpg;base64,${image}`} 
+                alt="part of dataset" 
+                class="single-image" 
+                style="width: calc(calc(100% / {gridValue}) - 1%)"
+            /> 
+        {:else}
+            <p>Image couldn't be rendered.</p>
+        {/each}
+    </div>
 </div>
