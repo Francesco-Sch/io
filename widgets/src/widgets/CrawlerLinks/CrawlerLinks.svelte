@@ -1,6 +1,7 @@
 <script lang="ts">
     import { TextInput, NumberInput, Button } from "carbon-components-svelte";
     import Add from "carbon-icons-svelte/lib/Add.svelte";
+    import SubtractAlt from "carbon-icons-svelte/lib/SubtractAlt.svelte";
     import { 
         CrawlerLinks,
         CrawlerOutputFolder,
@@ -24,6 +25,22 @@
         currentLinkInput = ''
         showLinkInput = false;
     }
+    function removeLink (i) {
+        if(links.length !== 1) {
+            links = links.filter((value, index, arr) => {
+                if(index === i) {
+                    return value
+                }
+            })
+            links = links
+        } else {
+            links = []
+        }
+        
+
+        CrawlerLinks.set([])
+        CrawlerLinks.set(links)
+    }
 </script>
 
 <style>
@@ -34,10 +51,29 @@
         margin-bottom: var(--spacing-09);
     }
     .links .link {
+        position: relative;
         padding: var(--spacing-05);
         margin-bottom: var(--spacing-03);
         font-family: var(--mono);
         background-color: var(--gray-30);
+    }
+    .links .link p {
+        overflow-x: auto;
+        white-space: nowrap
+    }
+    .links .link :global(.bx--btn.remove-button) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+
+        background: linear-gradient(270deg, #D6D6D6 62.5%, rgba(214, 214, 214, 0) 100%);
+    }
+    .links .link :global(.bx--btn.remove-button .bx--btn__icon) {
+        width: 1.25rem;
+        height: 1.25rem;
+
+        color: var(--gray-40);
     }
     .links .add-link {
         display: flex;
@@ -96,9 +132,10 @@
         <h3 class="io_widget-headline">Add links</h3>
 
         <div>
-            {#each links || [] as link}
-                <div>
-                    <p class="link">{link}</p>
+            {#each links || [] as link, index}
+                <div class="link">
+                    <p>{link}</p> 
+                    <Button iconDescription="Remove link" icon={SubtractAlt} class="remove-button" on:click={removeLink(index)} />
                 </div>
             {:else}
                 <p>No links added yet.</p>

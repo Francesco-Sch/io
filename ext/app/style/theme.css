@@ -83,6 +83,9 @@ pre {
 .jp-OutputPrompt {
   display: none;
 }
+.jp-OutputArea-child .jp-OutputArea-output {
+  width: 100%;
+}
 
 /* Markdown code cells */
 .jp-RenderedHTMLCommon pre,

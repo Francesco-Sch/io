@@ -59,6 +59,7 @@
     "acorn": "^7.2.0",
     "carbon-components": "^10.56.0",
     "carbon-components-svelte": "^0.65.0",
+    "carbon-icons-svelte": "^11.1.0",
     "css-loader": "^3.6.0",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
@@ -92,7 +93,7 @@
       }
     },
     "_build": {
-      "load": "static/remoteEntry.f9549378616cb7399d68.js",
+      "load": "static/remoteEntry.6b0498ecb13805945b4a.js",
       "extension": "./extension"
     }
   }
