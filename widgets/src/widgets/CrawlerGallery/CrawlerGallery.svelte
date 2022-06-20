@@ -1,12 +1,13 @@
 <script lang="ts">
     import axios from 'axios'
     import { onMount } from 'svelte';
-    import { ImageLoader } from "carbon-components-svelte";
+    import { ImageLoader, NumberInput } from "carbon-components-svelte";
     import { CrawlerGalleryFolder } from '../../stores'
 
     const folder:string = $CrawlerGalleryFolder
     let images:Array<any> = []
-    export let gridValue:Number = 6
+    export let gridValue:number = 6
+    let computedImageHeight:any;
 
     onMount(async () => {
         const imagePathsRequest = await axios.get(`${window.location.origin}/api/contents/${folder}`)
@@ -20,9 +21,24 @@
             images = images
         })
     })
+
+    $: if (gridValue) {
+        if (gridValue == 1) {
+           computedImageHeight = 'auto'
+        } else {
+            computedImageHeight = '24rem'
+        }
+    }
 </script>
 
 <style>
+    /* ----------------------------
+    HEADER
+    ---------------------------- */
+
+    /* ----------------------------
+    IMAGE GRID
+    ---------------------------- */
     .crawler-gallery .images-grid {
         max-height: 48rem;
         overflow-y: auto;
@@ -32,7 +48,8 @@
         flex-wrap: wrap;
     }
     .crawler-gallery .images-grid :global(.single-image) {
-        height: 12rem;
+        height: auto;
+
         margin-right: var(--spacing-03);
 
         object-fit: contain;
@@ -42,6 +59,7 @@
 <div class="io-widget crawler-gallery">
     <div class="header">
         <h3 class="io_widget-headline">Collected images</h3>
+        <NumberInput light hideLabel class="io_text-input" placeholder='6' bind:value={gridValue}/>
     </div>
     <div class="images-grid">
         {#each images as image}
@@ -49,8 +67,8 @@
                 src={`data:image/jpg;base64,${image}`} 
                 alt="part of dataset" 
                 class="single-image" 
-                style="width: calc(calc(100% / {gridValue}) - 1%)"
-            /> 
+                style="width: calc(calc(100% / {gridValue}) - 1%); max-height: {computedImageHeight}"
+            />
         {:else}
             <p>Image couldn't be rendered.</p>
         {/each}
