@@ -52,6 +52,15 @@ export function WidgetWritable<T>(name_: string, value_: T): WidgetWritable<T> {
 export const value = WidgetWritable<number>("value", 1);
 
 // ----------------
+// Validation
+// ----------------
+export const ValidationStatus = WidgetWritable<string>("ValidationStatus", "");
+export const ValidationMessage = WidgetWritable<string>(
+	"ValidationMessage",
+	""
+);
+
+// ----------------
 // Crawler Login
 // ----------------
 export const CrawlerLoginUserName = WidgetWritable<string>(
@@ -96,6 +105,10 @@ export const CrawlerGalleryFolder = WidgetWritable<string>(
 export function setStoreModels(model: DOMWidgetModel): void {
 	// Example Widget
 	value.setModel(model);
+
+	// Validation
+	ValidationStatus.setModel(model);
+	ValidationMessage.setModel(model);
 
 	// Crawler Login
 	CrawlerLoginUserName.setModel(model);

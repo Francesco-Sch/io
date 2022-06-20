@@ -15,6 +15,11 @@
 
 	--text: rgb(36, 41, 47);
 
+	--success: #e1fe86;
+	--success-background: #385c42;
+	--error: #ff5a4e;
+	--error-background: #5c4544;
+
 	/* ----------------------------
     SPACING
     ---------------------------- */
