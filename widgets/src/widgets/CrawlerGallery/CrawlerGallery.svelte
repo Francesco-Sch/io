@@ -66,7 +66,7 @@
 <div class="io-widget crawler-gallery">
     <div class="header">
         <h3 class="io_widget-headline">Collected images</h3>
-        <NumberInput light hideLabel class="io_text-input grid-value" placeholder='6' bind:value={gridValue}/>
+        <NumberInput light hideLabel class="io_number-input grid-value" placeholder='6' bind:value={gridValue}/>
     </div>
     <div class="images-grid">
         {#each images as image}

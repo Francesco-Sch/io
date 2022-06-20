@@ -53,9 +53,10 @@ BUTTON
 
 /* ----------------------------
 TEXT-INPUT
+NUMBER-INPUT
 ---------------------------- */
 .io_text-input,
-input[type="number"].io_text-input {
+input[type="number"].io_number-input {
 	margin-bottom: var(--spacing-04);
 
 	font-family: "Slussen", -apple-system, blinkmacsystemfont, "Segoe UI",
@@ -70,12 +71,26 @@ input[type="number"].io_text-input {
 }
 .io_text-input:focus,
 .io_text-input:active,
-input[type="number"].io_text-input:active,
-input[type="number"].io_text-input:focus {
+input[type="number"].io_number-input:active,
+input[type="number"].io_number-input:focus {
 	border-bottom: 2px solid var(--orange-100);
 	outline: none;
 }
 .io_text-input::placeholder,
-input[type="number"].io_text-input::placeholder {
+input[type="number"].io_number-input::placeholder {
 	color: var(--gray-50);
+}
+.bx--number__controls {
+	top: 39%;
+	height: 2.5rem;
+}
+.bx--number__controls .bx--number__control-btn::before,
+.bx--number__controls .bx--number__control-btn::after {
+	background-color: transparent;
+}
+.bx--number__controls .bx--number__rule-divider {
+	background-color: var(--gray-50);
+}
+.bx--number__control-btn {
+	border-bottom: none;
 }

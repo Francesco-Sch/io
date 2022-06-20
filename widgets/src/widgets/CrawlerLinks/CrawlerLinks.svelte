@@ -114,17 +114,6 @@
     .settings .inputs .folder p, .settings .inputs .amount-of-images p {
         margin-bottom: var(--spacing-04);
     }
-    .crawler-links .amount-of-images :global(.bx--number__controls) {
-        top: 39%;
-        height: 2.5rem;
-    }
-    .crawler-links .amount-of-images :global(.bx--number__controls .bx--number__control-btn::before),
-    .crawler-links .amount-of-images :global(.bx--number__controls .bx--number__control-btn::after) {
-        background-color: transparent;
-    }
-    .crawler-links .amount-of-images :global(.bx--number__controls .bx--number__rule-divider) {
-        background-color: var(--gray-50);
-    }
 </style>
 
 <div class="io-widget crawler-links">
@@ -175,7 +164,7 @@
                     Amount of images<br> 
                     you want to scrape
                 </p>
-                <NumberInput light hideLabel class="io_text-input" placeholder='3000' bind:value={imagesAmount} on:blur={() => {
+                <NumberInput light hideLabel class="io_number-input" placeholder='3000' bind:value={imagesAmount} on:blur={() => {
                     CrawlerImagesAmount.set(imagesAmount)
                 }}/>
             </div>
