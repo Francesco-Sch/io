@@ -35,6 +35,14 @@
     /* ----------------------------
     HEADER
     ---------------------------- */
+    .crawler-gallery .header {
+        display: flex;
+        margin-bottom: var(--spacing-09)
+    }
+    .crawler-gallery .header :global(.grid-value) {
+        width: 16rem;
+        margin-left: auto;
+    }
 
     /* ----------------------------
     IMAGE GRID
@@ -49,7 +57,6 @@
     }
     .crawler-gallery .images-grid :global(.single-image) {
         height: auto;
-
         margin-right: var(--spacing-03);
 
         object-fit: contain;
@@ -59,7 +66,7 @@
 <div class="io-widget crawler-gallery">
     <div class="header">
         <h3 class="io_widget-headline">Collected images</h3>
-        <NumberInput light hideLabel class="io_text-input" placeholder='6' bind:value={gridValue}/>
+        <NumberInput light hideLabel class="io_text-input grid-value" placeholder='6' bind:value={gridValue}/>
     </div>
     <div class="images-grid">
         {#each images as image}
