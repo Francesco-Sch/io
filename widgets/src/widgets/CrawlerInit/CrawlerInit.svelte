@@ -5,10 +5,15 @@
     } from '../../stores';
 </script>
 
-<style></style>
+<style>
+    .crawler-init :global(.init-button) {
+        width: 100%;
+        margin-top: 0;
+    }
+</style>
 
-<div>
-    <Button on:click="{() => {
+<div class="io-widget crawler-init">
+    <Button class="io_primary-btn init-button" on:click="{() => {
         CrawlerInitClick.set(true);
     }}">Start scraping</Button>
 </div>

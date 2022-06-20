@@ -29,7 +29,8 @@ BUTTON
 	justify-content: center;
 	align-items: center;
 
-	width: 12rem;
+	max-width: 100%;
+	width: 16rem;
 	margin-top: var(--spacing-04);
 	padding: var(--spacing-04);
 
