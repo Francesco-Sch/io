@@ -36,7 +36,6 @@
         } else {
             links = []
         }
-        
 
         CrawlerLinks.set([])
         CrawlerLinks.set(links)
@@ -124,7 +123,7 @@
             {#each links || [] as link, index}
                 <div class="link">
                     <p>{link}</p> 
-                    <Button iconDescription="Remove link" icon={SubtractAlt} class="remove-button" on:click={removeLink(index)} />
+                    <Button iconDescription="Remove link" icon={SubtractAlt} class="remove-button" on:click={() => {removeLink(index)}} />
                 </div>
             {:else}
                 <p>No links added yet.</p>
