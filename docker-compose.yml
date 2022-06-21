@@ -16,3 +16,11 @@ services:
     entrypoint: start-notebook.sh
 
     command: --VoilaConfiguration.enable_nbextensions=True --LabApp.token=''
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
