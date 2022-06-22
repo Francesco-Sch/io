@@ -12,6 +12,7 @@ from .widgets.CrawlerInit import *
 from .widgets.CrawlerGallery import *
 from .widgets.TextToImagePrompt import *
 from .widgets.TextToImageOptions import *
+from .widgets.TextToImageInit import *
 
 from ._version import __version__, version_info
 

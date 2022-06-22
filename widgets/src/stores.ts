@@ -133,6 +133,14 @@ export const TextToImageOptionIterations = WidgetWritable<number>(
 	NaN
 );
 
+// ----------------
+// TextToImage Init
+// ----------------
+export const TextToImageInitClick = WidgetWritable<boolean>(
+	"TextToImageInitClick",
+	false
+);
+
 // Set the model for each store you create.
 export function setStoreModels(model: DOMWidgetModel): void {
 	// Example Widget
@@ -166,4 +174,7 @@ export function setStoreModels(model: DOMWidgetModel): void {
 	TextToImageOptionWidth.setModel(model);
 	TextToImageOptionHeight.setModel(model);
 	TextToImageOptionIterations.setModel(model);
+
+	// TextToImage Init
+	TextToImageInitClick.setModel(model);
 }

@@ -9,5 +9,6 @@ export * from "./widgets/CrawlerInit/";
 export * from "./widgets/CrawlerGallery/";
 export * from "./widgets/TextToImagePrompt/";
 export * from "./widgets/TextToImageOptions/";
+export * from "./widgets/TextToImageInit/";
 
 export * from "./version";

@@ -20,5 +20,6 @@ export declare const TextToImageOptionFolder: WidgetWritable<string>;
 export declare const TextToImageOptionWidth: WidgetWritable<number>;
 export declare const TextToImageOptionHeight: WidgetWritable<number>;
 export declare const TextToImageOptionIterations: WidgetWritable<number>;
+export declare const TextToImageInitClick: WidgetWritable<boolean>;
 export declare function setStoreModels(model: DOMWidgetModel): void;
 export {};
