@@ -14,9 +14,6 @@ services:
       NB_UID: ${UID}
       NB_GID: ${GID}
     entrypoint: start-notebook.sh
-
-    command: --VoilaConfiguration.enable_nbextensions=True --LabApp.token=''
-
     deploy:
       resources:
         reservations:
@@ -24,3 +21,5 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
+
+    command: --VoilaConfiguration.enable_nbextensions=True --LabApp.token=''
