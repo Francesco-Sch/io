@@ -25,7 +25,7 @@
         let tempAttributes:any = []
         
         attributes.forEach((attribute) => {
-            attribute.weight = parseFloat(attribute.weight) / 100.0;
+            attribute.weight = parseFloat(attribute.weight) / 100;
 
             tempAttributes.push(attribute);
         })
