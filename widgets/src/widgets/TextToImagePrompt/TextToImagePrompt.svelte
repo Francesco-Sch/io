@@ -22,10 +22,18 @@
     let invalidTypeAttributeWeight:boolean = false
 
     function setPromptandAttributes () {
+        let tempAttributes:any = []
+        
+        attributes.forEach((attribute) => {
+            attribute.weight = parseFloat(attribute.weight) / 100.0;
+
+            tempAttributes.push(attribute);
+        })
+
         TextToImagePrompt.set(textPrompt)
 
         TextToImageAttributes.set([])
-        TextToImageAttributes.set(attributes)
+        TextToImageAttributes.set(tempAttributes)
     }
 
     function updateAttributes () {
