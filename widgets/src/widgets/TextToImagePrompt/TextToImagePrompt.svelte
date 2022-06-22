@@ -78,9 +78,6 @@
         } else {
             attributes = []
         }
-
-        TextToImageAttributes.set([])
-        TextToImageAttributes.set(attributes)
     }
 </script>
 
@@ -112,7 +109,6 @@
     }
     .attribute .attribute_text, 
     .attribute .attribute_weight, 
-    .attribute :global(.io_remove-button),
     .add-attribute .attribute_input :global(.bx--text-input-wrapper),
     .add-attribute .attribute_input :global(.add-attribute-button)
      {
@@ -132,6 +128,10 @@
     .add-attribute .attribute_input :global(.bx--text-input-wrapper):last-of-type {
         flex-grow: 0;
         width: 20%;
+    }
+    .attribute :global(.io_remove-button) {
+        padding: 1.3rem;
+        background-color: var(--gray-20);
     }
     .add-attribute {
         display: flex;
@@ -186,12 +186,12 @@
 
         {#each attributes || [] as attribute, index}
             <div class="attribute">
-                <span class="attribute_text">
+                <div class="attribute_text">
                     {attribute.attribute}
-                </span>
-                <span class="attribute_weight">
+                </div>
+                <div class="attribute_weight">
                     {attribute.weight}
-                </span>
+                </div>
                 <Button iconDescription="Remove attribute" icon={SubtractAlt} class="io_remove-button" on:click={() => {removeAttribute(index)}} />
             </div>
         {:else}
