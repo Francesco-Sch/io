@@ -10,6 +10,7 @@ from .widgets.CrawlerLogin import *
 from .widgets.CrawlerLinks import *
 from .widgets.CrawlerInit import *
 from .widgets.CrawlerGallery import *
+from .widgets.TextToImagePrompt import *
 
 from ._version import __version__, version_info
 

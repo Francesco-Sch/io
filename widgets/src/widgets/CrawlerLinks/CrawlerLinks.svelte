@@ -60,7 +60,7 @@
         overflow-x: auto;
         white-space: nowrap
     }
-    .links .link :global(.bx--btn.remove-button) {
+    .links .link :global(.bx--btn.io_remove-button) {
         position: absolute;
         top: 0;
         right: 0;
@@ -68,31 +68,11 @@
 
         background: linear-gradient(270deg, #D6D6D6 62.5%, rgba(214, 214, 214, 0) 100%);
     }
-    .links .link :global(.bx--btn.remove-button .bx--btn__icon) {
-        width: 1.25rem;
-        height: 1.25rem;
-
-        color: var(--gray-40);
-    }
     .links .add-link {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: var(--spacing-07);
-    }
-    .links .add-link :global(.bx--btn.add-button) {
-        background-color: transparent;
-
-        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    .links .add-link :global(.bx--btn.add-button):hover {
-        background-color: var(--gray-30);
-    }
-    .links .add-link :global(.bx--btn.add-button .bx--btn__icon) {
-        width: 1.75rem;
-        height: 1.75rem;
-
-        color: var(--gray-40);
     }
     .links .add-link .input {
         width: 100%;
@@ -123,7 +103,7 @@
             {#each links || [] as link, index}
                 <div class="link">
                     <p>{link}</p> 
-                    <Button iconDescription="Remove link" icon={SubtractAlt} class="remove-button" on:click={() => {removeLink(index)}} />
+                    <Button iconDescription="Remove link" icon={SubtractAlt} class="io_remove-button" on:click={() => {removeLink(index)}} />
                 </div>
             {:else}
                 <p>No links added yet.</p>
@@ -132,7 +112,7 @@
 
         <div class="add-link">
             {#if !showLinkInput}
-                <Button iconDescription="Add link" icon={Add} class="add-button" on:click={() => showLinkInput = true}/>
+                <Button iconDescription="Add link" icon={Add} class="io_add-button" on:click={() => showLinkInput = true}/>
             {:else}
                 <div class="input">
                     <TextInput light hideLabel class="io_text-input" placeholder='Enter a pinterest link' bind:value={currentLinkInput} />

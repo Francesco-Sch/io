@@ -53,6 +53,31 @@ BUTTON
 }
 
 /* ----------------------------
+ICON-BUTTONS
+---------------------------- */
+.bx--btn.io_add-button {
+	background-color: transparent;
+
+	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.bx--btn.io_add-button:hover {
+	background-color: var(--gray-30);
+}
+.bx--btn.io_add-button .bx--btn__icon {
+	width: 1.75rem;
+	height: 1.75rem;
+
+	color: var(--gray-40);
+}
+
+.bx--btn.io_remove-button .bx--btn__icon {
+	width: 1.25rem;
+	height: 1.25rem;
+
+	color: var(--gray-40);
+}
+
+/* ----------------------------
 TEXT-INPUT
 NUMBER-INPUT
 ---------------------------- */

@@ -101,6 +101,18 @@ export const CrawlerGalleryFolder = WidgetWritable<string>(
 	""
 );
 
+// ----------------
+// TextToImage Prompt
+// ----------------
+export const TextToImagePrompt = WidgetWritable<string>(
+	"TextToImagePrompt",
+	""
+);
+export const TextToImageAttributes = WidgetWritable<Array<object>>(
+	"TextToImageAttributes",
+	[]
+);
+
 // Set the model for each store you create.
 export function setStoreModels(model: DOMWidgetModel): void {
 	// Example Widget
@@ -124,4 +136,8 @@ export function setStoreModels(model: DOMWidgetModel): void {
 
 	// Crawler Gallery
 	CrawlerGalleryFolder.setModel(model);
+
+	// TextToImage Prompt
+	TextToImagePrompt.setModel(model);
+	TextToImageAttributes.setModel(model);
 }
