@@ -113,6 +113,26 @@ export const TextToImageAttributes = WidgetWritable<Array<object>>(
 	[]
 );
 
+// ----------------
+// TextToImage Options
+// ----------------
+export const TextToImageOptionFolder = WidgetWritable<string>(
+	"TextToImageOptionFolder",
+	""
+);
+export const TextToImageOptionWidth = WidgetWritable<number>(
+	"TextToImageOptionWidth",
+	NaN
+);
+export const TextToImageOptionHeight = WidgetWritable<number>(
+	"TextToImageOptionHeight",
+	NaN
+);
+export const TextToImageOptionIterations = WidgetWritable<number>(
+	"TextToImageOptionIterations",
+	NaN
+);
+
 // Set the model for each store you create.
 export function setStoreModels(model: DOMWidgetModel): void {
 	// Example Widget
@@ -140,4 +160,10 @@ export function setStoreModels(model: DOMWidgetModel): void {
 	// TextToImage Prompt
 	TextToImagePrompt.setModel(model);
 	TextToImageAttributes.setModel(model);
+
+	// TextToImage Options
+	TextToImageOptionFolder.setModel(model);
+	TextToImageOptionWidth.setModel(model);
+	TextToImageOptionHeight.setModel(model);
+	TextToImageOptionIterations.setModel(model);
 }
