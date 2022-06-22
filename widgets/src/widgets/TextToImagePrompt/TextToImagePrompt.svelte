@@ -10,15 +10,16 @@
 
     let textPrompt = $TextToImagePrompt
 
-    let attributes:Array<any> = [{
-        attribute: 'Abstract',
-        weight: '25%'
-    }]
+    let attributes:Array<any> = []
     let currentAttributeInput = {
         attribute: '',
         weight: ''
     }
     let showAttributeInput:boolean = false
+
+    let emptyAttributeText:boolean = false
+    let emptyAttributeWeight:boolean = false
+    let invalidTypeAttributeWeight:boolean = false
 
     function setPromptandAttributes () {
         TextToImagePrompt.set(textPrompt)
@@ -28,6 +29,35 @@
     }
 
     function updateAttributes () {
+        // Check if values are correct
+        if(currentAttributeInput.attribute == null || currentAttributeInput.attribute == '') {
+            emptyAttributeText = true;
+            return
+        } else {
+            emptyAttributeText = false;
+        }
+
+        if(currentAttributeInput.weight == null || currentAttributeInput.weight == '') {
+            emptyAttributeWeight = true;
+            return
+        } else {
+            emptyAttributeWeight = false;
+        }
+
+        if(isNaN(parseInt(currentAttributeInput.weight))) {
+            invalidTypeAttributeWeight = true;
+            return
+        } else {
+            invalidTypeAttributeWeight = false;
+        }
+
+        // Round weight up or down
+        if(parseInt(currentAttributeInput.weight) > 100) {
+            currentAttributeInput.weight = '100'
+        } else if(parseInt(currentAttributeInput.weight) < 0) {
+            currentAttributeInput.weight = '0'
+        }
+
         attributes.push(currentAttributeInput)
         attributes = attributes
 
@@ -173,9 +203,62 @@
                 <Button iconDescription="Add attribute" icon={Add} class="io_add-button" on:click={() => showAttributeInput = true}/>
             {:else}
                 <div class="attribute_input">
-                    <TextInput light hideLabel class="io_text-input adjective-input" placeholder='Add an adjective or attribute' bind:value={currentAttributeInput.attribute} />
-                    <TextInput light hideLabel class="io_text-input weight-input" placeholder='Set weight' bind:value={currentAttributeInput.weight} />
-                    <Button iconDescription="Set attribute" icon={CheckmarkOutline} class="add-attribute-button" on:click={updateAttributes} />
+                    {#if emptyAttributeText}
+                        <TextInput 
+                            light 
+                            hideLabel 
+                            invalid
+                            invalidText="You have to set an attribute."
+                            class="io_text-input adjective-input" 
+                            placeholder='Add an adjective or attribute' 
+                            bind:value={currentAttributeInput.attribute} 
+                        />
+                    {:else}
+                        <TextInput 
+                            light 
+                            hideLabel 
+                            class="io_text-input adjective-input" 
+                            placeholder='Add an adjective or attribute' 
+                            bind:value={currentAttributeInput.attribute} 
+                        />
+                    {/if} 
+
+                    {#if emptyAttributeWeight}
+                        <TextInput 
+                            light 
+                            hideLabel 
+                            invalid
+                            invalidText="You have set a weight if you want to define an attribute."
+                            class="io_text-input weight-input" 
+                            placeholder='Set weight' 
+                            bind:value={currentAttributeInput.weight} 
+                        />
+                    {:else if invalidTypeAttributeWeight}
+                        <TextInput 
+                            light 
+                            hideLabel 
+                            invalid
+                            invalidText="You have to set a number between 0 and 100"
+                            class="io_text-input weight-input" 
+                            placeholder='Set weight' 
+                            bind:value={currentAttributeInput.weight} 
+                        />
+                    {:else}
+                        <TextInput 
+                            light 
+                            hideLabel 
+                            class="io_text-input weight-input" 
+                            placeholder='Set weight' 
+                            bind:value={currentAttributeInput.weight} 
+                        />
+                    {/if} 
+
+                    <Button 
+                        iconDescription="Set attribute" 
+                        icon={CheckmarkOutline} 
+                        class="add-attribute-button" 
+                        on:click={updateAttributes} 
+                    />
                 </div>
             {/if}
         </div> 
