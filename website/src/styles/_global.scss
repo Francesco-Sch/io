@@ -1,9 +1,45 @@
+/* ----------------------------
+GLOBAL
+---------------------------- */
 * {
 	font-family: $sans;
-	font-size: 1.5rem;
+	font-size: $font-size-base;
 	font-weight: 400;
+
+	color: $text;
 }
 
+/* ----------------------------
+GRID
+---------------------------- */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	column-gap: $spacing-05;
+}
+
+/* ----------------------------
+HEADINGS
+---------------------------- */
+h2 {
+	font-size: $font-size-xxxl;
+	font-weight: 600;
+	line-height: 1.3em;
+	text-transform: uppercase;
+}
+
+/* ----------------------------
+TEXT
+---------------------------- */
+p {
+	text-indent: 3rem;
+	line-height: 1.4em;
+}
+
+/* ----------------------------
+LINKS
+---------------------------- */
 a {
 	transition: text-decoration 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 	text-decoration: underline;

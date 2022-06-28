@@ -43,6 +43,20 @@
 }
 @font-face {
 	font-family: 'Slussen';
+	src: url('/fonts/Slussen/Slussen-Semibold.woff2') format('woff2'),
+		url('/fonts/Slussen/Slussen-Semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Slussen';
+	src: url('/fonts/Slussen/Slussen-Semibold-Italic.woff2') format('woff2'),
+		url('/fonts/Slussen/Slussen-Semibold-Italic.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Slussen';
 	src: url('/fonts/Slussen/Slussen-Bold.woff2') format('woff2'),
 		url('/fonts/Slussen/Slussen-Bold.woff') format('woff');
 	font-weight: 700;
