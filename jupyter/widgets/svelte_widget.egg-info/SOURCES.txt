@@ -31,6 +31,12 @@ src/widgets/CrawlerLinks/CrawlerLinks.svelte
 src/widgets/CrawlerLinks/index.ts
 src/widgets/CrawlerLogin/CrawlerLogin.svelte
 src/widgets/CrawlerLogin/index.ts
+src/widgets/TextToImageInit/TextToImageInit.svelte
+src/widgets/TextToImageInit/index.ts
+src/widgets/TextToImageOptions/TextToImageOptions.svelte
+src/widgets/TextToImageOptions/index.ts
+src/widgets/TextToImagePrompt/TextToImagePrompt.svelte
+src/widgets/TextToImagePrompt/index.ts
 src/widgets/Validation/Validation.svelte
 src/widgets/Validation/index.ts
 src/widgets/Widget/Widget.svelte
@@ -44,8 +50,8 @@ svelte_widget.egg-info/dependency_links.txt
 svelte_widget.egg-info/requires.txt
 svelte_widget.egg-info/top_level.txt
 svelte_widget/labextension/package.json
-svelte_widget/labextension/static/568.f555f2932a35c9b41cf1.js
-svelte_widget/labextension/static/remoteEntry.72f551d92fab5648e069.js
+svelte_widget/labextension/static/568.b0892313a34b010e498c.js
+svelte_widget/labextension/static/remoteEntry.87596f538ff8f265e05f.js
 svelte_widget/labextension/static/style.js
 svelte_widget/labextension/static/third-party-licenses.json
 svelte_widget/nbextension/extension.js
