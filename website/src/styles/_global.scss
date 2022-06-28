@@ -1,3 +1,17 @@
 * {
 	font-family: $sans;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+a {
+	transition: text-decoration 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+	text-decoration: underline;
+	text-decoration-color: transparent;
+
+	&:hover {
+		text-decoration-color: $text;
+		text-decoration-thickness: 0.125em;
+		text-underline-offset: 1.5px;
+	}
 }
