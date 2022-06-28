@@ -1,29 +1,14 @@
 <script lang="ts">
-const navigation:object[] = [
-    {
-        name: 'Introduction',
-        link: '#introduction'
-    },
-    {
-        name: 'The Framework',
-        link: '#the-framework'
-    },
-    {
-        name: 'Notebooks',
-        link: '#notebooks'
-    },
-    {
-        name: 'Documentation',
-        link: '#documentation'
-    }
-]   
+import { get } from 'svelte/store'
+import { navigation } from '../store/index.js'
+
 </script>
 
 <header>
     <img src="./logo.svg" alt="Logo of the IO framework" class="logo">
     <nav>
         <ul>
-            {#each navigation as link}
+            {#each get(navigation) as link}
             <li>
                 <a href="{link.link}">{link.name}</a>
             </li>
@@ -51,6 +36,5 @@ const navigation:object[] = [
                 justify-content: space-between;
             }
         }
-
     }
 </style>
