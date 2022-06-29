@@ -41,7 +41,7 @@ p {
 LINKS
 ---------------------------- */
 a {
-	transition: text-decoration 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+	transition: text-decoration 0.3s $transition-ease;
 	text-decoration: underline;
 	text-decoration-color: transparent;
 

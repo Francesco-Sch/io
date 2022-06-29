@@ -19,6 +19,8 @@ export let title = 'Default title';
     padding: $spacing-07 0;
     border-bottom: solid 2px $gray-50;
 
+    transition: all 0.5s $transition-ease;
+
     h3 {
         grid-column: 2 / 13;
         font-size: 7vw;
@@ -46,6 +48,21 @@ export let title = 'Default title';
 
     p, h3 {
         color: $gray-50;
+        transition: all 0.5s $transition-ease;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border-color: $text;
+
+        p {
+            border-color: $text;
+        }
+
+        p, h3 {
+            color: $text;
+        }
+
     }
 }
 </style>
