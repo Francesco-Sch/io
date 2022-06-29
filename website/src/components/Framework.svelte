@@ -11,7 +11,14 @@ import { framework } from '../store/'
     </h2>
 
     {#each get(framework) as element}
-        <FrameworkElement index={element.index} title={element.title}/>
+        <FrameworkElement 
+            index={element.index} 
+            title={element.title}
+
+            on:click="{() => {
+                element.show.set(true)
+            }}"
+        />
     {/each}
 
 </section>

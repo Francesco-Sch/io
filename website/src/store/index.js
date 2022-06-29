@@ -31,27 +31,27 @@ export const framework = writable([
 		title: 'This website',
 		id: 'website',
 		content: '',
-		show: false
+		show: writable(false)
 	},
 	{
 		index: 2,
 		title: 'Web-Notebooks',
 		id: 'notebooks',
 		content: '',
-		show: false
+		show: writable(false)
 	},
 	{
 		index: 3,
 		title: 'Custom JupyterLab',
 		id: 'jupyterlab',
 		content: '',
-		show: false
+		show: writable(false)
 	},
 	{
 		index: 4,
 		title: 'JupyterLab Widgets',
 		id: 'widgets',
 		content: '',
-		show: false
+		show: writable(false)
 	}
 ]);
