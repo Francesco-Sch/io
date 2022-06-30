@@ -1,6 +1,6 @@
 <script lang="ts">
 /* Store & Props */
-import { framework } from '../store/'
+import { framework } from '../../store'
 export let index:number;
 let show = $framework[index].show
 

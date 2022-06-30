@@ -1,5 +1,5 @@
 <script lang="ts">
-import FrameworkElement from './FrameworkElement.svelte'
+import FrameworkElement from './Framework/FrameworkListElement.svelte'
 import { get } from 'svelte/store'
 import { framework } from '../store/'
 </script>
