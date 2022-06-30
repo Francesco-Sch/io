@@ -14,6 +14,11 @@ let showContent:boolean = false;
 show.subscribe(value => {
     showContent = value
 })
+
+/* Parse Markdown */
+import snarkdown from 'snarkdown';
+
+let html = snarkdown(content)
 </script>
 
 {#if showContent}
@@ -32,6 +37,10 @@ show.subscribe(value => {
                     <img src="/close-button.svg" alt="Close button">
                 </button>
             </div>
+        </div>
+
+        <div class="content">
+            {html}
         </div>
     </div>
 {/if}
