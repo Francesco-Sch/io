@@ -4,7 +4,7 @@ export let title = 'Default title';
 
 </script>
 
-<div class="framework-element grid">
+<div class="framework-element grid" on:click>
     <div class="number">
         <p>
             {index}

@@ -11,8 +11,8 @@ import { framework } from '../store/'
     </h2>
 
     {#each get(framework) as element}
-        <FrameworkElement 
-            index={element.index} 
+        <FrameworkElement
+            index={element.index}
             title={element.title}
 
             on:click="{() => {

@@ -1,10 +1,23 @@
 <script lang="ts">
-export let index = 0
+/* Store & Props */
+import { framework } from '../store/'
+export let index:number;
+let show = $framework[index].show
+
+/* Local variables */
+let showContent:boolean = false;
+
+/* Subscribe to store */
+show.subscribe(value => {
+    showContent = value
+})
 </script>
 
-<div class="framework-content">
-    
-</div>
+{#if showContent}
+    <div class="framework-content">
+        <p>Test</p>
+    </div>
+{/if}
 
 <style lang="scss">
 .framework-content {

@@ -6,7 +6,6 @@ import FrameworkContent from "../components/FrameworkContent.svelte";
 
 import { get } from 'svelte/store'
 import { framework } from '../store/'
-import { element } from "svelte/internal";
 </script>
 
 <main>
@@ -14,10 +13,8 @@ import { element } from "svelte/internal";
     <Introduction />
     <Framework />
 
-    {#each get(framework) as element}
-        {#if element.show}
-            <FrameworkContent />
-        {/if}
+    {#each get(framework) as element, index}
+        <FrameworkContent index={index}/>
     {/each}
 </main>
 
