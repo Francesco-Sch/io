@@ -1,7 +1,9 @@
 <script lang="ts">
 /* Imports */
-import { framework } from '../../store'
 import { onMount } from 'svelte';
+import { fade, slide } from 'svelte/transition';
+import { backInOut } from 'svelte/easing';
+import { framework } from '../../store'
 import { Remarkable } from 'remarkable';
 let md = new Remarkable({
     html: true
@@ -42,9 +44,9 @@ onMount(() => {
 
 {#if showContent}
     <div class="framework-modal">
-        <div class="backdrop" on:click="{handleClickOutside}"/>
+        <div class="backdrop" on:click="{handleClickOutside}" transition:fade={{duration: 300}}/>
 
-        <div class="framework-content">
+        <div class="framework-content" transition:slide="{{duration: 1300, easing: backInOut}}">
             <div class="header grid">
                 <div class="number-wrapper">
                     <div class="number">
@@ -65,7 +67,6 @@ onMount(() => {
                 {@html renderedMarkdown}
             </div>
         </div>
-
     </div>
 {/if}
 
@@ -83,7 +84,7 @@ onMount(() => {
         width: 100%;
         height: 100%;
 
-        background: rgba(0,0,0,0.35)
+        background: rgba(0,0,0,0.4)
     }
 
     .framework-content {
@@ -92,7 +93,7 @@ onMount(() => {
         left: 0;
 
         width: 100%;
-        height: 80vh;
+        height: 85vh;
 
         padding: $spacing-08 $spacing-06;
         overflow-y: auto;
