@@ -23,7 +23,7 @@
 
         .intro-text {
             grid-column: 1 / 6;
-            margin-bottom: $spacing-12;
+            margin-bottom: $spacing-09;
             color: white;
         }
 

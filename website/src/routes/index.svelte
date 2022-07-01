@@ -5,6 +5,7 @@ import Framework from "../components/Framework.svelte";
 import FrameworkContent from "../components/Framework/FrameworkContent.svelte";
 import Notebooks from "../components/Notebooks.svelte";
 import Documentation from "../components/Documentation.svelte";
+import Footer from "../components/Footer.svelte";
 
 import { get } from 'svelte/store'
 import { framework } from '../store/'
@@ -16,6 +17,7 @@ import { framework } from '../store/'
     <Framework />
     <Notebooks />
     <Documentation />
+    <Footer />
 
     {#each get(framework) as element, index}
         <FrameworkContent index={index}/>
