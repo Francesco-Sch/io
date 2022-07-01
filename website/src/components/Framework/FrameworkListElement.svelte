@@ -21,6 +21,24 @@ export let title = 'Default title';
 
     transition: all 0.5s $transition-ease;
 
+    &:hover {
+        cursor: pointer;
+        border-color: $text;
+
+        p {
+            border-color: $text;
+        }
+
+        p, h3 {
+            color: $text;
+        }
+
+    }
+
+    &:last-of-type {
+        border-bottom: 0px solid transparent;
+    }
+    
     h3 {
         grid-column: 2 / 13;
         font-size: 7vw;
@@ -49,20 +67,6 @@ export let title = 'Default title';
     p, h3 {
         color: $gray-50;
         transition: all 0.5s $transition-ease;
-    }
-
-    &:hover {
-        cursor: pointer;
-        border-color: $text;
-
-        p {
-            border-color: $text;
-        }
-
-        p, h3 {
-            color: $text;
-        }
-
     }
 }
 </style>

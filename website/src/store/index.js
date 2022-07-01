@@ -55,3 +55,24 @@ export const framework = writable([
 		show: writable(false)
 	}
 ]);
+
+/* ----------------
+Notebooks
+---------------- */
+export const notebooks = readable([
+	{
+		title: 'Scraping data with Pinterest',
+		link: 'http://localhost:8888/lab/tree/notebooks/Scraping-Data-with-Pinterest.ipynb',
+		available: true
+	},
+	{
+		title: 'Use Clip-Guided VQGAN to generate images',
+		link: 'http://localhost:8888/lab/tree/notebooks/Use-CLIP-guided-VQGAN-to-generate-images.ipynb',
+		available: true
+	},
+	{
+		title: 'Fine tune StyleGAN 3',
+		link: '',
+		available: false
+	}
+]);
