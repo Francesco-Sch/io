@@ -74,6 +74,8 @@ onMount(() => {
     background-color: $gray-10;
 
     .header {
+        margin-bottom: $spacing-10;
+        
         .number-wrapper {
             grid-column: 1 / 2;
             justify-self: start;
@@ -136,10 +138,14 @@ onMount(() => {
     .content {
         :global(p) {
             grid-column: 3 / 8;
+
+            text-indent: 3rem;
+	        line-height: 1.4em;
         }
 
         :global(.image) {
             grid-column: 3 / 11;
+            margin: $spacing-10 0;
 
             :global(img) {
                 width: 100%;
