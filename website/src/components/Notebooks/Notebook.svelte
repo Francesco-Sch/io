@@ -30,7 +30,7 @@ export let available:boolean;
     text-decoration: none;
 
     background-color: white;
-    border-right: 2px solid $gray-10;
+    border-right: 3px solid $gray-10;
 
     transition: all 0.3s $transition-ease;
 
