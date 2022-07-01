@@ -1,4 +1,7 @@
 <script lang="ts">
+import { onMount } from 'svelte';
+import snarkdown from 'snarkdown';
+
 /* Store & Props */
 import { framework } from '../../store'
 export let index:number;
@@ -9,6 +12,7 @@ let show = $framework[index].show
 
 /* Local variables */
 let showContent:boolean = false;
+let renderedMarkdown:any;
 
 /* Subscribe to store */
 show.subscribe(value => {
@@ -16,9 +20,17 @@ show.subscribe(value => {
 })
 
 /* Parse Markdown */
-import snarkdown from 'snarkdown';
+onMount(() => {
+    fetch(content)
+    .then(response => {
+        return response.text()
+    })
+    .then(text => {
+        renderedMarkdown = snarkdown(text)
 
-let html = snarkdown(content)
+        console.log(renderedMarkdown);
+    })
+})
 </script>
 
 {#if showContent}
@@ -40,7 +52,7 @@ let html = snarkdown(content)
         </div>
 
         <div class="content">
-            {html}
+            {@html renderedMarkdown}
         </div>
     </div>
 {/if}
