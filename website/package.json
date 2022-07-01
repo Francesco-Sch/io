@@ -33,7 +33,8 @@
 		"typescript": "^4.7.2"
 	},
 	"dependencies": {
-		"remarkable": "^2.0.1"
+		"remarkable": "^2.0.1",
+		"svelte-scrolling": "^1.2.1"
 	},
 	"type": "module"
 }

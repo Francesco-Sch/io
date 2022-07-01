@@ -1,6 +1,7 @@
 <script lang="ts">
 import { get } from 'svelte/store'
 import { navigation } from '../store/index.js'
+import { scrollTo } from 'svelte-scrolling'
 
 </script>
 
@@ -10,7 +11,7 @@ import { navigation } from '../store/index.js'
         <ul>
             {#each get(navigation) as link}
             <li>
-                <a href="{link.link}">{link.name}</a>
+                <a use:scrollTo={link.link}>{link.name}</a>
             </li>
             {/each}
         </ul>

@@ -2,9 +2,10 @@
 import FrameworkElement from './Framework/FrameworkListElement.svelte'
 import { get } from 'svelte/store'
 import { framework } from '../store/'
+import { scrollRef } from 'svelte-scrolling'
 </script>
 
-<section id="the-framework">
+<section id="the-framework" use:scrollRef={'the-framework'}>
     <h2>
         how to use <br>
         this framework:

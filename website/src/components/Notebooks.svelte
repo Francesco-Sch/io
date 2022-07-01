@@ -2,9 +2,10 @@
 import Notebook from "./Notebooks/Notebook.svelte";
 import { get } from 'svelte/store'
 import { notebooks } from '../store/'
+import { scrollRef } from 'svelte-scrolling'
 </script>
 
-<section id="notebooks">
+<section id="notebooks" use:scrollRef={'notebooks'}>
     <h2>
         launch a notebook <br>
         and start experimenting

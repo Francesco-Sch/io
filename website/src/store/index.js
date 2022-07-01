@@ -6,19 +6,19 @@ Navigation
 export const navigation = readable([
 	{
 		name: 'Introduction',
-		link: '#introduction'
+		link: 'introduction'
 	},
 	{
 		name: 'The Framework',
-		link: '#the-framework'
+		link: 'the-framework'
 	},
 	{
 		name: 'Notebooks',
-		link: '#notebooks'
+		link: 'notebooks'
 	},
 	{
 		name: 'Documentation',
-		link: '#documentation'
+		link: 'documentation'
 	}
 ]);
 

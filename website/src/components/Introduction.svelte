@@ -1,10 +1,10 @@
 <script lang="ts">
 import { get } from 'svelte/store'
 import { navigation } from '../store/index.js'
-
+import { scrollRef } from 'svelte-scrolling'
 </script>
 
-<section id="introduction" class="grid">
+<section id="introduction" class="grid" use:scrollRef={'introduction'}>
     <h2>
         making artifical<br> 
         intelligence accessible <br>

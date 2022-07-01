@@ -1,8 +1,8 @@
 <script lang="ts">
-
+import { scrollRef } from 'svelte-scrolling'
 </script>
 
-<section id="documentation" class="grid">
+<section id="documentation" class="grid" use:scrollRef={'documentation'}>
     <p class="intro-text">
         Head over to the Documentation for Tutorials and Support regarding technical questions. 
         It helps you with installing your own JupyterLab-Instance and gives you an overview over all available widgets and extensions.
