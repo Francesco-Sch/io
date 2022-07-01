@@ -1,13 +1,13 @@
 <script lang="ts">
+/* Imports */
+import { framework } from '../../store'
 import { onMount } from 'svelte';
 import { Remarkable } from 'remarkable';
 let md = new Remarkable({
     html: true
 })
-import {clickOutside} from '../../utilities/clickOutside.js';
 
 /* Store & Props */
-import { framework } from '../../store'
 export let index:number;
 let number = $framework[index].index
 let title = $framework[index].title
@@ -24,7 +24,7 @@ show.subscribe(value => {
 })
 
 /* Handle click outside of content modal */
-function handleClickOutside(event) {
+function handleClickOutside() {
     show.set(false)
 }
 
@@ -41,125 +41,143 @@ onMount(() => {
 </script>
 
 {#if showContent}
-    <div class="framework-content" use:clickOutside on:click_outside={handleClickOutside}>
-        <div class="header grid">
-            <div class="number-wrapper">
-                <div class="number">
-                    <p>{number}</p>
+    <div class="framework-modal">
+        <div class="backdrop" on:click="{handleClickOutside}"/>
+
+        <div class="framework-content">
+            <div class="header grid">
+                <div class="number-wrapper">
+                    <div class="number">
+                        <p>{number}</p>
+                    </div>
+                </div>
+                <h3>{title}</h3>
+                <div class="button-wrapper">
+                    <button on:click={() => {
+                        show.set(false)
+                    }}>
+                        <img src="/close-button.svg" alt="Close button">
+                    </button>
                 </div>
             </div>
-            <h3>{title}</h3>
-            <div class="button-wrapper">
-                <button on:click={() => {
-                    show.set(false)
-                }}>
-                    <img src="/close-button.svg" alt="Close button">
-                </button>
+    
+            <div class="content grid">
+                {@html renderedMarkdown}
             </div>
         </div>
 
-        <div class="content grid">
-            {@html renderedMarkdown}
-        </div>
     </div>
 {/if}
 
 <style lang="scss">
-.framework-content {
+.framework-modal {
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 100;
 
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
 
-    padding: $spacing-08 $spacing-06;
-    overflow-y: auto;
+    .backdrop {
+        width: 100%;
+        height: 100%;
 
-    background-color: $gray-10;
+        background: rgba(0,0,0,0.35)
+    }
 
-    .header {
-        margin-bottom: $spacing-10;
+    .framework-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
 
-        .number-wrapper {
-            grid-column: 1 / 2;
-            justify-self: start;
-            align-self: center;
+        width: 100%;
+        height: 80vh;
 
-            .number {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 2.5rem;
-                height: 2.5rem;
-                border: 1px solid $text;
-                border-radius: 50%;
-                
-                p {
-                    text-indent: 0;
-                    font-family: $mono;
+        padding: $spacing-08 $spacing-06;
+        overflow-y: auto;
+
+        background-color: $gray-10;
+
+        .header {
+            margin-bottom: $spacing-10;
+
+            .number-wrapper {
+                grid-column: 1 / 2;
+                justify-self: start;
+                align-self: center;
+
+                .number {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border: 1px solid $text;
+                    border-radius: 50%;
+                    
+                    p {
+                        text-indent: 0;
+                        font-family: $mono;
+                    }
+                    
                 }
-                
+            }
+
+            h3 {
+                grid-column: 3 / 11;
+
+                font-size: $font-size-xxxl;
+                text-align: right;
+                text-transform: uppercase;
+            }
+
+            .button-wrapper {
+                grid-column: 11 / 12;
+                justify-self: end;
+                align-self: center;
+
+                button {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: $spacing-04;
+
+                    border: 1px solid transparent;
+                    border-radius: 0.2rem;
+
+                    transition: all 0.3s $transition-ease;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $gray-20;
+                    }
+
+                    &:active {
+                        cursor: pointer;
+                        background-color: $gray-40;
+                    }
+                }
             }
         }
 
-        h3 {
-            grid-column: 3 / 11;
+        .content {
+            :global(p) {
+                grid-column: 3 / 8;
 
-            font-size: $font-size-xxxl;
-            text-align: right;
-            text-transform: uppercase;
-        }
+                text-indent: 3rem;
+                line-height: 1.4em;
+            }
 
-        .button-wrapper {
-            grid-column: 11 / 12;
-            justify-self: end;
-            align-self: center;
+            :global(.image) {
+                grid-column: 3 / 11;
+                margin: $spacing-10 0;
 
-            button {
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                padding: $spacing-04;
-
-                border: 1px solid transparent;
-                border-radius: 0.2rem;
-
-                transition: all 0.3s $transition-ease;
-
-                &:hover {
-                    cursor: pointer;
-                    background-color: $gray-20;
-                }
-
-                &:active {
-                    cursor: pointer;
-                    background-color: $gray-40;
+                :global(img) {
+                    width: 100%;
                 }
             }
         }
     }
-
-    .content {
-        :global(p) {
-            grid-column: 3 / 8;
-
-            text-indent: 3rem;
-	        line-height: 1.4em;
-        }
-
-        :global(.image) {
-            grid-column: 3 / 11;
-            margin: $spacing-10 0;
-
-            :global(img) {
-                width: 100%;
-            }
-        }
-
-
-    }
-
 }
 </style>
