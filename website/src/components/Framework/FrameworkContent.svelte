@@ -1,7 +1,9 @@
 <script lang="ts">
 import { onMount } from 'svelte';
 import { Remarkable } from 'remarkable';
-let md = new Remarkable()
+let md = new Remarkable({
+    html: true
+})
 
 /* Store & Props */
 import { framework } from '../../store'
@@ -28,8 +30,6 @@ onMount(() => {
     })
     .then(text => {
         renderedMarkdown = md.render(text)
-
-        console.log(renderedMarkdown);
     })
 })
 </script>
@@ -69,6 +69,7 @@ onMount(() => {
     height: 85vh;
 
     padding: $spacing-08 $spacing-06;
+    overflow-y: auto;
 
     background-color: $gray-10;
 
@@ -133,9 +134,19 @@ onMount(() => {
     }
 
     .content {
-        text {
+        :global(p) {
             grid-column: 3 / 8;
         }
+
+        :global(.image) {
+            grid-column: 3 / 11;
+
+            :global(img) {
+                width: 100%;
+            }
+        }
+
+
     }
 
 }
