@@ -62,12 +62,12 @@ Notebooks
 export const notebooks = readable([
 	{
 		title: 'Scraping data with Pinterest',
-		link: 'http://localhost:8888/lab/tree/notebooks/Scraping-Data-with-Pinterest.ipynb',
+		link: 'http://localhost:8888/lab/workspaces/pinterest/tree/notebooks/Scraping-Data-with-Pinterest.ipynb',
 		available: true
 	},
 	{
 		title: 'Use Clip-Guided VQGAN to generate images',
-		link: 'http://localhost:8888/lab/tree/notebooks/Use-CLIP-guided-VQGAN-to-generate-images.ipynb',
+		link: 'http://localhost:8888/lab/workspaces/VQGAN/tree/notebooks/Use-CLIP-guided-VQGAN-to-generate-images.ipynb',
 		available: true
 	},
 	{
