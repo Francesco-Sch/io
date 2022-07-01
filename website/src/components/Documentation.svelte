@@ -44,7 +44,7 @@
 
                 color: white;   
 
-                animation: scrollText 9s infinite linear;
+                animation: scrollText 20s infinite linear;
             }
         }
     } 
