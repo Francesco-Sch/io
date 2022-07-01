@@ -4,6 +4,7 @@ import { Remarkable } from 'remarkable';
 let md = new Remarkable({
     html: true
 })
+import {clickOutside} from '../../utilities/clickOutside.js';
 
 /* Store & Props */
 import { framework } from '../../store'
@@ -22,6 +23,11 @@ show.subscribe(value => {
     showContent = value
 })
 
+/* Handle click outside of content modal */
+function handleClickOutside(event) {
+    show.set(false)
+}
+
 onMount(() => {
     /* Parse Markdown */
     fetch(content)
@@ -35,7 +41,7 @@ onMount(() => {
 </script>
 
 {#if showContent}
-    <div class="framework-content">
+    <div class="framework-content" use:clickOutside on:click_outside={handleClickOutside}>
         <div class="header grid">
             <div class="number-wrapper">
                 <div class="number">
@@ -75,7 +81,7 @@ onMount(() => {
 
     .header {
         margin-bottom: $spacing-10;
-        
+
         .number-wrapper {
             grid-column: 1 / 2;
             justify-self: start;
