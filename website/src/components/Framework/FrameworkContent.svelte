@@ -1,6 +1,7 @@
 <script lang="ts">
 import { onMount } from 'svelte';
-import snarkdown from 'snarkdown';
+import { Remarkable } from 'remarkable';
+let md = new Remarkable()
 
 /* Store & Props */
 import { framework } from '../../store'
@@ -19,14 +20,14 @@ show.subscribe(value => {
     showContent = value
 })
 
-/* Parse Markdown */
 onMount(() => {
+    /* Parse Markdown */
     fetch(content)
     .then(response => {
         return response.text()
     })
     .then(text => {
-        renderedMarkdown = snarkdown(text)
+        renderedMarkdown = md.render(text)
 
         console.log(renderedMarkdown);
     })
@@ -51,7 +52,7 @@ onMount(() => {
             </div>
         </div>
 
-        <div class="content">
+        <div class="content grid">
             {@html renderedMarkdown}
         </div>
     </div>
@@ -130,5 +131,12 @@ onMount(() => {
             }
         }
     }
+
+    .content {
+        text {
+            grid-column: 3 / 8;
+        }
+    }
+
 }
 </style>

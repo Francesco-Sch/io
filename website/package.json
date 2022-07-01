@@ -16,6 +16,7 @@
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-node": "^1.0.0-next.78",
 		"@sveltejs/kit": "next",
+		"@types/remarkable": "^2.0.3",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
 		"eslint": "^8.16.0",
@@ -32,7 +33,7 @@
 		"typescript": "^4.7.2"
 	},
 	"dependencies": {
-		"snarkdown": "^2.0.0"
+		"remarkable": "^2.0.1"
 	},
 	"type": "module"
 }
