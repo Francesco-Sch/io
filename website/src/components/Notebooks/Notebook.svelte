@@ -1,10 +1,20 @@
 <script lang="ts">
+import { onMount } from 'svelte';
+
+/* Props */
 export let title:string;
 export let link:string;
 export let available:boolean;
+
+/* Local variables */
+let url:any;
+
+onMount(() => {
+    url = window.location.host;
+})
 </script>
 
-{#if available == true}
+{#if available == true && url == 'localhost:3000'}
 <a href="{link}" target="_blank" class="notebook">
     <h3>{title}</h3>  
     <img src="/launch-notebook.svg" alt="Launch notebook">
