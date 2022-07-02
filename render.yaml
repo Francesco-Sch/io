@@ -8,6 +8,8 @@ services:
     branch: main
     dockerfilePath: ./website/Dockerfile
     dockerContext: ./website
+    domains:
+      - io-framework.org
     # dockerCommand: ./website/Dockerfile # optional (defaults to Dockerfile command)
     numInstances: 1 # optional (defaults to 1)
     healthCheckPath: /
