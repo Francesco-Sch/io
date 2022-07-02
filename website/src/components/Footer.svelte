@@ -2,7 +2,7 @@
 
 <footer class="grid">
     <div class="logo">
-        <img src="/logo-small.svg" alt="Logo of IO framework">
+        <img src="/logo-footer.svg" alt="Logo of IO framework">
     </div>
     <div class="developer">
         <a>Developer Docs</a>

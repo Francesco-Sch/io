@@ -1,6 +1,7 @@
 <script lang="ts">
 import { onMount } from 'svelte'
 import { get } from 'svelte/store'
+import { slide } from 'svelte/transition';
 import { navigation } from '../store/index.js'
 import { scrollTo } from 'svelte-scrolling'
 
@@ -15,7 +16,8 @@ onMount(() => {
 <svelte:window bind:scrollY={y}/>
 
 {#if y >= header.offsetHeight}
-    <div class="sticky-header">
+    <div class="sticky-header" in:slide={{ duration: 300 }}>
+        <img src="./logo-small.svg" alt="Logo of the IO framework" class="logo-small">
         <nav>
             <ul>
                 {#each get(navigation) as link}
@@ -65,13 +67,30 @@ onMount(() => {
     }
 
     .sticky-header {
+        display: flex;
+
         position: fixed;
         top: 0;
         left: 0;
         z-index: 1000000;
 
         width: 100%;
+        padding: $spacing-04 $spacing-06;
 
         background-color: white;
+
+        .logo-small {
+            margin-right: auto;
+        }
+        
+        nav {
+            padding: 0;
+            border: none;
+
+            li {
+                margin-right: $spacing-05;
+            }
+        }
+        
     }
 </style>
