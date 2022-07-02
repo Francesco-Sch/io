@@ -1,0 +1,23 @@
+services:
+  # A Docker web service
+  - type: web
+    name: io-website
+    env: docker
+    region: frankfurt
+    plan: free
+    branch: master
+    dockerCommand: ./website/Dockerfile # optional (defaults to Dockerfile command)
+    numInstances: 1 # optional (defaults to 1)
+    healthCheckPath: /
+    # envVars:
+    #   - key: REDIS_HOST
+    #     fromService:
+    #       type: redis
+    #       name: lightning
+    #       property: host # available properties are listed below
+    #   - key: REDIS_PORT
+    #     fromService:
+    #       type: redis
+    #       name: lightning
+    #       property: port
+    #   - fromGroup: conc-settings
