@@ -97,6 +97,14 @@ export const CrawlerInitClick = WidgetWritable<boolean>(
 	"CrawlerInitClick",
 	false
 );
+export const CrawlerInitRunning = WidgetWritable<boolean>(
+	"CrawlerInitRunning",
+	false
+);
+export const CrawlerInitFinished = WidgetWritable<boolean>(
+	"CrawlerInitFinished",
+	false
+);
 
 // ----------------
 // Crawler Gallery
@@ -169,6 +177,8 @@ export function setStoreModels(model: DOMWidgetModel): void {
 
 	// Crawler Init
 	CrawlerInitClick.setModel(model);
+	CrawlerInitRunning.setModel(model);
+	CrawlerInitFinished.setModel(model);
 
 	// Crawler Gallery
 	CrawlerGalleryFolder.setModel(model);

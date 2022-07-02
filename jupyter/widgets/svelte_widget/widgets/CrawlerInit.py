@@ -17,3 +17,5 @@ class CrawlerInit(DOMWidget):
     _view_module_version = Unicode(module_version).tag(sync=True)
 
     CrawlerInitClick = Bool(False).tag(sync=True)
+    CrawlerInitRunning = Bool(False).tag(sync=True)
+    CrawlerInitFinished = Bool(False).tag(sync=True)

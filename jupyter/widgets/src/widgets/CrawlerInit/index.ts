@@ -24,6 +24,8 @@ export class CrawlerInitModel extends DOMWidgetModel {
 			_view_module: CrawlerInitModel.view_module,
 			_view_module_version: CrawlerInitModel.view_module_version,
 			CrawlerInitClick: false,
+			CrawlerInitRunning: false,
+			CrawlerInitFinished: false,
 		};
 	}
 
