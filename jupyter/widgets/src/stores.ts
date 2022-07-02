@@ -54,10 +54,7 @@ export const value = WidgetWritable<number>("value", 1);
 // ----------------
 // Setup
 // ----------------
-export const SetupProcessing = WidgetWritable<boolean>(
-	"SetupProcessing",
-	false
-);
+export const SetupProcessing = WidgetWritable<boolean>("SetupProcessing", true);
 
 // ----------------
 // Validation
