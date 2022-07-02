@@ -8,6 +8,10 @@ GLOBAL
 
 	color: $text;
 }
+::selection {
+	color: white;
+	background-color: $text;
+}
 
 /* ----------------------------
 GRID
