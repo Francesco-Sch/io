@@ -5,7 +5,7 @@ services:
     env: docker
     region: frankfurt
     plan: free
-    branch: master
+    branch: main
     dockerfilePath: ./website/Dockerfile
     dockerContext: ./website
     # dockerCommand: ./website/Dockerfile # optional (defaults to Dockerfile command)
