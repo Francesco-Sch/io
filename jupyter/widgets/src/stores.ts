@@ -52,6 +52,14 @@ export function WidgetWritable<T>(name_: string, value_: T): WidgetWritable<T> {
 export const value = WidgetWritable<number>("value", 1);
 
 // ----------------
+// Setup
+// ----------------
+export const SetupProcessing = WidgetWritable<boolean>(
+	"SetupProcessing",
+	false
+);
+
+// ----------------
 // Validation
 // ----------------
 export const ValidationStatus = WidgetWritable<string>("ValidationStatus", "");
@@ -145,6 +153,9 @@ export const TextToImageInitClick = WidgetWritable<boolean>(
 export function setStoreModels(model: DOMWidgetModel): void {
 	// Example Widget
 	value.setModel(model);
+
+	// Setup
+	SetupProcessing.setModel(model);
 
 	// Validation
 	ValidationStatus.setModel(model);

@@ -5,6 +5,7 @@
 # Distributed under the terms of the Modified BSD License.
 
 from .widgets.Widget import *
+from .widgets.Setup import *
 from .widgets.Validation import *
 from .widgets.CrawlerLogin import *
 from .widgets.CrawlerLinks import *

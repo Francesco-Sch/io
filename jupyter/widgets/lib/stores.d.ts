@@ -5,6 +5,7 @@ interface WidgetWritable<T> extends Writable<T> {
 }
 export declare function WidgetWritable<T>(name_: string, value_: T): WidgetWritable<T>;
 export declare const value: WidgetWritable<number>;
+export declare const SetupProcessing: WidgetWritable<boolean>;
 export declare const ValidationStatus: WidgetWritable<string>;
 export declare const ValidationMessage: WidgetWritable<string>;
 export declare const CrawlerLoginUserName: WidgetWritable<string>;
