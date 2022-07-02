@@ -6,7 +6,9 @@ services:
     region: frankfurt
     plan: free
     branch: master
-    dockerCommand: ./website/Dockerfile # optional (defaults to Dockerfile command)
+    dockerfilePath: ./website/Dockerfile
+    dockerContext: ./website
+    # dockerCommand: ./website/Dockerfile # optional (defaults to Dockerfile command)
     numInstances: 1 # optional (defaults to 1)
     healthCheckPath: /
     # envVars:
