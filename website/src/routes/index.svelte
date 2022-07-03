@@ -11,6 +11,11 @@ import { get } from 'svelte/store'
 import { framework } from '../store/'
 </script>
 
+<svelte:head>
+	<title>IO ‒ An AI framework for designer</title>
+    <link rel="icon" type="image/x-icon" href="logo-small.svg">
+</svelte:head>
+
 <main>
     <Header />
     <Introduction />
