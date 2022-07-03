@@ -1,6 +1,11 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna enim auctor ut vulputate. Enim, vitae diam viverra pretium aliquet eget laoreet. Enim neque, sed ullamcorper tincidunt mi luctus eget sit ut. Amet sit orci tincidunt hac. Mi ac in sed viverra lorem enim enim in egestas. Et sapien facilisi maecenas ut vehicula in metus.
-Adipiscing nibh facilisis leo pharetra. Odio porttitor aliquam tellus est faucibus a, sed. Rutrum pellentesque ut posuere diam. Ac turpis pharetra ut condimentum sem pellentesque diam. Tellus bibendum curabitur sed massa integer proin adipiscing diam phasellus. Enim, urna, amet bibendum turpis sagittis, tellus sed egestas. Nibh urna sed amet rutrum.
-Odio velit vulputate duis nibh. Facilisi purus suspendisse suscipit faucibus etiam enim. Tellus et nibh quis vitae neque gravida mauris. Cras nisl, turpis blandit est pulvinar. Elementum amet, venenatis, congue blandit amet vehicula hendrerit velit. Sodales mattis est et vulputate elementum. Nec, porta proin condimentum pellentesque morbi gravida. Phasellus lacus massa at tincidunt. Sed.
-![Example](/example.jpg)
-Adipiscing nibh facilisis leo pharetra. Odio porttitor aliquam tellus est faucibus a, sed. Rutrum pellentesque ut posuere diam. Ac turpis pharetra ut condimentum sem pellentesque diam. Tellus bibendum curabitur sed massa integer proin adipiscing diam phasellus. Enim, urna, amet bibendum turpis sagittis, tellus sed egestas. Nibh urna sed amet rutrum.
-Odio velit vulputate duis nibh. Facilisi purus suspendisse suscipit faucibus etiam enim. Tellus et nibh quis vitae neque gravida mauris. Cras nisl, turpis blandit est pulvinar. Elementum amet, venenatis, congue blandit amet vehicula hendrerit velit. Sodales mattis est et vulputate elementum. Nec, porta proin condimentum pellentesque morbi gravida. Phasellus lacus massa at tincidunt. Sed.
+<div class="image">
+    <img src="/images/doc_jupyterlab.jpg" alt="Custom JupyterLab" />
+</div>
+
+Coming from the web notebooks, the next step to become more familiar with Jupyter Notebooks and the work with AI is the JupyterLab Editor.
+
+The Jupyter Lab editor gives the possibility to edit the pre-built notebooks and to get an insight into the code cells. In the editor, it is still possible to display widgets in a notebook, which guarantee an easy handling of the notebooks. You can read more about the widgets under "4. JupyterLab Widgets".
+
+With the editor, it is now possible to customize the predefined notebooks according to your needs. It is also possible to create your own notebooks. Furthermore, widgets can be added to your own notebook via a code collection simply by drag-and-drop. This makes it possible to quickly create new notebooks for AI models and other use cases via a modular system.
+
+Since JupyterLab in its original form is quite confusing and unwieldy to use, JuypterLab was further developed and customized via an extension. This custom JupyterLab interface is also one part of the framework. This interface highlights certain control elements and hides others. It was generally cleaned up and the interaction elements simplified.

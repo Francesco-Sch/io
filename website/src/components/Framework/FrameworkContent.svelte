@@ -172,7 +172,7 @@ onMount(() => {
 
             :global(.image) {
                 grid-column: 3 / 11;
-                margin: $spacing-10 0;
+                margin: $spacing-08 0;
 
                 :global(img) {
                     width: 100%;

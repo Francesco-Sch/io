@@ -1,6 +1,16 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna enim auctor ut vulputate. Enim, vitae diam viverra pretium aliquet eget laoreet. Enim neque, sed ullamcorper tincidunt mi luctus eget sit ut. Amet sit orci tincidunt hac. Mi ac in sed viverra lorem enim enim in egestas. Et sapien facilisi maecenas ut vehicula in metus.
-Adipiscing nibh facilisis leo pharetra. Odio porttitor aliquam tellus est faucibus a, sed. Rutrum pellentesque ut posuere diam. Ac turpis pharetra ut condimentum sem pellentesque diam. Tellus bibendum curabitur sed massa integer proin adipiscing diam phasellus. Enim, urna, amet bibendum turpis sagittis, tellus sed egestas. Nibh urna sed amet rutrum.
-Odio velit vulputate duis nibh. Facilisi purus suspendisse suscipit faucibus etiam enim. Tellus et nibh quis vitae neque gravida mauris. Cras nisl, turpis blandit est pulvinar. Elementum amet, venenatis, congue blandit amet vehicula hendrerit velit. Sodales mattis est et vulputate elementum. Nec, porta proin condimentum pellentesque morbi gravida. Phasellus lacus massa at tincidunt. Sed.
-![Example](/example.jpg)
-Adipiscing nibh facilisis leo pharetra. Odio porttitor aliquam tellus est faucibus a, sed. Rutrum pellentesque ut posuere diam. Ac turpis pharetra ut condimentum sem pellentesque diam. Tellus bibendum curabitur sed massa integer proin adipiscing diam phasellus. Enim, urna, amet bibendum turpis sagittis, tellus sed egestas. Nibh urna sed amet rutrum.
-Odio velit vulputate duis nibh. Facilisi purus suspendisse suscipit faucibus etiam enim. Tellus et nibh quis vitae neque gravida mauris. Cras nisl, turpis blandit est pulvinar. Elementum amet, venenatis, congue blandit amet vehicula hendrerit velit. Sodales mattis est et vulputate elementum. Nec, porta proin condimentum pellentesque morbi gravida. Phasellus lacus massa at tincidunt. Sed.
+<div class="image">
+    <img src="/images/doc_web-notebooks.jpg" alt="A web notebbok" />
+</div>
+
+Web-Notebooks are a simpler form of Jupyter Notebooks.
+They allow to execute a notebook in a very reduced web view. In this web view it is not possible to access the code of the code cells from the Jupyter Notebooks.
+
+Nevertheless it is still possible to interact with the notebook through the widgets which rendered and interactive. These widgets provide simple UI interfaces to interact with the notebook and start working with AI. You can read more about the widgets under “4. JupyterLab Widgets”.
+
+Besides the rendered and interactive notebook the web view provides you with an Table of Content and a possibility to restart the notebook.
+
+This simple web view is designed to reduce the fear out of working with artificial intelligence by hiding complex processes and code for now and providing simple interfaces to use.
+
+From this simple web view, you can then launch the notebook in Jupyer Lab to gain a deeper insight into the notebook and its code. You can read more about the Jupyter Lab enviroment under “3. Custom Jupyter Lab”.
+
+The Web-Notebooks are still under development.
