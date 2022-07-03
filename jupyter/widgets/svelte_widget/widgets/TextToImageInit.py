@@ -18,3 +18,4 @@ class TextToImageInit(DOMWidget):
 
     TextToImageInitClick = Bool(False).tag(sync=True)
     TextToImageInitFolder = Unicode('').tag(sync=True)
+    TextToImageInitFinished = Bool(False).tag(sync=True)

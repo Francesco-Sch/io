@@ -5,43 +5,37 @@
     import CheckmarkFilled from 'carbon-icons-svelte/lib/CheckmarkFilled.svelte'
     import { 
         TextToImageInitClick,
-        TextToImageInitFolder
+        TextToImageInitFolder,
+        TextToImageInitFinished
     } from '../../stores';
 
     let click = $TextToImageInitClick;
     let folder = $TextToImageInitFolder;
-    let finished = false;
+    let finished = $TextToImageInitFinished;
     let images:Array<any> = [];
-    let stop:number = 0;
+
+    console.log(finished)
 
     async function fetchImages() {
+        images = [];
+
         const imagePathsRequest = await axios.get(`${window.location.origin}/api/contents/output/${folder}`)
         const imagePaths = await imagePathsRequest.data.content
 
-        if (images.length == imagePaths.length) {
-            stop = stop++;
-        } else {
-            stop = 0;
-            
-            images = [];
-            imagePaths.forEach(async (e:any) => {
-                const imageRequest = await axios.get(`${window.location.origin}/api/contents/${e.path}`)
-                let image = await imageRequest.data.content
+        imagePaths.forEach(async (e:any) => {
+            const imageRequest = await axios.get(`${window.location.origin}/api/contents/${e.path}`)
+            let image = await imageRequest.data.content
 
-                images.push(image)
-                images = images
-            })
-        }
-
-        if(stop == 7) {
-            finished = true
-            return
-        }
+            images.push(image)
+            images = images
+        })
     }
 
     onMount(async () => {
-        if(click == true) {
+        if(click == true && finished == false) {
             setInterval(fetchImages, 10000);
+        } else if (finished == true) {
+            fetchImages();
         }
     })
 </script>

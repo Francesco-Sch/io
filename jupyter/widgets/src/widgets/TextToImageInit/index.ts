@@ -26,6 +26,7 @@ export class TextToImageInitModel extends DOMWidgetModel {
 
 			TextToImageInitClick: false,
 			TextToImageInitFolder: "",
+			TextToImageInitFinished: false,
 		};
 	}
 
