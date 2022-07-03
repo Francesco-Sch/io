@@ -153,6 +153,10 @@ export const TextToImageInitClick = WidgetWritable<boolean>(
 	"TextToImageInitClick",
 	false
 );
+export const TextToImageInitFolder = WidgetWritable<string>(
+	"TextToImageInitFolder",
+	""
+);
 
 // Set the model for each store you create.
 export function setStoreModels(model: DOMWidgetModel): void {
@@ -195,4 +199,5 @@ export function setStoreModels(model: DOMWidgetModel): void {
 
 	// TextToImage Init
 	TextToImageInitClick.setModel(model);
+	TextToImageInitFolder.setModel(model);
 }

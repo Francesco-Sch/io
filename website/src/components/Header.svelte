@@ -43,8 +43,6 @@ onMount(() => {
     </nav>
 </header>
 
-
-
 <style lang="scss">
     header, .sticky-header {
         border-bottom: 2px solid $text;

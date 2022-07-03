@@ -17,3 +17,4 @@ class TextToImageInit(DOMWidget):
     _view_module_version = Unicode(module_version).tag(sync=True)
 
     TextToImageInitClick = Bool(False).tag(sync=True)
+    TextToImageInitFolder = Unicode('').tag(sync=True)
