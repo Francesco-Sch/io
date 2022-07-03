@@ -162,6 +162,14 @@ export const TextToImageInitFinished = WidgetWritable<boolean>(
 	false
 );
 
+// ----------------
+// TextToImage Show
+// ----------------
+export const TextToImageShowFolder = WidgetWritable<string>(
+	"TextToImageShowFolder",
+	""
+);
+
 // Set the model for each store you create.
 export function setStoreModels(model: DOMWidgetModel): void {
 	// Example Widget
@@ -205,4 +213,7 @@ export function setStoreModels(model: DOMWidgetModel): void {
 	TextToImageInitClick.setModel(model);
 	TextToImageInitFolder.setModel(model);
 	TextToImageInitFinished.setModel(model);
+
+	// TextToImage Show
+	TextToImageShowFolder.setModel(model);
 }
