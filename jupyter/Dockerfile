@@ -47,3 +47,8 @@ RUN jupyter labextension disable \
     @jupyterlab/statusbar-extension \
     @jupyterlab/debugger-extension \
     @elyra/theme-extension
+
+# Add workspaces config
+COPY ./workspaces ./workspaces
+RUN jupyter lab workspaces import ./workspaces/pinterest.json \
+    && jupyter lab workspaces import ./workspaces/vqgan.json
