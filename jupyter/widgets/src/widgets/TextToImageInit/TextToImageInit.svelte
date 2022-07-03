@@ -104,9 +104,14 @@
         font-weight: 500;
     }
 
+
+
     /* ----------------------------
     IMAGE GRID
     ---------------------------- */
+    .tti-init .io_widget-headline.previous {
+        margin-top: var(--spacing-09);
+    }
     .tti-init .images-wrapper {
         margin-top: var(--spacing-06);
         padding-top: var(--spacing-06);
@@ -138,7 +143,7 @@
         {:else if finished == true}
         <div class="io_primary-btn init-button finished">
             <CheckmarkFilled size={20} />
-            <p>Scraper finished successfully</p>
+            <p>Process finished successfully.</p>
         </div>
         {:else}
             <Button class="io_primary-btn init-button" on:click="{() => {
@@ -149,20 +154,30 @@
 
     {#if click == true}
         <div class="images-wrapper">
-            <h3 class="io_widget-headline">Generated results</h3>
+            {#if images.length >= 1}
+                <h3 class="io_widget-headline">Current step</h3>
+                <ImageLoader 
+                    src={`data:image/jpg;base64,${images[0].content}`}
+                    alt="part of dataset" 
+                    class="single-image"
+                />
 
-            
-            <div class="images-grid">
-                {#each images as image}
-                    <ImageLoader 
-                        src={`data:image/jpg;base64,${image.content}`}
-                        alt="part of dataset" 
-                        class="single-image"
-                    />
-                {:else}
-                    <p>Generate images should appear soon...</p>
-                {/each}
-            </div>
+                <h3 class="io_widget-headline previous">Previous steps</h3>
+
+                <div class="images-grid">
+                    {#each images as image}
+                        {#if image != images[0]}
+                            <ImageLoader 
+                                src={`data:image/jpg;base64,${image.content}`}
+                                alt="part of dataset" 
+                                class="single-image"
+                            />                      
+                        {/if}  
+                    {/each}
+                </div>
+            {:else}
+                <p>Generate images should appear soon...</p>
+            {/if}
         </div>
     {/if}
 </div>
