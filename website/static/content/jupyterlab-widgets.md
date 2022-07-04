@@ -2,9 +2,9 @@
     <img src="/images/doc_widgets.jpg" alt="Two widgets" />
 </div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna enim auctor ut vulputate. Enim, vitae diam viverra pretium aliquet eget laoreet. Enim neque, sed ullamcorper tincidunt mi luctus eget sit ut. Amet sit orci tincidunt hac. Mi ac in sed viverra lorem enim enim in egestas. Et sapien facilisi maecenas ut vehicula in metus.
-Adipiscing nibh facilisis leo pharetra. Odio porttitor aliquam tellus est faucibus a, sed. Rutrum pellentesque ut posuere diam. Ac turpis pharetra ut condimentum sem pellentesque diam. Tellus bibendum curabitur sed massa integer proin adipiscing diam phasellus. Enim, urna, amet bibendum turpis sagittis, tellus sed egestas. Nibh urna sed amet rutrum.
-Odio velit vulputate duis nibh. Facilisi purus suspendisse suscipit faucibus etiam enim. Tellus et nibh quis vitae neque gravida mauris. Cras nisl, turpis blandit est pulvinar. Elementum amet, venenatis, congue blandit amet vehicula hendrerit velit. Sodales mattis est et vulputate elementum. Nec, porta proin condimentum pellentesque morbi gravida. Phasellus lacus massa at tincidunt. Sed.
-![Example](/example.jpg)
-Adipiscing nibh facilisis leo pharetra. Odio porttitor aliquam tellus est faucibus a, sed. Rutrum pellentesque ut posuere diam. Ac turpis pharetra ut condimentum sem pellentesque diam. Tellus bibendum curabitur sed massa integer proin adipiscing diam phasellus. Enim, urna, amet bibendum turpis sagittis, tellus sed egestas. Nibh urna sed amet rutrum.
-Odio velit vulputate duis nibh. Facilisi purus suspendisse suscipit faucibus etiam enim. Tellus et nibh quis vitae neque gravida mauris. Cras nisl, turpis blandit est pulvinar. Elementum amet, venenatis, congue blandit amet vehicula hendrerit velit. Sodales mattis est et vulputate elementum. Nec, porta proin condimentum pellentesque morbi gravida. Phasellus lacus massa at tincidunt. Sed.
+The widgets are a central part to simplify the work with AI.
+
+They are operable UI-components, that can be used within a notebook and executed code blocks. This creates simple interfaces which are used to abstract and execute code. The framework comes with a number of different pre-built widgets that represent common processes and tasks in working with with AI. Therea widgets to work with data scraping, use text-to-image models more easily or to fine tune existing GAN models.
+
+This makes the access to AI for designers significantly simpler. In addition, the widgets are necessary to introduce the idea of a simplified web view of the notebooks, as there would
+otherwise there be no way to execute code within the web view.

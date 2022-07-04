@@ -19,7 +19,7 @@ import { scrollRef } from 'svelte-scrolling'
             However, working with artificial intelligence is currently very complex and involves many hurdles. A lack of knowledge in programming and the tools makes it difficult to use artificial intelligence as a design tool. "IO - An AI Framework for Designers" addresses this problem and offers a range of possibilities to make artificial intelligence accessible to designers.
         </p>
         <p>
-            Extending the ecosystem around JupyterLab and Jupyter Notebooks, IO provides different tools to make AI more accessible. Part of the framework are this website, a JupyterLab theme and server extension, an easy web-view for Jupyter notebooks and extremely refined widgets which can be used inside Jupyter notebooks. You can read more about the different parts in the following section.
+            Extending the ecosystem around JupyterLab and Jupyter Notebooks, IO provides different tools to make AI more accessible. Part of the framework are this website, a JupyterLab theme and server extension, an easy web-view for Jupyter notebooks and refined widgets which can be used inside Jupyter notebooks. You can read more about the different parts in the following section.
         </p>
     </div>
 
