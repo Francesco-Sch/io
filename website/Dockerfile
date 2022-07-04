@@ -7,7 +7,7 @@ RUN npm ci
 
 # Copy all local files into the image.
 COPY . .
-COPY ./static/fonts ./fonts
+COPY /static/fonts ./fonts
 
 RUN npm run build
 
