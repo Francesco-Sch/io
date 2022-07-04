@@ -2,7 +2,7 @@ FROM mhart/alpine-node:16
 
 # install dependencies
 WORKDIR /website
-COPY ./static/fonts/ ./fonts
+# COPY ./static/fonts/ ./fonts
 COPY package.json package-lock.json ./
 RUN npm ci
 
