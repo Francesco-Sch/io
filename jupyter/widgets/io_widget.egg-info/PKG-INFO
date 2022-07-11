@@ -1,3 +1,31 @@
+Metadata-Version: 2.1
+Name: io-widget
+Version: 0.1.0.dev0
+Summary: Accessible Jupyter Widgets for Designers. Part of IO
+Home-page: https://github.com/Francesco-Sch/io/tree/main/jupyter/widgets
+Author: Francesco Scheffczyk
+Author-email: francesco.scheffczyk@gmail.com
+License: BSD
+Keywords: Jupyter,Widgets,IPython
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Jupyter
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: examples
+Provides-Extra: docs
+License-File: LICENSE.txt
+
 # IO Widgets
 
 Custom Jupyter Widget with Svelte

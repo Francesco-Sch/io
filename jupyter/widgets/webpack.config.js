@@ -56,7 +56,7 @@ module.exports = [
 		entry: "./src/extension.ts",
 		output: {
 			filename: "index.js",
-			path: path.resolve(__dirname, "svelte_widget", "nbextension"),
+			path: path.resolve(__dirname, "io_widget", "nbextension"),
 			libraryTarget: "amd",
 			publicPath: "",
 		},
@@ -68,7 +68,7 @@ module.exports = [
 	},
 
 	/**
-	 * Embeddable svelte-widget bundle
+	 * Embeddable io-widget bundle
 	 *
 	 * This bundle is almost identical to the notebook extension bundle. The only
 	 * difference is in the configuration of the webpack public path for the
@@ -83,8 +83,8 @@ module.exports = [
 			filename: "index.js",
 			path: path.resolve(__dirname, "dist"),
 			libraryTarget: "amd",
-			library: "svelte-widget",
-			publicPath: "https://unpkg.com/svelte-widget@" + version + "/dist/",
+			library: "io-widget",
+			publicPath: "https://unpkg.com/io-widget@" + version + "/dist/",
 		},
 		module: {
 			rules: rules,
@@ -103,7 +103,7 @@ module.exports = [
 		output: {
 			filename: "embed-bundle.js",
 			path: path.resolve(__dirname, "docs", "source", "_static"),
-			library: "svelte-widget",
+			library: "io-widget",
 			libraryTarget: "amd",
 		},
 		module: {

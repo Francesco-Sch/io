@@ -23,7 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 
 # The name of the project
-name = 'svelte_widget'
+name = 'io_widget'
 
 # Get the version
 version = get_version(pjoin(name, '_version.py'))
@@ -45,14 +45,14 @@ package_data_spec = {
 
 
 data_files_spec = [
-    ('share/jupyter/nbextensions/svelte_widget',
-     'svelte_widget/nbextension', '**'),
-    ('share/jupyter/labextensions/svelte-widget',
-     'svelte_widget/labextension', '**'),
-    ('share/jupyter/labextensions/svelte-widget',
+    ('share/jupyter/nbextensions/io_widget',
+     'io_widget/nbextension', '**'),
+    ('share/jupyter/labextensions/io-widget',
+     'io_widget/labextension', '**'),
+    ('share/jupyter/labextensions/io-widget',
      '.', 'install.json'),
     ('etc/jupyter/nbconfig/notebook.d', '.',
-     'svelte_widget.json'),
+     'io_widget.json'),
 ]
 
 
@@ -66,14 +66,14 @@ cmdclass['jsdeps'] = combine_commands(
 
 setup_args = dict(
     name=name,
-    description='Custom Jupyter Widget with Svelte',
+    description='Accessible Jupyter Widgets for Designers. Part of IO',
     version=version,
     scripts=glob(pjoin('scripts', '*')),
     cmdclass=cmdclass,
     packages=find_packages(),
     author='Francesco Scheffczyk',
     author_email='francesco.scheffczyk@gmail.com',
-    url='https://github.com//svelte-widget',
+    url='https://github.com/Francesco-Sch/io/tree/main/jupyter/widgets',
     license='BSD',
     platforms="Linux, Mac OS X, Windows",
     keywords=['Jupyter', 'Widgets', 'IPython'],
