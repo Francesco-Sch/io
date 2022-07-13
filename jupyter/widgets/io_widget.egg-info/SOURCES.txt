@@ -20,8 +20,8 @@ io_widget.egg-info/dependency_links.txt
 io_widget.egg-info/requires.txt
 io_widget.egg-info/top_level.txt
 io_widget/labextension/package.json
-io_widget/labextension/static/568.74124ed7fa797873b693.js
-io_widget/labextension/static/remoteEntry.2fcded8015868b96f7e0.js
+io_widget/labextension/static/568.2e5a4981e47d195cee80.js
+io_widget/labextension/static/remoteEntry.08cab6aba7854c2d2872.js
 io_widget/labextension/static/style.js
 io_widget/labextension/static/third-party-licenses.json
 io_widget/nbextension/extension.js
