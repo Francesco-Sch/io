@@ -9,8 +9,9 @@
 **/fonts
 
 # Widgets
-/widgets/dist/
-/widgets/lib/
-/widgets/docs/
-/widgets/**/labextension/
-/widgets/**/nbextension/
+/jupyter/widgets/dist/
+/jupyter/widgets/lib/
+/jupyter/widgets/docs/
+/jupyter/widgets/**/labextension/
+/jupyter/widgets/**/nbextension/
+/jupyter/widgets/MANIFEST

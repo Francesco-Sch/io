@@ -9,12 +9,16 @@
     export let gridValue:number = 6
     let computedImageHeight:any;
 
+    const BASE_URL = process.env.NODE_ENV === 'production'
+        ? [window.location.origin, window.location.pathname.match(/[^/]+\/(\w+)/)[0]].join('/')
+        : window.location.origin
+
     onMount(async () => {
-        const imagePathsRequest = await axios.get(`${window.location.origin}/api/contents/${folder}`)
+        const imagePathsRequest = await axios.get(`${BASE_URL}/api/contents/${folder}`)
         const imagePaths = await imagePathsRequest.data.content
 
         imagePaths.forEach(async (e:any) => {
-            const imageRequest = await axios.get(`${window.location.origin}/api/contents/${e.path}`)
+            const imageRequest = await axios.get(`${BASE_URL}/api/contents/${e.path}`)
             let image = await imageRequest.data.content
 
             images.push(image)

@@ -14,16 +14,18 @@
     let finished = $TextToImageInitFinished;
     let images:Array<any> = [];
 
-    console.log(finished)
+    const BASE_URL = process.env.NODE_ENV === 'production'
+        ? [window.location.origin, window.location.pathname.match(/[^/]+\/(\w+)/)[0]].join('/')
+        : window.location.origin
 
     async function fetchImages() {
         images = [];
 
-        const imagePathsRequest = await axios.get(`${window.location.origin}/api/contents/output/${folder}`)
+        const imagePathsRequest = await axios.get(`${BASE_URL}/api/contents/output/${folder}`)
         const imagePaths = await imagePathsRequest.data.content
 
         imagePaths.forEach(async (e:any) => {
-            const imageRequest = await axios.get(`${window.location.origin}/api/contents/${e.path}`)
+            const imageRequest = await axios.get(`${BASE_URL}/api/contents/${e.path}`)
             let image = {
                 created: '',
                 content: ''
