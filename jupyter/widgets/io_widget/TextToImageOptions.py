@@ -6,7 +6,7 @@
 
 from ipywidgets import DOMWidget
 from traitlets import Unicode, Integer
-from .._frontend import module_name, module_version
+from ._frontend import module_name, module_version
 
 class TextToImageOptions(DOMWidget):
     _model_name = Unicode('TextToImageOptionsModel').tag(sync=True)

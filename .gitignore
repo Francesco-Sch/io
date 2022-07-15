@@ -9,6 +9,7 @@
 **/fonts
 
 # Widgets
+/jupyter/widgets/build/
 /jupyter/widgets/dist/
 /jupyter/widgets/lib/
 /jupyter/widgets/docs/

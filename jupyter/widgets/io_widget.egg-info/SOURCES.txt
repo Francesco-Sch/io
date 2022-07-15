@@ -11,6 +11,17 @@ tsconfig.json
 webpack.config.js
 docs/source/_static/embed-bundle.js
 examples/introduction.ipynb
+io_widget/CrawlerGallery.py
+io_widget/CrawlerInit.py
+io_widget/CrawlerLinks.py
+io_widget/CrawlerLogin.py
+io_widget/Setup.py
+io_widget/TextToImageInit.py
+io_widget/TextToImageOptions.py
+io_widget/TextToImagePrompt.py
+io_widget/TextToImageShow.py
+io_widget/Validation.py
+io_widget/Widget.py
 io_widget/__init__.py
 io_widget/_frontend.py
 io_widget/_version.py

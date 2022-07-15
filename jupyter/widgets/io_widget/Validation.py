@@ -6,7 +6,7 @@
 
 from ipywidgets import DOMWidget, widget_serialization
 from traitlets import Unicode, Dict
-from .._frontend import module_name, module_version
+from ._frontend import module_name, module_version
 
 class Validation(DOMWidget):
     _model_name = Unicode('ValidationModel').tag(sync=True)

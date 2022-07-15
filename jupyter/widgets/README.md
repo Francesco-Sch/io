@@ -81,3 +81,11 @@ After a change wait for the build to finish and then refresh your browser and th
 #### Python:
 
 If you make a change to the python code then you will need to restart the notebook kernel to have it take effect.
+
+## Packaging the Widgets
+
+Bundle the python package:
+
+```bash
+python setup.py sdist bdist_wheel
+```

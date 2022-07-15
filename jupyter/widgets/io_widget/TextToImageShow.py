@@ -6,8 +6,7 @@
 
 from ipywidgets import DOMWidget
 from traitlets import Unicode, List
-
-from .._frontend import module_name, module_version
+from ._frontend import module_name, module_version
 
 class TextToImageShow(DOMWidget):
     _model_name = Unicode('TextToImageShowModel').tag(sync=True)

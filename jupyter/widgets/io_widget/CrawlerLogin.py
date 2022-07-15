@@ -6,7 +6,7 @@
 
 from ipywidgets import DOMWidget
 from traitlets import Unicode
-from .._frontend import module_name, module_version
+from ._frontend import module_name, module_version
 
 class CrawlerLogin(DOMWidget):
     _model_name = Unicode('CrawlerLoginModel').tag(sync=True)

@@ -4,17 +4,17 @@
 # Copyright (c) Francesco Scheffczyk.
 # Distributed under the terms of the Modified BSD License.
 
-from .widgets.Widget import *
-from .widgets.Setup import *
-from .widgets.Validation import *
-from .widgets.CrawlerLogin import *
-from .widgets.CrawlerLinks import *
-from .widgets.CrawlerInit import *
-from .widgets.CrawlerGallery import *
-from .widgets.TextToImagePrompt import *
-from .widgets.TextToImageOptions import *
-from .widgets.TextToImageInit import *
-from .widgets.TextToImageShow import *
+from .Widget import *
+from .Setup import *
+from .Validation import *
+from .CrawlerLogin import *
+from .CrawlerLinks import *
+from .CrawlerInit import *
+from .CrawlerGallery import *
+from .TextToImagePrompt import *
+from .TextToImageOptions import *
+from .TextToImageInit import *
+from .TextToImageShow import *
 
 from ._version import __version__, version_info
 
