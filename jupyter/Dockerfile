@@ -27,10 +27,6 @@ RUN set -ex \
 # Install packages via conda
 RUN conda install nodejs yarn
 
-# Install custom widgets
-COPY ./widgets/dist/io_widget-0.5.0.dev0-py2.py3-none-any.whl ./io_widget-0.5.0.dev0-py2.py3-none-any.whl
-RUN pip3 install io_widget-0.5.0.dev0-py2.py3-none-any.whl
-
 # Uninstall unecessary packages from base docker image
 RUN pip uninstall jupyterlab-git -y
 
